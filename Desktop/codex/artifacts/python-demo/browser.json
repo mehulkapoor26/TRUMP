@@ -1,0 +1,11 @@
+{
+  "verifiedAt": "2026-10-31T22:06:57.993Z",
+  "base": "http://127.0.0.1:5173",
+  "checks": [
+    "real live PyPI OSV/CVE findings",
+    "interactive Python graph and explicit unsupported reachability",
+    "verified PyPI candidate displayed and report downloaded"
+  ],
+  "errors": [],
+  "network": "live; no mocked responses"
+}

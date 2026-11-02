@@ -1,0 +1,21 @@
+{
+  "mode": "OFFLINE DEMO: synthetic GitHub/OSV/npm responses; not live security evidence",
+  "verifiedAt": "2026-10-31T22:13:33.694Z",
+  "repository": "https://github.com/traceguard-demo/fixture",
+  "repositoryScanId": "cadc12f9-209d-4179-8752-f138a5e1a2e2",
+  "beforeScanId": "96319e99-6acb-4611-a50b-878432906541",
+  "afterScanId": "7a42ada0-8657-48f6-aa98-4c0b78ddc343",
+  "advisoryMatches": 1,
+  "coverage": "complete",
+  "incomplete": [],
+  "checks": [
+    "repository ingestion to saved report",
+    "ZIP ingestion",
+    "OSV matches",
+    "isolated scoped reachability",
+    "persisted reports",
+    "two JSON and two parseable PDF downloads",
+    "CycloneDX SBOM",
+    "before/after comparison"
+  ]
+}

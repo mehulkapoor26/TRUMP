@@ -1,0 +1,40 @@
+{
+  "snapshotId": "official-osv-querybatch-lodash-4.17.19-2026-11-01",
+  "source": "https://api.osv.dev/v1/querybatch",
+  "query": {
+    "package": {
+      "name": "lodash",
+      "ecosystem": "npm"
+    },
+    "version": "4.17.19"
+  },
+  "querybatch": {
+    "results": [
+      {
+        "vulns": [
+          {
+            "id": "GHSA-29mw-wpgm-hmr9",
+            "modified": "2025-09-29T21:12:31.102523Z"
+          },
+          {
+            "id": "GHSA-35jh-r3h4-6jhm",
+            "modified": "2026-10-17T02:55:38.085813Z"
+          },
+          {
+            "id": "GHSA-f23m-r3pf-42rh",
+            "modified": "2026-10-17T02:56:13.084362Z"
+          },
+          {
+            "id": "GHSA-r5fr-rjxr-66jc",
+            "modified": "2026-10-17T02:56:15.633068Z"
+          },
+          {
+            "id": "GHSA-xxjr-mmjv-4gpg",
+            "modified": "2026-10-17T02:55:54.229635Z"
+          }
+        ]
+      }
+    ]
+  },
+  "advisoryDetails": "Not included; detail lookups are deliberately unavailable in this fixture."
+}

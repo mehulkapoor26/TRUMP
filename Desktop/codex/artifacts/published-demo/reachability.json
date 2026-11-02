@@ -1,0 +1,147 @@
+{
+  "unknown": {
+    "status": "UNKNOWN",
+    "reason": "No affected-function export mapping supplied. Advisory presence does not identify a vulnerable function.",
+    "target": {
+      "packageNodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+      "exportName": "",
+      "advisoryId": "GHSA-29mw-wpgm-hmr9"
+    },
+    "mapping": "user-declared export; not independently verified",
+    "coverage": {
+      "entrypoints": [
+        {
+          "file": "src/entry.js",
+          "symbol": "handler"
+        }
+      ],
+      "analyzedFiles": [],
+      "sourceFilesAvailable": 1,
+      "skippedSources": [],
+      "functionsVisited": 0,
+      "callsExamined": 0,
+      "completeForDeclaredEntrypoints": false,
+      "boundary": "Captured application source → declared export of the selected locked npm package instance."
+    },
+    "evidence": [],
+    "gaps": [
+      {
+        "reason": "No affected-function export mapping supplied. Advisory presence does not identify a vulnerable function."
+      }
+    ],
+    "limitations": [
+      "Syntactic, context-insensitive ESM traversal of captured JS/JSX/TS/TSX/MJS/CJS source; no code is executed.",
+      "Entrypoints are user-declared. Module initialization and an optional named/default exported function are roots. Other externally invoked exports are outside coverage.",
+      "Target mapping is user-declared and not verified against an advisory. A target denotes an exported API boundary, not an internal library function.",
+      "External package initialization and internal code, node_modules, generated/missing source, native code, framework dispatch, callbacks, dynamic imports, CommonJS, reflection, and computed calls are not modeled.",
+      "Branches are conservatively traversed without feasibility analysis. REACHABLE means a syntactic call path, not proven runtime execution or exploitability.",
+      "NOT REACHABLE applies only to declared entrypoints, captured source, and the exported-boundary model. It is not evidence of application safety.",
+      "Source capture: 200 files, 256 KiB/file, 2 MiB total. Traversal: 1,000 units, 5,000 calls, 100,000 AST visits; evidence limited to 100 records."
+    ]
+  },
+  "unused": {
+    "status": "NOT REACHABLE",
+    "reason": "No call to the declared affected export was found within the declared entrypoint closure and supported static model.",
+    "target": {
+      "packageNodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+      "exportName": "template",
+      "advisoryId": "GHSA-29mw-wpgm-hmr9"
+    },
+    "mapping": "user-declared export; not independently verified",
+    "coverage": {
+      "entrypoints": [
+        {
+          "file": "src/entry.js",
+          "symbol": "<module>"
+        }
+      ],
+      "analyzedFiles": [
+        "src/entry.js"
+      ],
+      "sourceFilesAvailable": 1,
+      "skippedSources": [],
+      "functionsVisited": 0,
+      "callsExamined": 0,
+      "completeForDeclaredEntrypoints": true,
+      "boundary": "Captured application source → declared export of the selected locked npm package instance."
+    },
+    "evidence": [
+      {
+        "file": "src/entry.js",
+        "line": 1,
+        "column": 1,
+        "snippet": "import { template } from 'lodash';",
+        "kind": "entry",
+        "from": "<declared entrypoint>",
+        "to": "src/entry.js#<module>"
+      }
+    ],
+    "gaps": [],
+    "limitations": [
+      "Syntactic, context-insensitive ESM traversal of captured JS/JSX/TS/TSX/MJS/CJS source; no code is executed.",
+      "Entrypoints are user-declared. Module initialization and an optional named/default exported function are roots. Other externally invoked exports are outside coverage.",
+      "Target mapping is user-declared and not verified against an advisory. A target denotes an exported API boundary, not an internal library function.",
+      "External package initialization and internal code, node_modules, generated/missing source, native code, framework dispatch, callbacks, dynamic imports, CommonJS, reflection, and computed calls are not modeled.",
+      "Branches are conservatively traversed without feasibility analysis. REACHABLE means a syntactic call path, not proven runtime execution or exploitability.",
+      "NOT REACHABLE applies only to declared entrypoints, captured source, and the exported-boundary model. It is not evidence of application safety.",
+      "Source capture: 200 files, 256 KiB/file, 2 MiB total. Traversal: 1,000 units, 5,000 calls, 100,000 AST visits; evidence limited to 100 records."
+    ]
+  },
+  "reachable": {
+    "status": "REACHABLE",
+    "reason": "A syntactic call path reaches the user-declared affected export of the selected locked package instance.",
+    "target": {
+      "packageNodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+      "exportName": "template",
+      "advisoryId": "GHSA-29mw-wpgm-hmr9"
+    },
+    "mapping": "user-declared export; not independently verified",
+    "coverage": {
+      "entrypoints": [
+        {
+          "file": "src/entry.js",
+          "symbol": "handler"
+        }
+      ],
+      "analyzedFiles": [
+        "src/entry.js"
+      ],
+      "sourceFilesAvailable": 1,
+      "skippedSources": [],
+      "functionsVisited": 1,
+      "callsExamined": 1,
+      "completeForDeclaredEntrypoints": true,
+      "boundary": "Captured application source → declared export of the selected locked npm package instance."
+    },
+    "evidence": [
+      {
+        "file": "src/entry.js",
+        "line": 4,
+        "column": 1,
+        "snippet": "export function handler() {",
+        "kind": "entry",
+        "from": "<declared entrypoint>",
+        "to": "src/entry.js#handler"
+      },
+      {
+        "file": "src/entry.js",
+        "line": 5,
+        "column": 10,
+        "snippet": "return template('Hello <%= name %>');",
+        "kind": "target",
+        "from": "src/entry.js#handler",
+        "to": "lodash@4.17.20:template"
+      }
+    ],
+    "gaps": [],
+    "limitations": [
+      "Syntactic, context-insensitive ESM traversal of captured JS/JSX/TS/TSX/MJS/CJS source; no code is executed.",
+      "Entrypoints are user-declared. Module initialization and an optional named/default exported function are roots. Other externally invoked exports are outside coverage.",
+      "Target mapping is user-declared and not verified against an advisory. A target denotes an exported API boundary, not an internal library function.",
+      "External package initialization and internal code, node_modules, generated/missing source, native code, framework dispatch, callbacks, dynamic imports, CommonJS, reflection, and computed calls are not modeled.",
+      "Branches are conservatively traversed without feasibility analysis. REACHABLE means a syntactic call path, not proven runtime execution or exploitability.",
+      "NOT REACHABLE applies only to declared entrypoints, captured source, and the exported-boundary model. It is not evidence of application safety.",
+      "Source capture: 200 files, 256 KiB/file, 2 MiB total. Traversal: 1,000 units, 5,000 calls, 100,000 AST visits; evidence limited to 100 records."
+    ]
+  }
+}

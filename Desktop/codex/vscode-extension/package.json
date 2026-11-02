@@ -1,0 +1,85 @@
+{
+  "name": "traceguard-dependency-watch",
+  "displayName": "TRACEGUARD Dependency Watch",
+  "description": "Watch npm dependency changes and check resolved versions against OSV with explainable diagnostics.",
+  "version": "0.1.0",
+  "publisher": "traceguard-local",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Linters",
+    "Other"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "main": "./dist/extension.cjs",
+  "activationEvents": [
+    "workspaceContains:**/package.json",
+    "workspaceContains:**/package-lock.json",
+    "workspaceContains:**/npm-shrinkwrap.json",
+    "onStartupFinished"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "Network advisory queries require a trusted workspace."
+    },
+    "virtualWorkspaces": {
+      "supported": false
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "traceguard.scanDependencies",
+        "title": "TRACEGUARD: Check npm Dependencies"
+      },
+      {
+        "command": "traceguard.showOutput",
+        "title": "TRACEGUARD: Show Dependency Check Output"
+      }
+    ],
+    "configuration": {
+      "title": "TRACEGUARD",
+      "properties": {
+        "traceguard.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Check saved npm metadata on startup and changes. Package names and resolved versions are sent to api.osv.dev; source is never sent."
+        },
+        "traceguard.notifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Notify when new advisory matches or coverage failures are observed."
+        },
+        "traceguard.debounceMs": {
+          "type": "number",
+          "default": 1200,
+          "minimum": 250,
+          "maximum": 10000,
+          "description": "Delay after saved dependency changes before rechecking."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc --noEmit",
+    "vscode:prepublish": "npm run typecheck && npm run build",
+    "package": "vsce package --no-dependencies --allow-missing-repository --out ../artifacts/traceguard-dependency-watch-0.1.0.vsix",
+    "test": "node --test test/*.test.mjs"
+  },
+  "overrides": {
+    "@vscode/vsce": { "minimatch": "^11.0.1" }
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "@types/vscode": "1.95.0",
+    "@vscode/vsce": "^4.1.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.9.3"
+  }
+}

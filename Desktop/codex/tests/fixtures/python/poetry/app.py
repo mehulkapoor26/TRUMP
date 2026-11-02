@@ -1,0 +1,1 @@
+raise RuntimeError("SCAN AS DATA ONLY; DO NOT EXECUTE OR IMPORT")

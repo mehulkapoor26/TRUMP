@@ -1,0 +1,482 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "31b1a622-e13d-4090-8ba7-af1c23a79690",
+  "generatedAt": "2026-10-31T22:05:06.537Z",
+  "scan": {
+    "id": "3557f034-3d1e-4bf8-8211-3c6b10242697",
+    "source": "ZIP upload",
+    "createdAt": "2026-10-31T22:04:53.126Z",
+    "inventorySha256": "1260fb9550cb4445cfc71986b0c653f6dbaeba801b96d974c0e7074af071e7af"
+  },
+  "coverage": {
+    "status": "partial",
+    "checkedAt": "2026-10-31T22:05:05.982Z",
+    "packageInstances": 6,
+    "matched": 5,
+    "noKnownMatch": 1,
+    "unknown": 0,
+    "findingsIncluded": 5,
+    "findingsOmitted": 0
+  },
+  "limitations": [
+    "This report is a point-in-time snapshot of the saved inventory and fresh OSV queries, not a live deployment assessment.",
+    "Dependency presence and advisory version matches do not prove runtime execution, attacker control, or actual exploitability.",
+    "No known advisory match is not a safety guarantee. Unknown, failed, paginated, or skipped checks are not clean findings.",
+    "Advisory IDs can be aliases of the same underlying issue; counts describe package instances, not distinct exploitable vulnerabilities.",
+    "Details are fetched for at most 40 unique advisory IDs; at most 100 matched package instances and 20 advisory IDs per finding are included. Descriptions, references, paths and source evidence are bounded.",
+    "Source-provided CVSS vectors are retained without inventing numeric scores or priorities. Withdrawn or mismatched records require manual review.",
+    "A verified candidate is an advisory-listed fixed release that exists in its ecosystem registry and returns no known OSV match at verification time. It is not a guarantee of safety, compatibility, or that every relevant fix was published.",
+    "At most three candidate releases per package/version are checked, for at most 20 unique pairs. If no candidate is verified, manual review is required. Major-version changes may require migration.",
+    "Transitive updates require changes to the owning parent or carefully reviewed root overrides. No dependency graph or lockfile is changed automatically.",
+    "Only server-recorded scoped reachability results from this server process are included (latest result per instance, at most 100 instances per scan and 100 recent scans; not restored after restart). Their affected-export mappings are user-declared; NOT REACHABLE applies only within each declared coverage and is never a global safety claim.",
+    "No source code, submitted package scripts, or package installation is executed while preparing these reports. Testing and release-note review remain the maintainer's responsibility.",
+    "Python reachability is unsupported and UNKNOWN. PyPI fix candidates require an advisory fixed boundary, a published non-yanked release and a fresh OSV query; Python/platform compatibility is NOT TESTED. npm supply-chain heuristics do not assess PyPI packages.",
+    "Dependency inventory is incomplete or has warnings; advisory coverage only applies to recorded resolved instances."
+  ],
+  "reportType": "remediation-plan",
+  "title": "Remediation Plan",
+  "actions": [
+    {
+      "findingId": "F-001",
+      "packageNodeId": "urn:traceguard:component:bb86b3d2838012e8185ec413ac06bdb417c7389e0fac7b644cbbafaab6e60255",
+      "packageName": "pyyaml",
+      "installedVersion": "5.3.1",
+      "status": "VERIFIED CANDIDATE",
+      "suggestedVersion": "5.4",
+      "verification": {
+        "checkedAt": "2026-10-31T22:05:23.399Z",
+        "advisorySources": [
+          "https://api.osv.dev/v1/vulns/GHSA-8q59-q68h-6hv4",
+          "https://api.osv.dev/v1/vulns/PYSEC-2021-142"
+        ],
+        "registrySource": "https://pypi.org/pypi/pyyaml/5.4/json",
+        "candidateAdvisoryStatus": "no-known",
+        "compatibility": "NOT TESTED"
+      },
+      "steps": [
+        "Review pyyaml 5.4, the cited PyPI advisories and your Python/platform constraints. Compatibility is NOT TESTED.",
+        "Update the owning requirements/pyproject declaration or transitive parent for poetry.lock; regenerate its lockfile in your trusted development environment. TRACEGUARD does not run pip, Poetry or build backends.",
+        "Review every locked instance, conditional dependency and environment marker; run project tests and rescan. No automatic edits or installs are performed."
+      ],
+      "validation": [
+        "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+        "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+        "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+      ],
+      "recommendationSources": [
+        "https://osv.dev/vulnerability/GHSA-8q59-q68h-6hv4",
+        "https://nvd.nist.gov/vuln/detail/CVE-2020-14343",
+        "https://github.com/SeldonIO/seldon-core/issues/2252",
+        "https://github.com/yaml/pyyaml/issues/420",
+        "https://github.com/yaml/pyyaml/issues/420#issuecomment-663673966",
+        "https://github.com/yaml/pyyaml/commit/a001f2782501ad2d24986959f0239a354675f9dc",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=1860466",
+        "https://github.com/advisories/GHSA-8q59-q68h-6hv4",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/pyyaml/PYSEC-2021-142.yaml",
+        "https://github.com/yaml/pyyaml",
+        "https://pypi.org/project/PyYAML",
+        "https://www.oracle.com/security-alerts/cpuapr2022.html",
+        "https://www.oracle.com/security-alerts/cpujul2022.html",
+        "https://osv.dev/vulnerability/PYSEC-2021-142",
+        "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+        "https://pip.pypa.io/en/stable/cli/pip_install/"
+      ]
+    },
+    {
+      "findingId": "F-002",
+      "packageNodeId": "urn:traceguard:component:9640b0a9eb8bf7919af53e7008871f01055b43513c2cb87cc7af84b6459b2d73",
+      "packageName": "requests",
+      "installedVersion": "2.31.0",
+      "status": "VERIFIED CANDIDATE",
+      "suggestedVersion": "2.33.0",
+      "verification": {
+        "checkedAt": "2026-10-31T22:05:23.399Z",
+        "advisorySources": [
+          "https://api.osv.dev/v1/vulns/GHSA-9hjg-9r4m-mvj7",
+          "https://api.osv.dev/v1/vulns/GHSA-9wx4-h78v-vm56",
+          "https://api.osv.dev/v1/vulns/GHSA-gc5v-m9x4-r6x2",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-1872",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-1873",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-2275"
+        ],
+        "registrySource": "https://pypi.org/pypi/requests/2.33.0/json",
+        "candidateAdvisoryStatus": "no-known",
+        "compatibility": "NOT TESTED"
+      },
+      "steps": [
+        "Review requests 2.33.0, the cited PyPI advisories and your Python/platform constraints. Compatibility is NOT TESTED.",
+        "Update the owning requirements/pyproject declaration or transitive parent for poetry.lock; regenerate its lockfile in your trusted development environment. TRACEGUARD does not run pip, Poetry or build backends.",
+        "Review every locked instance, conditional dependency and environment marker; run project tests and rescan. No automatic edits or installs are performed."
+      ],
+      "validation": [
+        "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+        "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+        "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+      ],
+      "recommendationSources": [
+        "https://osv.dev/vulnerability/GHSA-9hjg-9r4m-mvj7",
+        "https://github.com/psf/requests/security/advisories/GHSA-9hjg-9r4m-mvj7",
+        "https://nvd.nist.gov/vuln/detail/CVE-2024-47081",
+        "https://github.com/psf/requests/pull/6965",
+        "https://github.com/psf/requests/commit/96ba401c1296ab1dda74a2365ef36d88f7d144ef",
+        "https://github.com/advisories/GHSA-9hjg-9r4m-mvj7",
+        "https://github.com/psf/requests",
+        "https://github.com/psf/requests/releases/tag/v2.32.4",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/requests/PYSEC-2026-1872.yaml",
+        "https://pypi.org/project/requests",
+        "https://requests.readthedocs.io/en/latest/api/#requests.Session.trust_env",
+        "https://seclists.org/fulldisclosure/2025/Jun/2",
+        "https://osv.dev/vulnerability/GHSA-9wx4-h78v-vm56",
+        "https://github.com/psf/requests/security/advisories/GHSA-9wx4-h78v-vm56",
+        "https://nvd.nist.gov/vuln/detail/CVE-2024-35195",
+        "https://github.com/psf/requests/pull/6655",
+        "https://github.com/psf/requests/commit/a58d7f2ffb4d00b46dca2d70a3932a0b37e22fac",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IYLSNK5TL46Q6XPRVMHVWS63MVJQOK4Q",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N7WP6EYDSUOCOJYHDK5NX43PYZ4SNHGZ",
+        "https://osv.dev/vulnerability/GHSA-gc5v-m9x4-r6x2",
+        "https://github.com/psf/requests/security/advisories/GHSA-gc5v-m9x4-r6x2",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-25645",
+        "https://github.com/psf/requests/commit/66d21cb07bd6255b1280291c4fafb71803cdb3b7",
+        "https://github.com/psf/requests/releases/tag/v2.33.0",
+        "https://osv.dev/vulnerability/PYSEC-2026-1872",
+        "https://osv.dev/vulnerability/PYSEC-2026-1873",
+        "https://github.com/advisories/GHSA-9wx4-h78v-vm56",
+        "https://osv.dev/vulnerability/PYSEC-2026-2275",
+        "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+        "https://pip.pypa.io/en/stable/cli/pip_install/"
+      ]
+    },
+    {
+      "findingId": "F-003",
+      "packageNodeId": "urn:traceguard:component:ba9445ef23336812394d0e2b9066bdaea2871f9476e9010d489d3d37f103f597",
+      "packageName": "certifi",
+      "installedVersion": "2024.7.4",
+      "status": "VERIFIED CANDIDATE",
+      "suggestedVersion": "2026.10.18",
+      "verification": {
+        "checkedAt": "2026-10-31T22:05:23.399Z",
+        "advisorySources": [
+          "https://api.osv.dev/v1/vulns/GHSA-6q48-6c7w-9gw2",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-4320"
+        ],
+        "registrySource": "https://pypi.org/pypi/certifi/2026.10.18/json",
+        "candidateAdvisoryStatus": "no-known",
+        "compatibility": "NOT TESTED"
+      },
+      "steps": [
+        "Review certifi 2026.10.18, the cited PyPI advisories and your Python/platform constraints. Compatibility is NOT TESTED.",
+        "Update the owning requirements/pyproject declaration or transitive parent for poetry.lock; regenerate its lockfile in your trusted development environment. TRACEGUARD does not run pip, Poetry or build backends.",
+        "Review every locked instance, conditional dependency and environment marker; run project tests and rescan. No automatic edits or installs are performed."
+      ],
+      "validation": [
+        "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+        "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+        "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+      ],
+      "recommendationSources": [
+        "https://osv.dev/vulnerability/GHSA-6q48-6c7w-9gw2",
+        "https://github.com/certifi/python-certifi/security/advisories/GHSA-6q48-6c7w-9gw2",
+        "https://discuss.python.org/t/information-for-python-users-regarding-emudhra-emsign-ca-certificate-security-incident/109576",
+        "https://emudhra.we-have-a-problem.com/",
+        "https://github.com/certifi/python-certifi",
+        "https://osv.dev/vulnerability/PYSEC-2026-4320",
+        "https://pypi.org/project/certifi",
+        "https://github.com/advisories/GHSA-6q48-6c7w-9gw2",
+        "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+        "https://pip.pypa.io/en/stable/cli/pip_install/"
+      ]
+    },
+    {
+      "findingId": "F-004",
+      "packageNodeId": "urn:traceguard:component:dadae6aa4447dc7e2f2119d160e1cf52b441bbc11d8922de0b5c6dccda99feb0",
+      "packageName": "idna",
+      "installedVersion": "3.7",
+      "status": "VERIFIED CANDIDATE",
+      "suggestedVersion": "3.15",
+      "verification": {
+        "checkedAt": "2026-10-31T22:05:23.399Z",
+        "advisorySources": [
+          "https://api.osv.dev/v1/vulns/GHSA-65pc-fj4g-8rjx",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-215"
+        ],
+        "registrySource": "https://pypi.org/pypi/idna/3.15/json",
+        "candidateAdvisoryStatus": "no-known",
+        "compatibility": "NOT TESTED"
+      },
+      "steps": [
+        "Review idna 3.15, the cited PyPI advisories and your Python/platform constraints. Compatibility is NOT TESTED.",
+        "Update the owning requirements/pyproject declaration or transitive parent for poetry.lock; regenerate its lockfile in your trusted development environment. TRACEGUARD does not run pip, Poetry or build backends.",
+        "Review every locked instance, conditional dependency and environment marker; run project tests and rescan. No automatic edits or installs are performed."
+      ],
+      "validation": [
+        "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+        "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+        "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+      ],
+      "recommendationSources": [
+        "https://osv.dev/vulnerability/GHSA-65pc-fj4g-8rjx",
+        "https://github.com/kjd/idna/security/advisories/GHSA-65pc-fj4g-8rjx",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-45409",
+        "https://github.com/kjd/idna",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/idna/PYSEC-2026-215.yaml",
+        "https://osv.dev/vulnerability/PYSEC-2026-215",
+        "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+        "https://pip.pypa.io/en/stable/cli/pip_install/"
+      ]
+    },
+    {
+      "findingId": "F-005",
+      "packageNodeId": "urn:traceguard:component:79493d81990b4c073997e723ca5c37c9445b668235b217160ee150c640fe4254",
+      "packageName": "urllib3",
+      "installedVersion": "2.2.2",
+      "status": "MANUAL REVIEW",
+      "verification": {
+        "checkedAt": "2026-10-31T22:05:23.399Z",
+        "advisorySources": [
+          "https://api.osv.dev/v1/vulns/GHSA-2xpw-w6gg-jr37",
+          "https://api.osv.dev/v1/vulns/GHSA-38jv-5279-wg99",
+          "https://api.osv.dev/v1/vulns/GHSA-48p4-8xcf-vxj5",
+          "https://api.osv.dev/v1/vulns/GHSA-8988-9cw3-xx77",
+          "https://api.osv.dev/v1/vulns/GHSA-gm62-xv2j-4w53",
+          "https://api.osv.dev/v1/vulns/GHSA-pq67-6m6q-mj2v",
+          "https://api.osv.dev/v1/vulns/GHSA-qccp-gfcp-xxvc",
+          "https://api.osv.dev/v1/vulns/GHSA-vxq7-64xx-v4gw",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-141",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-1994",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-1996",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-1997",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-1998",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-1999",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-4175",
+          "https://api.osv.dev/v1/vulns/PYSEC-2026-4177"
+        ],
+        "candidateAdvisoryStatus": "not-verified",
+        "compatibility": "NOT TESTED"
+      },
+      "steps": [
+        "No publishable, advisory-clean upgrade candidate could be verified within the report coverage. Do not assume that latest, a fixed boundary, or an unavailable query is safe.",
+        "Review the cited advisories for urllib3@2.2.2, published maintainer fixes, and all owning parent paths. Verify a compatible release before choosing an upgrade.",
+        "If no supported fix exists, evaluate removing or replacing the dependency, disabling the affected feature, or applying a maintainer-reviewed patch. These are manual options, not verified mitigations."
+      ],
+      "validation": [
+        "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+        "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+        "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+      ],
+      "recommendationSources": [
+        "https://osv.dev/vulnerability/GHSA-2xpw-w6gg-jr37",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-66471",
+        "https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7",
+        "https://github.com/urllib3/urllib3/commit/d0fde3672e4a4093f7587858dccfc298eb66e46c",
+        "https://github.com/advisories/GHSA-2xpw-w6gg-jr37",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/urllib3/PYSEC-2026-1994.yaml",
+        "https://github.com/urllib3/urllib3",
+        "https://pypi.org/project/urllib3",
+        "https://osv.dev/vulnerability/GHSA-38jv-5279-wg99",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-21441",
+        "https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b",
+        "https://lists.debian.org/debian-lts-announce/2026/01/msg00017.html",
+        "https://osv.dev/vulnerability/GHSA-48p4-8xcf-vxj5",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-48p4-8xcf-vxj5",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-50182",
+        "https://github.com/urllib3/urllib3/commit/7eb4a2aafe49a279c29b6d1f0ed0f42e9736194f",
+        "https://github.com/urllib3/urllib3/releases/tag/2.5.0",
+        "https://osv.dev/vulnerability/GHSA-8988-9cw3-xx77",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-8988-9cw3-xx77",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-97687",
+        "https://github.com/urllib3/urllib3/pull/5093",
+        "https://github.com/urllib3/urllib3/commit/07408cec79d1856d81bb42c74a904a24fdb9e465",
+        "https://github.com/urllib3/urllib3/commit/b6447295fff7b38fdffc67e0df9712d60cef3cc3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.8.0",
+        "https://osv.dev/vulnerability/GHSA-gm62-xv2j-4w53",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-gm62-xv2j-4w53",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-66418",
+        "https://github.com/urllib3/urllib3/commit/24d7b67eac89f94e11003424bcf0d8f7b72222a8",
+        "https://osv.dev/vulnerability/GHSA-pq67-6m6q-mj2v",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-pq67-6m6q-mj2v",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-50181",
+        "https://github.com/urllib3/urllib3/commit/f05b1329126d5be6de501f9d1e3e36738bc08857",
+        "https://osv.dev/vulnerability/GHSA-qccp-gfcp-xxvc",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-qccp-gfcp-xxvc",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-44431",
+        "https://osv.dev/vulnerability/GHSA-vxq7-64xx-v4gw",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-vxq7-64xx-v4gw",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-97689",
+        "https://github.com/urllib3/urllib3/commit/cd770b059b543be29298ea5c52afb0b1b090f5ed",
+        "https://osv.dev/vulnerability/PYSEC-2026-141",
+        "https://osv.dev/vulnerability/PYSEC-2026-1994",
+        "https://osv.dev/vulnerability/PYSEC-2026-1996",
+        "https://github.com/advisories/GHSA-38jv-5279-wg99",
+        "https://osv.dev/vulnerability/PYSEC-2026-1997",
+        "https://github.com/advisories/GHSA-48p4-8xcf-vxj5",
+        "https://osv.dev/vulnerability/PYSEC-2026-1998",
+        "https://github.com/advisories/GHSA-gm62-xv2j-4w53",
+        "https://osv.dev/vulnerability/PYSEC-2026-1999",
+        "https://github.com/advisories/GHSA-pq67-6m6q-mj2v",
+        "https://osv.dev/vulnerability/PYSEC-2026-4175",
+        "https://github.com/advisories/GHSA-8988-9cw3-xx77",
+        "https://osv.dev/vulnerability/PYSEC-2026-4177",
+        "https://github.com/advisories/GHSA-vxq7-64xx-v4gw",
+        "https://packaging.python.org/en/latest/specifications/dependency-specifiers/",
+        "https://pip.pypa.io/en/stable/cli/pip_install/"
+      ]
+    }
+  ],
+  "packageRisk": {
+    "checkedAt": "2026-10-31T22:05:23.400Z",
+    "coverage": {
+      "total": 6,
+      "metadataChecked": 0,
+      "unavailable": 0,
+      "skipped": 6
+    },
+    "results": [
+      {
+        "nodeId": "urn:traceguard:component:bb86b3d2838012e8185ec413ac06bdb417c7389e0fac7b644cbbafaab6e60255",
+        "name": "pyyaml",
+        "version": "5.3.1",
+        "classification": "UNKNOWN",
+        "metadataStatus": "skipped",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "comparison": "NOT COMPARABLE",
+          "artifactVerification": "NOT PERFORMED"
+        },
+        "provenance": {
+          "status": "UNKNOWN",
+          "signatures": [],
+          "verification": "NOT PERFORMED"
+        },
+        "reviewSteps": [
+          "PyPI supply-chain metadata, artifact integrity and provenance checks are not implemented. npm heuristics do not apply; this coverage is UNKNOWN."
+        ]
+      },
+      {
+        "nodeId": "urn:traceguard:component:9640b0a9eb8bf7919af53e7008871f01055b43513c2cb87cc7af84b6459b2d73",
+        "name": "requests",
+        "version": "2.31.0",
+        "classification": "UNKNOWN",
+        "metadataStatus": "skipped",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "comparison": "NOT COMPARABLE",
+          "artifactVerification": "NOT PERFORMED"
+        },
+        "provenance": {
+          "status": "UNKNOWN",
+          "signatures": [],
+          "verification": "NOT PERFORMED"
+        },
+        "reviewSteps": [
+          "PyPI supply-chain metadata, artifact integrity and provenance checks are not implemented. npm heuristics do not apply; this coverage is UNKNOWN."
+        ]
+      },
+      {
+        "nodeId": "urn:traceguard:component:ba9445ef23336812394d0e2b9066bdaea2871f9476e9010d489d3d37f103f597",
+        "name": "certifi",
+        "version": "2024.7.4",
+        "classification": "UNKNOWN",
+        "metadataStatus": "skipped",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "comparison": "NOT COMPARABLE",
+          "artifactVerification": "NOT PERFORMED"
+        },
+        "provenance": {
+          "status": "UNKNOWN",
+          "signatures": [],
+          "verification": "NOT PERFORMED"
+        },
+        "reviewSteps": [
+          "PyPI supply-chain metadata, artifact integrity and provenance checks are not implemented. npm heuristics do not apply; this coverage is UNKNOWN."
+        ]
+      },
+      {
+        "nodeId": "urn:traceguard:component:b5b7163d8af9c7df1c24eaa5f4e6bde1b389dcbe787ca5c19c29ae2fdf4268c6",
+        "name": "charset-normalizer",
+        "version": "3.3.2",
+        "classification": "UNKNOWN",
+        "metadataStatus": "skipped",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "comparison": "NOT COMPARABLE",
+          "artifactVerification": "NOT PERFORMED"
+        },
+        "provenance": {
+          "status": "UNKNOWN",
+          "signatures": [],
+          "verification": "NOT PERFORMED"
+        },
+        "reviewSteps": [
+          "PyPI supply-chain metadata, artifact integrity and provenance checks are not implemented. npm heuristics do not apply; this coverage is UNKNOWN."
+        ]
+      },
+      {
+        "nodeId": "urn:traceguard:component:dadae6aa4447dc7e2f2119d160e1cf52b441bbc11d8922de0b5c6dccda99feb0",
+        "name": "idna",
+        "version": "3.7",
+        "classification": "UNKNOWN",
+        "metadataStatus": "skipped",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "comparison": "NOT COMPARABLE",
+          "artifactVerification": "NOT PERFORMED"
+        },
+        "provenance": {
+          "status": "UNKNOWN",
+          "signatures": [],
+          "verification": "NOT PERFORMED"
+        },
+        "reviewSteps": [
+          "PyPI supply-chain metadata, artifact integrity and provenance checks are not implemented. npm heuristics do not apply; this coverage is UNKNOWN."
+        ]
+      },
+      {
+        "nodeId": "urn:traceguard:component:79493d81990b4c073997e723ca5c37c9445b668235b217160ee150c640fe4254",
+        "name": "urllib3",
+        "version": "2.2.2",
+        "classification": "UNKNOWN",
+        "metadataStatus": "skipped",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "comparison": "NOT COMPARABLE",
+          "artifactVerification": "NOT PERFORMED"
+        },
+        "provenance": {
+          "status": "UNKNOWN",
+          "signatures": [],
+          "verification": "NOT PERFORMED"
+        },
+        "reviewSteps": [
+          "PyPI supply-chain metadata, artifact integrity and provenance checks are not implemented. npm heuristics do not apply; this coverage is UNKNOWN."
+        ]
+      }
+    ],
+    "limitations": [
+      "Heuristics are review signals, not proof of malicious intent. NO SIGNALS is not a safety guarantee. Metadata can be publisher-controlled.",
+      "Name similarity uses a fixed reference list v1 (react, react-dom, express, lodash, axios, typescript, webpack, vite, eslint, prettier, chalk, commander, mongoose, next, jquery, dotenv), one edit or adjacent transposition, minimum length five; scoped names are excluded. It does not cover all typosquatting or dependency confusion.",
+      "At most 100 unique exact package/version pairs and 1,000 instances are included, with a 15-second metadata deadline and 1 MiB response limit. Unavailable or omitted data is not clean.",
+      "Integrity compares recorded lock and registry digest strings only. Tarballs, installed bytes, signatures and provenance attestations are not downloaded or cryptographically verified. Matching metadata does not establish safety.",
+      "Provenance is registry-advertised evidence only. Missing provenance or signatures does not imply malware. Lifecycle scripts are common in legitimate packages and are never executed.",
+      "CONFIRMED MALICIOUS requires a fresh OSV version match and a verified, non-withdrawn MAL- advisory for the same npm package. This is an attributed source verdict, not an independent analysis; other advisory IDs and heuristics cannot confirm malware. Advisory detail coverage limits also apply."
+    ],
+    "sources": [
+      "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+      "https://docs.npmjs.com/viewing-package-provenance/",
+      "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+      "https://osv.dev/"
+    ]
+  },
+  "coverageActions": [
+    "Resolve manifest/lockfile inventory warnings and repeat the scan before treating coverage as complete.",
+    "Validate changes in a trusted development environment. TRACEGUARD does not execute fixes or submitted source code."
+  ]
+}

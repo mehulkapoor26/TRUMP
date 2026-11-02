@@ -1,0 +1,106 @@
+{
+  "id": "ae4f4065-1f9c-4aeb-85ba-fe87e01614c9",
+  "generatedAt": "2026-10-31T22:13:33.693Z",
+  "before": {
+    "scanId": "96319e99-6acb-4611-a50b-878432906541",
+    "createdAt": "2026-10-31T22:13:33.378Z",
+    "source": "OFFLINE DEMO — simulated external evidence — ZIP upload",
+    "inventorySha256": "0ef4924823d675252f29e8df666bddd676ceba93e9e522fcbe503d2983ff21e8",
+    "advisoryCheckedAt": "2026-10-31T22:13:33.693Z",
+    "inventoryWarnings": [],
+    "unresolvedDependencies": 0
+  },
+  "after": {
+    "scanId": "7a42ada0-8657-48f6-aa98-4c0b78ddc343",
+    "createdAt": "2026-10-31T22:13:33.692Z",
+    "source": "OFFLINE DEMO — simulated external evidence — ZIP upload",
+    "inventorySha256": "4693d49788912e95d531f2bf78262be89c22c0b3c1d9677d00531c8eb1c6c6d0",
+    "advisoryCheckedAt": "2026-10-31T22:13:33.693Z",
+    "inventoryWarnings": [],
+    "unresolvedDependencies": 0
+  },
+  "issues": [
+    {
+      "packageName": "lodash",
+      "ecosystem": "npm",
+      "advisoryId": "GHSA-DEMO-0001",
+      "status": "resolved",
+      "before": [
+        {
+          "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+          "version": "4.17.20",
+          "installPath": "node_modules/lodash",
+          "project": "package-lock.json",
+          "advisoryMatched": true
+        }
+      ],
+      "after": [
+        {
+          "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+          "version": "4.17.21",
+          "installPath": "node_modules/lodash",
+          "project": "package-lock.json",
+          "advisoryMatched": false
+        }
+      ],
+      "reason": "No matching advisory ID remains for this package in the after inventory, with complete relevant version checks and no inventory gaps. This includes package removal."
+    }
+  ],
+  "counts": {
+    "resolved": 1,
+    "remaining": 0,
+    "newlyIntroduced": 0,
+    "unverifiable": 0
+  },
+  "beforeChecks": {
+    "source": "OSV",
+    "checkedAt": "2026-10-31T22:13:33.693Z",
+    "status": "complete",
+    "checks": [
+      {
+        "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "status": "matched",
+        "complete": true,
+        "advisoryIds": [
+          "GHSA-DEMO-0001"
+        ]
+      },
+      {
+        "nodeId": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "status": "unknown",
+        "complete": false,
+        "advisoryIds": []
+      }
+    ],
+    "warnings": []
+  },
+  "afterChecks": {
+    "source": "OSV",
+    "checkedAt": "2026-10-31T22:13:33.693Z",
+    "status": "complete",
+    "checks": [
+      {
+        "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "status": "no-known",
+        "complete": true,
+        "advisoryIds": []
+      },
+      {
+        "nodeId": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "status": "unknown",
+        "complete": false,
+        "advisoryIds": []
+      }
+    ],
+    "warnings": []
+  },
+  "limitations": [
+    "Both saved inventories are checked against current OSV data during comparison. This is not a comparison of historical advisory database states or proof that a code change caused an outcome.",
+    "Issues are grouped by ecosystem, exact package name and advisory ID across all instances. Versions and paths are retained as evidence, but duplicate instances are not paired by installation path. Advisory aliases are not deduplicated; an ID change can appear as resolved and introduced.",
+    "Resolved means no longer observed under complete relevant checks and inventory coverage, including dependency removal. It does not prove safe execution or validate the fix. Remaining may include fewer affected instances.",
+    "Newly introduced means newly observed in the after inventory against current advisory data; it does not establish when a vulnerability was created.",
+    "Unverifiable includes coverage gaps as well as issues whose absence cannot be established. Counts include coverage rows and are not counts of unique exploitable vulnerabilities.",
+    "The user declares that these inventories represent the same project. Repository identity, commit lineage, deployment identity, source completeness, runtime exploitability and compatibility are not verified.",
+    "No user code, manifests or lockfiles are modified and no submitted install scripts or source code are executed. Suspicious package heuristics are separate from this vulnerability comparison."
+  ]
+}

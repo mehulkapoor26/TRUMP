@@ -1,0 +1,282 @@
+{
+  "id": "3397e573-c637-48b4-a829-68f059422e1c",
+  "scanId": "cadc12f9-209d-4179-8752-f138a5e1a2e2",
+  "generatedAt": "2026-10-31T22:13:33.373Z",
+  "securityFindings": {
+    "schemaVersion": "1.0",
+    "bundleId": "3397e573-c637-48b4-a829-68f059422e1c",
+    "generatedAt": "2026-10-31T22:13:33.373Z",
+    "scan": {
+      "id": "cadc12f9-209d-4179-8752-f138a5e1a2e2",
+      "source": "OFFLINE DEMO — simulated external evidence — https://github.com/traceguard-demo/fixture",
+      "createdAt": "2026-10-31T22:13:33.367Z",
+      "inventorySha256": "0ef4924823d675252f29e8df666bddd676ceba93e9e522fcbe503d2983ff21e8"
+    },
+    "coverage": {
+      "status": "complete",
+      "checkedAt": "2026-10-31T22:13:33.373Z",
+      "packageInstances": 1,
+      "matched": 1,
+      "noKnownMatch": 0,
+      "unknown": 0,
+      "findingsIncluded": 1,
+      "findingsOmitted": 0
+    },
+    "limitations": [
+      "This report is a point-in-time snapshot of the saved inventory and fresh OSV queries, not a live deployment assessment.",
+      "Dependency presence and advisory version matches do not prove runtime execution, attacker control, or actual exploitability.",
+      "No known advisory match is not a safety guarantee. Unknown, failed, paginated, or skipped checks are not clean findings.",
+      "Advisory IDs can be aliases of the same underlying issue; counts describe package instances, not distinct exploitable vulnerabilities.",
+      "Details are fetched for at most 40 unique advisory IDs; at most 100 matched package instances and 20 advisory IDs per finding are included. Descriptions, references, paths and source evidence are bounded.",
+      "Source-provided CVSS vectors are retained without inventing numeric scores or priorities. Withdrawn or mismatched records require manual review.",
+      "A verified candidate is an advisory-listed fixed release that exists in its ecosystem registry and returns no known OSV match at verification time. It is not a guarantee of safety, compatibility, or that every relevant fix was published.",
+      "At most three candidate releases per package/version are checked, for at most 20 unique pairs. If no candidate is verified, manual review is required. Major-version changes may require migration.",
+      "Transitive updates require changes to the owning dependency declaration or parent. No dependency graph or lockfile is changed automatically.",
+      "Only server-recorded scoped reachability results from this server process are included (latest result per instance, at most 100 instances per scan and 100 recent scans; not restored after restart). Their affected-export mappings are user-declared; NOT REACHABLE applies only within each declared coverage and is never a global safety claim.",
+      "No source code, submitted package scripts, or package installation is executed while preparing these reports. Testing and release-note review remain the maintainer's responsibility."
+    ],
+    "reportType": "security-findings",
+    "title": "Security Findings",
+    "findings": [
+      {
+        "id": "F-001",
+        "package": {
+          "id": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+          "name": "lodash",
+          "version": "4.17.20",
+          "installPath": "node_modules/lodash",
+          "project": "package-lock.json",
+          "isProject": false,
+          "direct": true,
+          "transitive": false,
+          "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz"
+        },
+        "whatIsWrong": "OSV returned 1 advisory ID(s) for lodash@4.17.20 at this recorded dependency location.",
+        "whyItMatters": "The recorded dependency includes a version associated with published security advisories. Dependent packages or project roots may inherit this dependency impact. The advisory preconditions and application exposure must be evaluated separately.",
+        "advisories": [
+          {
+            "id": "GHSA-DEMO-0001",
+            "source": "https://api.osv.dev/v1/vulns/GHSA-DEMO-0001",
+            "verification": "verified",
+            "summary": "SIMULATED advisory for the offline judge demo",
+            "description": "Synthetic fixture evidence, not a real vulnerability assessment.",
+            "aliases": [],
+            "severity": [],
+            "fixedVersions": [
+              "4.17.21"
+            ],
+            "references": [
+              "https://osv.dev/vulnerability/GHSA-DEMO-0001"
+            ],
+            "affectedVersions": [
+              "SEMVER: [{\"introduced\":\"0\"},{\"fixed\":\"4.17.21\"}]"
+            ]
+          }
+        ],
+        "dependencyImpact": {
+          "parentCount": 1,
+          "parents": [
+            {
+              "id": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+              "name": "traceguard-judge-fixture",
+              "version": "1.0.0",
+              "installPath": ""
+            }
+          ],
+          "rootPaths": [
+            [
+              "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+              "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4"
+            ]
+          ],
+          "truncated": false
+        },
+        "reachability": {
+          "status": "NOT ANALYZED"
+        },
+        "exploitability": "NOT ASSESSED"
+      }
+    ],
+    "inventoryWarnings": [],
+    "packageRisk": {
+      "checkedAt": "2026-10-31T22:13:33.374Z",
+      "coverage": {
+        "total": 1,
+        "metadataChecked": 1,
+        "unavailable": 0,
+        "skipped": 0
+      },
+      "results": [
+        {
+          "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+          "name": "lodash",
+          "version": "4.17.20",
+          "classification": "NO SIGNALS",
+          "metadataStatus": "available",
+          "signals": [],
+          "maliciousSources": [],
+          "integrity": {
+            "comparison": "NOT COMPARABLE",
+            "artifactVerification": "NOT PERFORMED"
+          },
+          "provenance": {
+            "status": "NOT ADVERTISED",
+            "verification": "NOT PERFORMED",
+            "signatures": []
+          },
+          "reviewSteps": [
+            "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+          ],
+          "source": "https://registry.npmjs.org/lodash/4.17.20",
+          "metadata": {
+            "description": "SIMULATED registry metadata for offline demonstration",
+            "license": "",
+            "maintainers": [],
+            "lifecycleScripts": {}
+          }
+        }
+      ],
+      "limitations": [
+        "Heuristics are review signals, not proof of malicious intent. NO SIGNALS is not a safety guarantee. Metadata can be publisher-controlled.",
+        "Name similarity uses a fixed reference list v1 (react, react-dom, express, lodash, axios, typescript, webpack, vite, eslint, prettier, chalk, commander, mongoose, next, jquery, dotenv), one edit or adjacent transposition, minimum length five; scoped names are excluded. It does not cover all typosquatting or dependency confusion.",
+        "At most 100 unique exact package/version pairs and 1,000 instances are included, with a 15-second metadata deadline and 1 MiB response limit. Unavailable or omitted data is not clean.",
+        "Integrity compares recorded lock and registry digest strings only. Tarballs, installed bytes, signatures and provenance attestations are not downloaded or cryptographically verified. Matching metadata does not establish safety.",
+        "Provenance is registry-advertised evidence only. Missing provenance or signatures does not imply malware. Lifecycle scripts are common in legitimate packages and are never executed.",
+        "CONFIRMED MALICIOUS requires a fresh OSV version match and a verified, non-withdrawn MAL- advisory for the same npm package. This is an attributed source verdict, not an independent analysis; other advisory IDs and heuristics cannot confirm malware. Advisory detail coverage limits also apply."
+      ],
+      "sources": [
+        "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+        "https://docs.npmjs.com/viewing-package-provenance/",
+        "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+        "https://osv.dev/"
+      ]
+    }
+  },
+  "remediationPlan": {
+    "schemaVersion": "1.0",
+    "bundleId": "3397e573-c637-48b4-a829-68f059422e1c",
+    "generatedAt": "2026-10-31T22:13:33.373Z",
+    "scan": {
+      "id": "cadc12f9-209d-4179-8752-f138a5e1a2e2",
+      "source": "OFFLINE DEMO — simulated external evidence — https://github.com/traceguard-demo/fixture",
+      "createdAt": "2026-10-31T22:13:33.367Z",
+      "inventorySha256": "0ef4924823d675252f29e8df666bddd676ceba93e9e522fcbe503d2983ff21e8"
+    },
+    "coverage": {
+      "status": "complete",
+      "checkedAt": "2026-10-31T22:13:33.373Z",
+      "packageInstances": 1,
+      "matched": 1,
+      "noKnownMatch": 0,
+      "unknown": 0,
+      "findingsIncluded": 1,
+      "findingsOmitted": 0
+    },
+    "limitations": [
+      "This report is a point-in-time snapshot of the saved inventory and fresh OSV queries, not a live deployment assessment.",
+      "Dependency presence and advisory version matches do not prove runtime execution, attacker control, or actual exploitability.",
+      "No known advisory match is not a safety guarantee. Unknown, failed, paginated, or skipped checks are not clean findings.",
+      "Advisory IDs can be aliases of the same underlying issue; counts describe package instances, not distinct exploitable vulnerabilities.",
+      "Details are fetched for at most 40 unique advisory IDs; at most 100 matched package instances and 20 advisory IDs per finding are included. Descriptions, references, paths and source evidence are bounded.",
+      "Source-provided CVSS vectors are retained without inventing numeric scores or priorities. Withdrawn or mismatched records require manual review.",
+      "A verified candidate is an advisory-listed fixed release that exists in its ecosystem registry and returns no known OSV match at verification time. It is not a guarantee of safety, compatibility, or that every relevant fix was published.",
+      "At most three candidate releases per package/version are checked, for at most 20 unique pairs. If no candidate is verified, manual review is required. Major-version changes may require migration.",
+      "Transitive updates require changes to the owning dependency declaration or parent. No dependency graph or lockfile is changed automatically.",
+      "Only server-recorded scoped reachability results from this server process are included (latest result per instance, at most 100 instances per scan and 100 recent scans; not restored after restart). Their affected-export mappings are user-declared; NOT REACHABLE applies only within each declared coverage and is never a global safety claim.",
+      "No source code, submitted package scripts, or package installation is executed while preparing these reports. Testing and release-note review remain the maintainer's responsibility."
+    ],
+    "reportType": "remediation-plan",
+    "title": "Remediation Plan",
+    "actions": [
+      {
+        "findingId": "F-001",
+        "packageNodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "packageName": "lodash",
+        "installedVersion": "4.17.20",
+        "status": "VERIFIED CANDIDATE",
+        "suggestedVersion": "4.17.21",
+        "verification": {
+          "checkedAt": "2026-10-31T22:13:33.374Z",
+          "advisorySources": [
+            "https://api.osv.dev/v1/vulns/GHSA-DEMO-0001"
+          ],
+          "registrySource": "https://registry.npmjs.org/lodash/4.17.21",
+          "candidateAdvisoryStatus": "no-known",
+          "compatibility": "NOT TESTED"
+        },
+        "steps": [
+          "Review the cited advisories and release notes for lodash 4.17.21; compare with installed 4.17.20. Compatibility has not been tested.",
+          "In package-lock.json, locate the owning package.json declaration (including aliases) and update its declared dependency to the verified candidate 4.17.21. Preserve the intended runtime/dev/optional role.",
+          "Regenerate the affected lockfile in your controlled development environment, review the diff, and ensure every affected installation path is replaced. Do not edit a nested node_modules copy as the fix."
+        ],
+        "validation": [
+          "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+          "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+          "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+        ],
+        "recommendationSources": [
+          "https://osv.dev/vulnerability/GHSA-DEMO-0001",
+          "https://docs.npmjs.com/cli/v11/commands/npm-install/",
+          "https://docs.npmjs.com/cli/v11/configuring-npm/package-json/#overrides",
+          "https://docs.npmjs.com/cli/v11/commands/npm-explain/"
+        ]
+      }
+    ],
+    "packageRisk": {
+      "checkedAt": "2026-10-31T22:13:33.374Z",
+      "coverage": {
+        "total": 1,
+        "metadataChecked": 1,
+        "unavailable": 0,
+        "skipped": 0
+      },
+      "results": [
+        {
+          "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+          "name": "lodash",
+          "version": "4.17.20",
+          "classification": "NO SIGNALS",
+          "metadataStatus": "available",
+          "signals": [],
+          "maliciousSources": [],
+          "integrity": {
+            "comparison": "NOT COMPARABLE",
+            "artifactVerification": "NOT PERFORMED"
+          },
+          "provenance": {
+            "status": "NOT ADVERTISED",
+            "verification": "NOT PERFORMED",
+            "signatures": []
+          },
+          "reviewSteps": [
+            "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+          ],
+          "source": "https://registry.npmjs.org/lodash/4.17.20",
+          "metadata": {
+            "description": "SIMULATED registry metadata for offline demonstration",
+            "license": "",
+            "maintainers": [],
+            "lifecycleScripts": {}
+          }
+        }
+      ],
+      "limitations": [
+        "Heuristics are review signals, not proof of malicious intent. NO SIGNALS is not a safety guarantee. Metadata can be publisher-controlled.",
+        "Name similarity uses a fixed reference list v1 (react, react-dom, express, lodash, axios, typescript, webpack, vite, eslint, prettier, chalk, commander, mongoose, next, jquery, dotenv), one edit or adjacent transposition, minimum length five; scoped names are excluded. It does not cover all typosquatting or dependency confusion.",
+        "At most 100 unique exact package/version pairs and 1,000 instances are included, with a 15-second metadata deadline and 1 MiB response limit. Unavailable or omitted data is not clean.",
+        "Integrity compares recorded lock and registry digest strings only. Tarballs, installed bytes, signatures and provenance attestations are not downloaded or cryptographically verified. Matching metadata does not establish safety.",
+        "Provenance is registry-advertised evidence only. Missing provenance or signatures does not imply malware. Lifecycle scripts are common in legitimate packages and are never executed.",
+        "CONFIRMED MALICIOUS requires a fresh OSV version match and a verified, non-withdrawn MAL- advisory for the same npm package. This is an attributed source verdict, not an independent analysis; other advisory IDs and heuristics cannot confirm malware. Advisory detail coverage limits also apply."
+      ],
+      "sources": [
+        "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+        "https://docs.npmjs.com/viewing-package-provenance/",
+        "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+        "https://osv.dev/"
+      ]
+    },
+    "coverageActions": [
+      "Validate changes in a trusted development environment. TRACEGUARD does not execute fixes or submitted source code."
+    ]
+  }
+}

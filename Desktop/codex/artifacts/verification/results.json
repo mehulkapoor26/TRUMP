@@ -1,0 +1,210 @@
+{
+  "verifiedAt": "2026-10-31T22:14:14.835Z",
+  "timezone": "Asia/Kolkata",
+  "environment": {
+    "node": "v26.8.2",
+    "platform": "darwin",
+    "arch": "arm64"
+  },
+  "results": {
+    "applicationTests": 63,
+    "extensionTests": 10,
+    "chromeTests": 4,
+    "typecheck": "passed",
+    "build": "passed",
+    "cleanInstalls": "both passed",
+    "compiledWorkflow": "passed with controlled external responses",
+    "offlineDemo": "passed",
+    "liveZipToReport": "passed with real OSV/npm and 8 library instances",
+    "liveGitHub": "passed: public codeload default-branch archive",
+    "vsix": "packaged",
+    "actualVSCodeHost": "manual verification incomplete",
+    "liveBrowserWalkthrough": "passed without mocked responses",
+    "publishedDemo": "http://127.0.0.1:5173/#/scans/422236b8-566a-4310-bbb4-1683a31efbe4/overview",
+    "python": "passed controlled tests and live OSV/PyPI workflow",
+    "pythonReachability": "UNKNOWN; not implemented",
+    "pythonLiveBrowser": "passed without mocked responses",
+    "pythonGitHub": "passed pypa/sampleproject; requests archive rejected by safety policy",
+    "pythonCompiledBackend": "passed controlled runtime check"
+  },
+  "audits": {
+    "root": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "extension": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "sha256": {
+    "package-lock.json": "42cc2641ee502c5df88e99c3cffa051e41339e50792693ef79f052cce9e7832b",
+    "vscode-extension/package-lock.json": "e8bac62edead8199e3977b1b8c9cd0fe8b288defc2bfaaefeac76e6928aa4f93",
+    "artifacts/traceguard-dependency-watch-0.1.0.vsix": "c8339e7c82189913becfeac208220da18ecee3d4ac07eae229e7d2738b890b72",
+    "tests/fixtures/published-vulnerabilities/package-lock.json": "4fbdfb16d2b682fd3486d2442abbbe415ddf24885d179ced7e644ace6f754e5c",
+    "artifacts/published-demo/project.zip": "cc54816c50928cb5739509bfab8a5b72d36a5d53210154431af03c742efd4b65",
+    "tests/fixtures/python/poetry/poetry.lock": "2839b2ac764cf389188ac1c14ff6c9fd8ccc739f352e6340b549c0154e25ff90"
+  },
+  "liveEvidence": {
+    "incomplete": [],
+    "inventory": {
+      "packages": 8,
+      "direct": 4,
+      "transitive": 4,
+      "relationships": 8
+    },
+    "advisories": {
+      "matchedInstances": 2,
+      "noKnownMatch": 6,
+      "unknownLibraries": 0,
+      "ids": [
+        "GHSA-29mw-wpgm-hmr9",
+        "GHSA-35jh-r3h4-6jhm",
+        "GHSA-f23m-r3pf-42rh",
+        "GHSA-r5fr-rjxr-66jc",
+        "GHSA-xxjr-mmjv-4gpg",
+        "GHSA-vh95-rmgr-6w4m",
+        "GHSA-xvch-5gv4-984h"
+      ],
+      "cves": [
+        "CVE-2020-28500",
+        "CVE-2021-23337",
+        "CVE-2026-2950",
+        "CVE-2026-4800",
+        "CVE-2025-13465",
+        "CVE-2020-7598",
+        "CVE-2021-44906"
+      ],
+      "warnings": []
+    },
+    "browserChecks": [
+      "scanner accessible",
+      "live OSV/CVE links and severity rendered",
+      "CVE search and matched/no-known filters",
+      "interactive 9-node/8-edge graph and package selection",
+      "saved report status and PDF download through UI"
+    ],
+    "browserErrors": []
+  },
+  "pythonEvidence": {
+    "summary": {
+      "mode": "CONTROLLED PYTHON METADATA + LIVE OSV/PyPI; no uploaded code installed or executed",
+      "verifiedAt": "2026-10-31T22:04:53.093Z",
+      "incomplete": [],
+      "scanId": "3557f034-3d1e-4bf8-8211-3c6b10242697",
+      "dashboard": "http://127.0.0.1:5173/#/scans/3557f034-3d1e-4bf8-8211-3c6b10242697/overview",
+      "findings": "http://127.0.0.1:5173/#/scans/3557f034-3d1e-4bf8-8211-3c6b10242697/findings",
+      "inventory": {
+        "packages": 6,
+        "direct": 2,
+        "transitive": 4,
+        "relationships": 6,
+        "warnings": [
+          "poetry.lock: inventory is a lock snapshot; Python/platform activation, artifact hashes and lockfile freshness are not independently verified."
+        ]
+      },
+      "advisories": {
+        "matchedInstances": 5,
+        "ids": [
+          "GHSA-8q59-q68h-6hv4",
+          "PYSEC-2021-142",
+          "GHSA-9hjg-9r4m-mvj7",
+          "GHSA-9wx4-h78v-vm56",
+          "GHSA-gc5v-m9x4-r6x2",
+          "PYSEC-2026-1872",
+          "PYSEC-2026-1873",
+          "PYSEC-2026-2275",
+          "GHSA-6q48-6c7w-9gw2",
+          "PYSEC-2026-4320",
+          "GHSA-65pc-fj4g-8rjx",
+          "PYSEC-2026-215",
+          "GHSA-2xpw-w6gg-jr37",
+          "GHSA-38jv-5279-wg99",
+          "GHSA-48p4-8xcf-vxj5",
+          "GHSA-8988-9cw3-xx77",
+          "GHSA-gm62-xv2j-4w53",
+          "GHSA-pq67-6m6q-mj2v",
+          "GHSA-qccp-gfcp-xxvc",
+          "GHSA-vxq7-64xx-v4gw",
+          "PYSEC-2026-141",
+          "PYSEC-2026-1994",
+          "PYSEC-2026-1996",
+          "PYSEC-2026-1997",
+          "PYSEC-2026-1998",
+          "PYSEC-2026-1999",
+          "PYSEC-2026-4175",
+          "PYSEC-2026-4177"
+        ],
+        "cves": [
+          "CVE-2020-14343",
+          "CVE-2024-47081",
+          "CVE-2024-35195",
+          "CVE-2026-25645",
+          "CVE-2026-45409",
+          "CVE-2025-66471",
+          "CVE-2026-21441",
+          "CVE-2025-50182",
+          "CVE-2026-97687",
+          "CVE-2025-66418",
+          "CVE-2025-50181",
+          "CVE-2026-44431",
+          "CVE-2026-97689"
+        ],
+        "coverage": "partial"
+      },
+      "actions": [
+        {
+          "package": "pyyaml",
+          "status": "VERIFIED CANDIDATE",
+          "candidate": "5.4",
+          "compatibility": "NOT TESTED"
+        },
+        {
+          "package": "requests",
+          "status": "VERIFIED CANDIDATE",
+          "candidate": "2.33.0",
+          "compatibility": "NOT TESTED"
+        },
+        {
+          "package": "certifi",
+          "status": "VERIFIED CANDIDATE",
+          "candidate": "2026.10.18",
+          "compatibility": "NOT TESTED"
+        },
+        {
+          "package": "idna",
+          "status": "VERIFIED CANDIDATE",
+          "candidate": "3.15",
+          "compatibility": "NOT TESTED"
+        },
+        {
+          "package": "urllib3",
+          "status": "MANUAL REVIEW",
+          "compatibility": "NOT TESTED"
+        }
+      ],
+      "reachability": "UNKNOWN: Python analysis is not implemented"
+    },
+    "browser": {
+      "verifiedAt": "2026-10-31T22:06:57.993Z",
+      "base": "http://127.0.0.1:5173",
+      "checks": [
+        "real live PyPI OSV/CVE findings",
+        "interactive Python graph and explicit unsupported reachability",
+        "verified PyPI candidate displayed and report downloaded"
+      ],
+      "errors": [],
+      "network": "live; no mocked responses"
+    },
+    "githubScanId": "7d0a6d4c-04f9-4bd6-9ca4-b94c3367cf6b",
+    "scope": "requirements, PEP 621/Poetry pyproject, Poetry 1.x/2.x; see docs/PYTHON-SCANNING.md"
+  }
+}

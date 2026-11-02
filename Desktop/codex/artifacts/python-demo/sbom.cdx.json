@@ -1,0 +1,340 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:3557f034-3d1e-4bf8-8211-3c6b10242697",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-31T22:04:53.126Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "urn:uuid:3557f034-3d1e-4bf8-8211-3c6b10242697",
+      "name": "TRACEGUARD scanned projects"
+    },
+    "properties": [
+      {
+        "name": "traceguard:analysis",
+        "value": "Static npm/Python dependency metadata analysis; no packages installed or executed."
+      },
+      {
+        "name": "traceguard:unresolved-count",
+        "value": "0"
+      },
+      {
+        "name": "traceguard:warning",
+        "value": "poetry.lock: inventory is a lock snapshot; Python/platform activation, artifact hashes and lockfile freshness are not independently verified."
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "urn:traceguard:component:746a1ad179ea6d1b0ee60b106b8ceaef6600efd2ed95fac3219e9c95452efc00",
+      "name": "traceguard-python-lab",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "poetry.lock"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": ""
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "PyPI"
+        },
+        {
+          "name": "traceguard:version-evidence",
+          "value": "unresolved"
+        },
+        {
+          "name": "traceguard:relationship-known",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:traceguard:component:bb86b3d2838012e8185ec413ac06bdb417c7389e0fac7b644cbbafaab6e60255",
+      "name": "pyyaml",
+      "version": "5.3.1",
+      "purl": "pkg:pypi/pyyaml@5.3.1",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "poetry.lock"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": "poetry/pyyaml@5.3.1#0"
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "true"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "PyPI"
+        },
+        {
+          "name": "traceguard:version-evidence",
+          "value": "lockfile"
+        },
+        {
+          "name": "traceguard:relationship-known",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:traceguard:component:9640b0a9eb8bf7919af53e7008871f01055b43513c2cb87cc7af84b6459b2d73",
+      "name": "requests",
+      "version": "2.31.0",
+      "purl": "pkg:pypi/requests@2.31.0",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "poetry.lock"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": "poetry/requests@2.31.0#1"
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "true"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "PyPI"
+        },
+        {
+          "name": "traceguard:version-evidence",
+          "value": "lockfile"
+        },
+        {
+          "name": "traceguard:relationship-known",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:traceguard:component:ba9445ef23336812394d0e2b9066bdaea2871f9476e9010d489d3d37f103f597",
+      "name": "certifi",
+      "version": "2024.7.4",
+      "purl": "pkg:pypi/certifi@2024.7.4",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "poetry.lock"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": "poetry/certifi@2024.7.4#2"
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "true"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "PyPI"
+        },
+        {
+          "name": "traceguard:version-evidence",
+          "value": "lockfile"
+        },
+        {
+          "name": "traceguard:relationship-known",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:traceguard:component:b5b7163d8af9c7df1c24eaa5f4e6bde1b389dcbe787ca5c19c29ae2fdf4268c6",
+      "name": "charset-normalizer",
+      "version": "3.3.2",
+      "purl": "pkg:pypi/charset-normalizer@3.3.2",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "poetry.lock"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": "poetry/charset-normalizer@3.3.2#3"
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "true"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "PyPI"
+        },
+        {
+          "name": "traceguard:version-evidence",
+          "value": "lockfile"
+        },
+        {
+          "name": "traceguard:relationship-known",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:traceguard:component:dadae6aa4447dc7e2f2119d160e1cf52b441bbc11d8922de0b5c6dccda99feb0",
+      "name": "idna",
+      "version": "3.7",
+      "purl": "pkg:pypi/idna@3.7",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "poetry.lock"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": "poetry/idna@3.7#4"
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "true"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "PyPI"
+        },
+        {
+          "name": "traceguard:version-evidence",
+          "value": "lockfile"
+        },
+        {
+          "name": "traceguard:relationship-known",
+          "value": "true"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "urn:traceguard:component:79493d81990b4c073997e723ca5c37c9445b668235b217160ee150c640fe4254",
+      "name": "urllib3",
+      "version": "2.2.2",
+      "purl": "pkg:pypi/urllib3@2.2.2",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "poetry.lock"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": "poetry/urllib3@2.2.2#5"
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "true"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "PyPI"
+        },
+        {
+          "name": "traceguard:version-evidence",
+          "value": "lockfile"
+        },
+        {
+          "name": "traceguard:relationship-known",
+          "value": "true"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "urn:uuid:3557f034-3d1e-4bf8-8211-3c6b10242697",
+      "dependsOn": [
+        "urn:traceguard:component:746a1ad179ea6d1b0ee60b106b8ceaef6600efd2ed95fac3219e9c95452efc00"
+      ]
+    },
+    {
+      "ref": "urn:traceguard:component:746a1ad179ea6d1b0ee60b106b8ceaef6600efd2ed95fac3219e9c95452efc00",
+      "dependsOn": [
+        "urn:traceguard:component:9640b0a9eb8bf7919af53e7008871f01055b43513c2cb87cc7af84b6459b2d73",
+        "urn:traceguard:component:bb86b3d2838012e8185ec413ac06bdb417c7389e0fac7b644cbbafaab6e60255"
+      ]
+    },
+    {
+      "ref": "urn:traceguard:component:bb86b3d2838012e8185ec413ac06bdb417c7389e0fac7b644cbbafaab6e60255",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:traceguard:component:9640b0a9eb8bf7919af53e7008871f01055b43513c2cb87cc7af84b6459b2d73",
+      "dependsOn": [
+        "urn:traceguard:component:79493d81990b4c073997e723ca5c37c9445b668235b217160ee150c640fe4254",
+        "urn:traceguard:component:b5b7163d8af9c7df1c24eaa5f4e6bde1b389dcbe787ca5c19c29ae2fdf4268c6",
+        "urn:traceguard:component:ba9445ef23336812394d0e2b9066bdaea2871f9476e9010d489d3d37f103f597",
+        "urn:traceguard:component:dadae6aa4447dc7e2f2119d160e1cf52b441bbc11d8922de0b5c6dccda99feb0"
+      ]
+    },
+    {
+      "ref": "urn:traceguard:component:ba9445ef23336812394d0e2b9066bdaea2871f9476e9010d489d3d37f103f597",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:traceguard:component:b5b7163d8af9c7df1c24eaa5f4e6bde1b389dcbe787ca5c19c29ae2fdf4268c6",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:traceguard:component:dadae6aa4447dc7e2f2119d160e1cf52b441bbc11d8922de0b5c6dccda99feb0",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:traceguard:component:79493d81990b4c073997e723ca5c37c9445b668235b217160ee150c640fe4254",
+      "dependsOn": []
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "incomplete",
+      "assemblies": [
+        "urn:uuid:3557f034-3d1e-4bf8-8211-3c6b10242697"
+      ]
+    }
+  ]
+}

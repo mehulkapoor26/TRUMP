@@ -1,0 +1,66 @@
+{
+  "mode": "CONTROLLED INPUT + LIVE GitHub/OSV/npm. No mocked advisories. No downloaded code executed.",
+  "base": "http://127.0.0.1:5173",
+  "verifiedAt": "2026-10-31T23:36:15.164Z",
+  "incomplete": [
+    "{\"error\":\"Too many analysis requests. Try again later.\"}\n\n429 !== 200\n"
+  ],
+  "github": {
+    "status": "passed",
+    "scanId": "ea60557f-5c68-407f-b141-d89aa96a3ee8",
+    "source": "https://github.com/expressjs/serve-static",
+    "metadataFiles": 1,
+    "inventoryWarnings": [
+      "No lockfile for serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json; dependency ranges are not resolved versions.",
+      "Unresolved dev dependency eslint (7.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-config-standard (14.1.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-import (2.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-markdown (2.2.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-node (11.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-promise (5.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-standard (4.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency mocha (^10.7.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency nyc (^17.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency supertest (^6.3.4) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency encodeurl (^2.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency escape-html (^1.0.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency parseurl (^1.3.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency send (^1.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>."
+    ],
+    "note": "Upstream library may omit a lockfile; missing resolved versions remain explicit."
+  },
+  "zipSha256": "cc54816c50928cb5739509bfab8a5b72d36a5d53210154431af03c742efd4b65",
+  "scanId": "dffca870-000e-4fba-9e71-a7e6167bf368",
+  "dashboard": "http://127.0.0.1:5173/#/scans/dffca870-000e-4fba-9e71-a7e6167bf368/overview",
+  "findings": "http://127.0.0.1:5173/#/scans/dffca870-000e-4fba-9e71-a7e6167bf368/findings",
+  "inventory": {
+    "packages": 8,
+    "direct": 4,
+    "transitive": 4,
+    "relationships": 8
+  },
+  "advisories": {
+    "matchedInstances": 2,
+    "noKnownMatch": 6,
+    "unknownLibraries": 0,
+    "ids": [
+      "GHSA-29mw-wpgm-hmr9",
+      "GHSA-35jh-r3h4-6jhm",
+      "GHSA-f23m-r3pf-42rh",
+      "GHSA-r5fr-rjxr-66jc",
+      "GHSA-xxjr-mmjv-4gpg",
+      "GHSA-vh95-rmgr-6w4m",
+      "GHSA-xvch-5gv4-984h"
+    ],
+    "cves": [
+      "CVE-2020-28500",
+      "CVE-2021-23337",
+      "CVE-2026-2950",
+      "CVE-2026-4800",
+      "CVE-2025-13465",
+      "CVE-2020-7598",
+      "CVE-2021-44906"
+    ],
+    "warnings": []
+  }
+}

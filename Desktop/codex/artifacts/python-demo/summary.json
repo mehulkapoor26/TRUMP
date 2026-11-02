@@ -1,0 +1,98 @@
+{
+  "mode": "CONTROLLED PYTHON METADATA + LIVE OSV/PyPI; no uploaded code installed or executed",
+  "verifiedAt": "2026-10-31T22:04:53.093Z",
+  "incomplete": [],
+  "scanId": "3557f034-3d1e-4bf8-8211-3c6b10242697",
+  "dashboard": "http://127.0.0.1:5173/#/scans/3557f034-3d1e-4bf8-8211-3c6b10242697/overview",
+  "findings": "http://127.0.0.1:5173/#/scans/3557f034-3d1e-4bf8-8211-3c6b10242697/findings",
+  "inventory": {
+    "packages": 6,
+    "direct": 2,
+    "transitive": 4,
+    "relationships": 6,
+    "warnings": [
+      "poetry.lock: inventory is a lock snapshot; Python/platform activation, artifact hashes and lockfile freshness are not independently verified."
+    ]
+  },
+  "advisories": {
+    "matchedInstances": 5,
+    "ids": [
+      "GHSA-8q59-q68h-6hv4",
+      "PYSEC-2021-142",
+      "GHSA-9hjg-9r4m-mvj7",
+      "GHSA-9wx4-h78v-vm56",
+      "GHSA-gc5v-m9x4-r6x2",
+      "PYSEC-2026-1872",
+      "PYSEC-2026-1873",
+      "PYSEC-2026-2275",
+      "GHSA-6q48-6c7w-9gw2",
+      "PYSEC-2026-4320",
+      "GHSA-65pc-fj4g-8rjx",
+      "PYSEC-2026-215",
+      "GHSA-2xpw-w6gg-jr37",
+      "GHSA-38jv-5279-wg99",
+      "GHSA-48p4-8xcf-vxj5",
+      "GHSA-8988-9cw3-xx77",
+      "GHSA-gm62-xv2j-4w53",
+      "GHSA-pq67-6m6q-mj2v",
+      "GHSA-qccp-gfcp-xxvc",
+      "GHSA-vxq7-64xx-v4gw",
+      "PYSEC-2026-141",
+      "PYSEC-2026-1994",
+      "PYSEC-2026-1996",
+      "PYSEC-2026-1997",
+      "PYSEC-2026-1998",
+      "PYSEC-2026-1999",
+      "PYSEC-2026-4175",
+      "PYSEC-2026-4177"
+    ],
+    "cves": [
+      "CVE-2020-14343",
+      "CVE-2024-47081",
+      "CVE-2024-35195",
+      "CVE-2026-25645",
+      "CVE-2026-45409",
+      "CVE-2025-66471",
+      "CVE-2026-21441",
+      "CVE-2025-50182",
+      "CVE-2026-97687",
+      "CVE-2025-66418",
+      "CVE-2025-50181",
+      "CVE-2026-44431",
+      "CVE-2026-97689"
+    ],
+    "coverage": "partial"
+  },
+  "actions": [
+    {
+      "package": "pyyaml",
+      "status": "VERIFIED CANDIDATE",
+      "candidate": "5.4",
+      "compatibility": "NOT TESTED"
+    },
+    {
+      "package": "requests",
+      "status": "VERIFIED CANDIDATE",
+      "candidate": "2.33.0",
+      "compatibility": "NOT TESTED"
+    },
+    {
+      "package": "certifi",
+      "status": "VERIFIED CANDIDATE",
+      "candidate": "2026.10.18",
+      "compatibility": "NOT TESTED"
+    },
+    {
+      "package": "idna",
+      "status": "VERIFIED CANDIDATE",
+      "candidate": "3.15",
+      "compatibility": "NOT TESTED"
+    },
+    {
+      "package": "urllib3",
+      "status": "MANUAL REVIEW",
+      "compatibility": "NOT TESTED"
+    }
+  ],
+  "reachability": "UNKNOWN: Python analysis is not implemented"
+}

@@ -1,0 +1,12 @@
+{
+  "verifiedAt": "2026-10-31T23:26:47.055Z",
+  "mode": "Real running website, no network interception or mocked responses",
+  "checks": [
+    "scanner accessible",
+    "live OSV/CVE links and severity rendered",
+    "CVE search and matched/no-known filters",
+    "interactive 9-node/8-edge graph and package selection",
+    "saved report status and PDF download through UI"
+  ],
+  "errors": []
+}

@@ -1,0 +1,10 @@
+node_modules/**
+src/**
+test/**
+*.ts
+*.mjs
+package-lock.json
+tsconfig.json
+.vscode/**
+.DS_Store
+**/.DS_Store

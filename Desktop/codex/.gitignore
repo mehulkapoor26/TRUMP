@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.local
+*.log
+.DS_Store
+
+.traceguard/
+
+/test-results/
+/playwright-report/

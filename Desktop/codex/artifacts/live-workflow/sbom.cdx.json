@@ -1,0 +1,110 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:79573486-0a6c-48e6-8f41-1295a790db58",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-31T23:05:44.548Z",
+    "component": {
+      "type": "application",
+      "bom-ref": "urn:uuid:79573486-0a6c-48e6-8f41-1295a790db58",
+      "name": "TRACEGUARD scanned projects"
+    },
+    "properties": [
+      {
+        "name": "traceguard:analysis",
+        "value": "Static npm/Python dependency metadata analysis; no packages installed or executed."
+      },
+      {
+        "name": "traceguard:unresolved-count",
+        "value": "0"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+      "name": "lodash",
+      "version": "4.17.20",
+      "purl": "pkg:npm/lodash@4.17.20",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": "node_modules/lodash"
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "true"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "npm"
+        }
+      ]
+    },
+    {
+      "type": "application",
+      "bom-ref": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+      "name": "traceguard-judge-fixture",
+      "version": "1.0.0",
+      "properties": [
+        {
+          "name": "traceguard:lockfile-or-manifest",
+          "value": "package-lock.json"
+        },
+        {
+          "name": "traceguard:install-path",
+          "value": ""
+        },
+        {
+          "name": "traceguard:direct",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:transitive",
+          "value": "false"
+        },
+        {
+          "name": "traceguard:ecosystem",
+          "value": "npm"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "urn:uuid:79573486-0a6c-48e6-8f41-1295a790db58",
+      "dependsOn": [
+        "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+      ]
+    },
+    {
+      "ref": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+      "dependsOn": []
+    },
+    {
+      "ref": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+      "dependsOn": [
+        "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4"
+      ]
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "complete",
+      "assemblies": [
+        "urn:uuid:79573486-0a6c-48e6-8f41-1295a790db58"
+      ]
+    }
+  ]
+}

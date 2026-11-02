@@ -1,0 +1,1 @@
+{"name":"controlled-rescan","version":"1.0.0","dependencies":{"fixture-upgrade":"2.0.0","fixture-remaining":"1.0.0","fixture-new":"2.0.0","fixture-unknown":"2.0.0"},"scripts":{"preinstall":"throw-do-not-execute-fixture"}}

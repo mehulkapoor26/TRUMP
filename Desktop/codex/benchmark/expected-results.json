@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "groundTruthKind": "frozen-osv-query-results",
+  "snapshotId": "osv-querybatch-2026-11-01",
+  "cases": [
+    {
+      "id": "npm-lodash-vulnerable",
+      "fixture": "fixtures/npm-vulnerable",
+      "expectedScanStatus": "analyzed",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "lodash",
+          "version": "4.17.19",
+          "relationship": "direct"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "npm",
+          "name": "lodash",
+          "version": "4.17.19",
+          "label": "osv-match",
+          "expectedStatus": "matched",
+          "expectedAdvisoryIds": [
+            "GHSA-29mw-wpgm-hmr9",
+            "GHSA-35jh-r3h4-6jhm",
+            "GHSA-f23m-r3pf-42rh",
+            "GHSA-r5fr-rjxr-66jc",
+            "GHSA-xxjr-mmjv-4gpg"
+          ],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch",
+            "https://osv.dev/vulnerability/GHSA-29mw-wpgm-hmr9",
+            "https://osv.dev/vulnerability/GHSA-xxjr-mmjv-4gpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "npm-minimist-vulnerable",
+      "fixture": "fixtures/npm-minimist-vulnerable",
+      "expectedScanStatus": "analyzed",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "minimist",
+          "version": "0.0.8",
+          "relationship": "direct"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "npm",
+          "name": "minimist",
+          "version": "0.0.8",
+          "label": "osv-match",
+          "expectedStatus": "matched",
+          "expectedAdvisoryIds": [
+            "GHSA-vh95-rmgr-6w4m",
+            "GHSA-xvch-5gv4-984h"
+          ],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch",
+            "https://osv.dev/vulnerability/GHSA-xvch-5gv4-984h"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "npm-minimist-fixed-comparison",
+      "fixture": "fixtures/npm-fixed",
+      "expectedScanStatus": "analyzed",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "minimist",
+          "version": "1.2.8",
+          "relationship": "direct"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "npm",
+          "name": "minimist",
+          "version": "1.2.8",
+          "label": "no-osv-match-at-snapshot",
+          "expectedStatus": "no-known",
+          "expectedAdvisoryIds": [],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch",
+            "https://osv.dev/vulnerability/GHSA-xvch-5gv4-984h"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python-pyyaml-vulnerable",
+      "fixture": "fixtures/python-vulnerable",
+      "expectedScanStatus": "partial",
+      "dependencies": [
+        {
+          "ecosystem": "PyPI",
+          "name": "pyyaml",
+          "version": "5.3.1",
+          "relationship": "unknown"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "PyPI",
+          "name": "pyyaml",
+          "version": "5.3.1",
+          "label": "osv-match",
+          "expectedStatus": "matched",
+          "expectedAdvisoryIds": [
+            "GHSA-8q59-q68h-6hv4",
+            "PYSEC-2021-142"
+          ],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch",
+            "https://osv.dev/vulnerability/GHSA-8q59-q68h-6hv4",
+            "https://github.com/pypa/advisory-database/blob/main/vulns/pyyaml/PYSEC-2021-142.yaml"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "python-pyyaml-no-known-advisory-comparison",
+      "fixture": "fixtures/python-fixed",
+      "expectedScanStatus": "partial",
+      "dependencies": [
+        {
+          "ecosystem": "PyPI",
+          "name": "pyyaml",
+          "version": "6.0.2",
+          "relationship": "unknown"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "PyPI",
+          "name": "pyyaml",
+          "version": "6.0.2",
+          "label": "no-osv-match-at-snapshot",
+          "expectedStatus": "no-known",
+          "expectedAdvisoryIds": [],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maven-log4j-core-vulnerable-lock",
+      "fixture": "fixtures/maven-log4j",
+      "expectedScanStatus": "partial",
+      "dependencies": [
+        {
+          "ecosystem": "Maven",
+          "name": "org.apache.logging.log4j:log4j-core",
+          "version": "2.14.1",
+          "relationship": "unknown"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "Maven",
+          "name": "org.apache.logging.log4j:log4j-core",
+          "version": "2.14.1",
+          "label": "osv-match",
+          "expectedStatus": "matched",
+          "expectedAdvisoryIds": [
+            "GHSA-3pxv-7cmr-fjr4",
+            "GHSA-6hg6-v5c8-fphq",
+            "GHSA-7rjr-3q55-vv33",
+            "GHSA-8489-44mv-ggj8",
+            "GHSA-h383-gmxw-35v2",
+            "GHSA-jfh8-c2jp-5v3q",
+            "GHSA-p6xc-xr62-6r2g",
+            "GHSA-vc5p-v9hr-52mj"
+          ],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch",
+            "https://osv.dev/vulnerability/GHSA-jfh8-c2jp-5v3q"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nested-monorepo",
+      "fixture": "fixtures/nested-monorepo",
+      "expectedScanStatus": "analyzed",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "lodash",
+          "version": "4.17.19",
+          "relationship": "direct"
+        },
+        {
+          "ecosystem": "npm",
+          "name": "is-number",
+          "version": "7.0.0",
+          "relationship": "direct"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "npm",
+          "name": "lodash",
+          "version": "4.17.19",
+          "label": "osv-match",
+          "expectedStatus": "matched",
+          "expectedAdvisoryIds": [
+            "GHSA-29mw-wpgm-hmr9",
+            "GHSA-35jh-r3h4-6jhm",
+            "GHSA-f23m-r3pf-42rh",
+            "GHSA-r5fr-rjxr-66jc",
+            "GHSA-xxjr-mmjv-4gpg"
+          ],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch"
+          ]
+        },
+        {
+          "ecosystem": "npm",
+          "name": "is-number",
+          "version": "7.0.0",
+          "label": "no-osv-match-at-snapshot",
+          "expectedStatus": "no-known",
+          "expectedAdvisoryIds": [],
+          "evidence": [
+            "https://api.osv.dev/v1/querybatch"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "npm-missing-lock",
+      "fixture": "fixtures/npm-missing-lock",
+      "expectedScanStatus": "unknown",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "lodash",
+          "version": null,
+          "relationship": "unresolved"
+        }
+      ],
+      "advisories": []
+    },
+    {
+      "id": "npm-malformed-lock",
+      "fixture": "fixtures/npm-malformed-lock",
+      "expectedScanStatus": "failed",
+      "dependencies": [],
+      "advisories": []
+    },
+    {
+      "id": "nested-duplicate-package-versions",
+      "fixture": "fixtures/duplicate-versions",
+      "expectedScanStatus": "analyzed",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "lodash",
+          "version": "4.17.19",
+          "relationship": "direct"
+        },
+        {
+          "ecosystem": "npm",
+          "name": "lodash",
+          "version": "4.17.23",
+          "relationship": "direct"
+        }
+      ],
+      "advisories": []
+    },
+    {
+      "id": "unsupported-rust",
+      "fixture": "fixtures/unsupported-rust",
+      "expectedScanStatus": "unsupported",
+      "dependencies": [],
+      "advisories": []
+    },
+    {
+      "id": "osv-transport-failure",
+      "fixture": "fixtures/osv-failure",
+      "expectedScanStatus": "analyzed",
+      "osvMode": "failure",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "is-number",
+          "version": "7.0.0",
+          "relationship": "direct"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "npm",
+          "name": "is-number",
+          "version": "7.0.0",
+          "label": "unlabeled-transport-test",
+          "expectedStatus": "unknown",
+          "expectedAdvisoryIds": []
+        }
+      ]
+    },
+    {
+      "id": "osv-incomplete-pagination",
+      "fixture": "fixtures/osv-incomplete",
+      "expectedScanStatus": "analyzed",
+      "osvMode": "incomplete",
+      "dependencies": [
+        {
+          "ecosystem": "npm",
+          "name": "is-number",
+          "version": "7.0.0",
+          "relationship": "direct"
+        }
+      ],
+      "advisories": [
+        {
+          "ecosystem": "npm",
+          "name": "is-number",
+          "version": "7.0.0",
+          "label": "unlabeled-transport-test",
+          "expectedStatus": "unknown",
+          "expectedAdvisoryIds": []
+        }
+      ]
+    }
+  ]
+}

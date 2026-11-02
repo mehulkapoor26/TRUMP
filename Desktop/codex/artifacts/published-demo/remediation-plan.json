@@ -1,0 +1,566 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "bbf6ace3-5b75-45e9-a295-f7c61bdbd718",
+  "generatedAt": "2026-10-31T23:24:16.148Z",
+  "advisorySnapshotId": "0e4a4fe12d10370e464dbdf402562d7c3d52eab95546462ee7a4a6df35c7b3b0",
+  "inventoryCounts": {
+    "projectModules": 1,
+    "uniquePackages": 7,
+    "uniquePackageVersions": 8,
+    "dependencyInstances": 8,
+    "directDependencies": 4,
+    "transitiveOnlyDependencies": 4,
+    "unknownRelationships": 0,
+    "dependencyEdges": 8,
+    "unresolvedDeclarations": 0
+  },
+  "scanEvidence": {
+    "scannerVersion": "0.2.0",
+    "archiveSha256": "cc54816c50928cb5739509bfab8a5b72d36a5d53210154431af03c742efd4b65",
+    "revisionStatus": "unknown",
+    "inventorySha256": "147361aa36811031dfadd65a336aa4d86b4ec3144fe6219fc8577d403100ee6f",
+    "languages": [
+      "JavaScript"
+    ],
+    "projects": [
+      {
+        "path": ".",
+        "manager": "npm",
+        "status": "analyzed",
+        "reasons": []
+      },
+      {
+        "path": ".",
+        "manager": "npm",
+        "status": "analyzed",
+        "reasons": []
+      }
+    ],
+    "metadataHashes": [
+      {
+        "path": "package-lock.json",
+        "sha256": "4fbdfb16d2b682fd3486d2442abbbe415ddf24885d179ced7e644ace6f754e5c"
+      },
+      {
+        "path": "package.json",
+        "sha256": "391c2de4bdacd91dd036293de3b7479fae6dbda0ab468fb2d928b58cad24a80c"
+      }
+    ]
+  },
+  "scan": {
+    "id": "1f4d8678-6b9f-4152-ae6c-6293337445dc",
+    "source": "ZIP upload",
+    "createdAt": "2026-10-31T23:24:12.175Z",
+    "inventorySha256": "147361aa36811031dfadd65a336aa4d86b4ec3144fe6219fc8577d403100ee6f"
+  },
+  "coverage": {
+    "status": "complete",
+    "checkedAt": "2026-10-31T23:24:12.185Z",
+    "packageInstances": 8,
+    "matched": 2,
+    "noKnownMatch": 6,
+    "unknown": 0,
+    "findingsIncluded": 2,
+    "findingsOmitted": 0
+  },
+  "limitations": [
+    "This report is a point-in-time snapshot of the saved inventory and fresh OSV queries, not a live deployment assessment.",
+    "Dependency presence and advisory version matches do not prove runtime execution, attacker control, or actual exploitability.",
+    "No known advisory match is not a safety guarantee. Unknown, failed, paginated, or skipped checks are not clean findings.",
+    "Advisory IDs can be aliases of the same underlying issue; counts describe package instances, not distinct exploitable vulnerabilities.",
+    "Details are fetched for at most 40 unique advisory IDs; at most 100 matched package instances and 20 advisory IDs per finding are included. Descriptions, references, paths and source evidence are bounded.",
+    "Source-provided CVSS vectors are retained without inventing numeric scores or priorities. Withdrawn or mismatched records require manual review.",
+    "A verified candidate is an advisory-listed fixed release that exists in its ecosystem registry and returns no known OSV match at verification time. It is not a guarantee of safety, compatibility, or that every relevant fix was published.",
+    "At most three candidate releases per package/version are checked, for at most 20 unique pairs. If no candidate is verified, manual review is required. Major-version changes may require migration.",
+    "Transitive updates require changes to the owning dependency declaration or parent. No dependency graph or lockfile is changed automatically.",
+    "Only server-recorded scoped reachability results from this server process are included (latest result per instance, at most 100 instances per scan and 100 recent scans; not restored after restart). Their affected-export mappings are user-declared; NOT REACHABLE applies only within each declared coverage and is never a global safety claim.",
+    "No source code, submitted package scripts, or package installation is executed while preparing these reports. Testing and release-note review remain the maintainer's responsibility."
+  ],
+  "reportType": "remediation-plan",
+  "title": "Remediation Plan",
+  "actions": [
+    {
+      "findingId": "F-001",
+      "packageNodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+      "packageName": "lodash",
+      "installedVersion": "4.17.20",
+      "status": "MANUAL REVIEW",
+      "verification": {
+        "checkedAt": "2026-10-31T23:24:19.703Z",
+        "advisorySources": [
+          "https://api.osv.dev/v1/vulns/GHSA-29mw-wpgm-hmr9",
+          "https://api.osv.dev/v1/vulns/GHSA-35jh-r3h4-6jhm",
+          "https://api.osv.dev/v1/vulns/GHSA-f23m-r3pf-42rh",
+          "https://api.osv.dev/v1/vulns/GHSA-r5fr-rjxr-66jc",
+          "https://api.osv.dev/v1/vulns/GHSA-xxjr-mmjv-4gpg"
+        ],
+        "candidateAdvisoryStatus": "not-verified",
+        "compatibility": "NOT TESTED"
+      },
+      "steps": [
+        "No publishable, advisory-clean upgrade candidate could be verified within the report coverage. Do not assume that latest, a fixed boundary, or an unavailable query is safe.",
+        "Review the cited advisories for lodash@4.17.20, published maintainer fixes, and all owning parent paths. Verify a compatible release before choosing an upgrade.",
+        "If no supported fix exists, evaluate removing or replacing the dependency, disabling the affected feature, or applying a maintainer-reviewed patch. These are manual options, not verified mitigations."
+      ],
+      "validation": [
+        "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+        "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+        "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+      ],
+      "recommendationSources": [
+        "https://osv.dev/vulnerability/GHSA-29mw-wpgm-hmr9",
+        "https://nvd.nist.gov/vuln/detail/CVE-2020-28500",
+        "https://github.com/github/advisory-database/pull/6139",
+        "https://github.com/lodash/lodash/pull/5065",
+        "https://github.com/lodash/lodash/pull/5065/commits/02906b8191d3c100c193fe6f7b27d1c40f200bb7",
+        "https://github.com/lodash/lodash/commit/c4847ebe7d14540bb28a8b932a9ce1b9ecbfee1a",
+        "https://www.oracle.com/security-alerts/cpuoct2021.html",
+        "https://www.oracle.com/security-alerts/cpujul2022.html",
+        "https://www.oracle.com/security-alerts/cpujan2022.html",
+        "https://www.oracle.com//security-alerts/cpujul2021.html",
+        "https://snyk.io/vuln/SNYK-JS-LODASH-1018905",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074893",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074895",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074892",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074894",
+        "https://osv.dev/vulnerability/GHSA-35jh-r3h4-6jhm",
+        "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+        "https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c",
+        "https://snyk.io/vuln/SNYK-JS-LODASH-1040724",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074929",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074931",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074928",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074930",
+        "https://snyk.io/vuln/SNYK-JAVA-ORGFUJIONWEBJARS-1074932",
+        "https://security.netapp.com/advisory/ntap-20210312-0006",
+        "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/lodash-rails/CVE-2021-23337.yml",
+        "https://osv.dev/vulnerability/GHSA-f23m-r3pf-42rh",
+        "https://github.com/lodash/lodash/security/advisories/GHSA-f23m-r3pf-42rh",
+        "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-2950",
+        "https://github.com/lodash/lodash",
+        "https://osv.dev/vulnerability/GHSA-r5fr-rjxr-66jc",
+        "https://github.com/lodash/lodash/security/advisories/GHSA-r5fr-rjxr-66jc",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-4800",
+        "https://cna.openjsf.org/security-advisories.html",
+        "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+        "https://osv.dev/vulnerability/GHSA-xxjr-mmjv-4gpg",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-13465",
+        "https://github.com/lodash/lodash/commit/edadd452146f7e4bad4ea684e955708931d84d81",
+        "https://cert-portal.siemens.com/productcert/html/ssa-253495.html",
+        "https://docs.npmjs.com/cli/v11/commands/npm-install/",
+        "https://docs.npmjs.com/cli/v11/configuring-npm/package-json/#overrides",
+        "https://docs.npmjs.com/cli/v11/commands/npm-explain/"
+      ]
+    },
+    {
+      "findingId": "F-002",
+      "packageNodeId": "urn:traceguard:component:cbeff0b767fcc8148a21020df309d840d73aa24dceafc667ce44394a02d5e196",
+      "packageName": "minimist",
+      "installedVersion": "0.0.8",
+      "status": "VERIFIED CANDIDATE",
+      "suggestedVersion": "0.2.4",
+      "verification": {
+        "checkedAt": "2026-10-31T23:24:19.703Z",
+        "advisorySources": [
+          "https://api.osv.dev/v1/vulns/GHSA-vh95-rmgr-6w4m",
+          "https://api.osv.dev/v1/vulns/GHSA-xvch-5gv4-984h"
+        ],
+        "registrySource": "https://registry.npmjs.org/minimist/0.2.4",
+        "candidateAdvisoryStatus": "no-known",
+        "compatibility": "NOT TESTED"
+      },
+      "steps": [
+        "Review the cited advisories and release notes for minimist 0.2.4; compare with installed 0.0.8. Compatibility has not been tested.",
+        "In package-lock.json, locate the owning package.json declaration (including aliases) and update its declared dependency to the verified candidate 0.2.4. Preserve the intended runtime/dev/optional role.",
+        "Regenerate the affected lockfile in your controlled development environment, review the diff, and ensure every affected installation path is replaced. Do not edit a nested node_modules copy as the fix."
+      ],
+      "validation": [
+        "Run the project's actual regression, integration, and build checks in a trusted environment; resolve major-version migration requirements.",
+        "Rescan the updated manifests and lockfiles and rerun OSV checks for all affected instances, including duplicate versions.",
+        "Revisit scoped function reachability with verified affected-export mappings. Separately review runtime feasibility, attacker control, deployment exposure, and mitigations."
+      ],
+      "recommendationSources": [
+        "https://osv.dev/vulnerability/GHSA-vh95-rmgr-6w4m",
+        "https://nvd.nist.gov/vuln/detail/CVE-2020-7598",
+        "https://github.com/minimistjs/minimist/commit/10bd4cdf49d9686d48214be9d579a9cdfda37c68",
+        "https://github.com/minimistjs/minimist/commit/38a4d1caead72ef99e824bb420a2528eec03d9ab",
+        "https://github.com/minimistjs/minimist/commit/4cf1354839cb972e38496d35e12f806eea92c11f#diff-a1e0ee62c91705696ddb71aa30ad4f95",
+        "https://github.com/minimistjs/minimist/commit/63e7ed05aa4b1889ec2f3b196426db4500cbda94",
+        "https://github.com/substack/minimist",
+        "https://snyk.io/vuln/SNYK-JS-MINIMIST-559764",
+        "https://www.npmjs.com/advisories/1179",
+        "https://osv.dev/vulnerability/GHSA-xvch-5gv4-984h",
+        "https://nvd.nist.gov/vuln/detail/CVE-2021-44906",
+        "https://github.com/minimistjs/minimist/issues/11",
+        "https://github.com/substack/minimist/issues/164",
+        "https://github.com/minimistjs/minimist/pull/24",
+        "https://github.com/minimistjs/minimist/commit/34e20b8461118608703d6485326abbb8e35e1703",
+        "https://github.com/minimistjs/minimist/commit/bc8ecee43875261f4f17eb20b1243d3ed15e70eb",
+        "https://github.com/minimistjs/minimist/commit/c2b981977fa834b223b408cfb860f933c9811e4d",
+        "https://github.com/minimistjs/minimist/commit/ef9153fc52b6cea0744b2239921c5dcae4697f11",
+        "https://github.com/Marynk/JavaScript-vulnerability-detection/blob/main/minimist%20PoC.zip",
+        "https://github.com/minimistjs/minimist/commits/v0.2.4",
+        "https://github.com/substack/minimist/blob/master/index.js#L69",
+        "https://security.netapp.com/advisory/ntap-20240621-0006",
+        "https://docs.npmjs.com/cli/v11/commands/npm-install/",
+        "https://docs.npmjs.com/cli/v11/configuring-npm/package-json/#overrides",
+        "https://docs.npmjs.com/cli/v11/commands/npm-explain/"
+      ]
+    }
+  ],
+  "packageRisk": {
+    "checkedAt": "2026-10-31T23:24:19.704Z",
+    "coverage": {
+      "total": 8,
+      "metadataChecked": 8,
+      "unavailable": 0,
+      "skipped": 0
+    },
+    "results": [
+      {
+        "nodeId": "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89",
+        "name": "is-even",
+        "version": "1.0.0",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-LEhnkAdJqic4Dbqn58A0y52IXoHWlsueqQkKfMfdEnIYG8A1sm/GHidKkS6yvXlMoRrkM34csHnXQtOqcb+Jzg==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-LEhnkAdJqic4Dbqn58A0y52IXoHWlsueqQkKfMfdEnIYG8A1sm/GHidKkS6yvXlMoRrkM34csHnXQtOqcb+Jzg==",
+          "shasum": "76b5055fbad8d294a86b6a949015e1c97b717c06"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEQCIGdFCa72n+vIbeujikn3ExFVcAX2rnuKWBBFWQlQIH1gAiBn5HXb7zzOTEFwAnHX8zrI8+2gPyDaxgy5gAMFq7fzhA=="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/is-even/1.0.0",
+        "metadata": {
+          "description": "Return true if the given number is even.",
+          "license": "MIT",
+          "repository": "https://github.com/jonschlinkert/is-even.git",
+          "homepage": "https://github.com/jonschlinkert/is-even",
+          "maintainers": [
+            "jonschlinkert",
+            "doowb"
+          ],
+          "lifecycleScripts": {}
+        }
+      },
+      {
+        "nodeId": "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52",
+        "name": "kind-of",
+        "version": "3.2.2",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==",
+          "shasum": "31ea21a734bab9bbb0f32466d893aea51e4a3c64"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEQCIA+PkCBtTWJTJGp6BmBDfGldIMKBbiUOjpqLF17rq5ChAiByW4/OwEAm6P8sMzKZeuAe6BJfOo7Hw7VOn765GyKKzQ=="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/kind-of/3.2.2",
+        "metadata": {
+          "description": "Get the native type of a value.",
+          "license": "MIT",
+          "repository": "https://github.com/jonschlinkert/kind-of.git",
+          "homepage": "https://github.com/jonschlinkert/kind-of",
+          "maintainers": [
+            "jonschlinkert",
+            "doowb"
+          ],
+          "lifecycleScripts": {}
+        }
+      },
+      {
+        "nodeId": "urn:traceguard:component:76396b0995214089bf2b58dd03b9a8a648f1386e96583619f38bb8822aced6c1",
+        "name": "is-buffer",
+        "version": "1.1.6",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==",
+          "shasum": "efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEUCIDQAnODX01K6w5cJdtd+M5OyeiiFZL0r/VpvrwjdJcEEAiEA1n9Pq+avL75FrFQdoA84fBlUmeqf25sOcbsEXxHQh7c="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/is-buffer/1.1.6",
+        "metadata": {
+          "description": "Determine if an object is a Buffer",
+          "license": "MIT",
+          "homepage": "https://github.com/feross/is-buffer#readme",
+          "maintainers": [
+            "feross"
+          ],
+          "lifecycleScripts": {}
+        }
+      },
+      {
+        "nodeId": "urn:traceguard:component:8cec2c0a911ef6a0a4211e07416af7bbbe9808138060339d463d93f10e00b2e9",
+        "name": "is-number",
+        "version": "7.0.0",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
+          "shasum": "7535345b896734d5f80c4d06c50955527a14f12b"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEUCIGex85Xx5rKhEgNSkg7z5bBu7vbcFbJnWJZbV3f9Td8GAiEA5wzgLXU41sE6ezCKGrmzsyMtm6M+2OhefJJhkzPEAoc="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/is-number/7.0.0",
+        "metadata": {
+          "description": "Returns true if a number or string value is a finite number. Useful for regex matches, parsing, user input, etc.",
+          "license": "MIT",
+          "repository": "https://github.com/jonschlinkert/is-number.git",
+          "homepage": "https://github.com/jonschlinkert/is-number",
+          "maintainers": [
+            "doowb",
+            "jonschlinkert",
+            "realityking"
+          ],
+          "lifecycleScripts": {}
+        }
+      },
+      {
+        "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "name": "lodash",
+        "version": "4.17.20",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==",
+          "shasum": "b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEUCIQDPF8qtGU3yxHj4Yw4h9hpt+DCVT9dlk9ApvKxVXPwv7AIgSLC2TkL6ONbFlhyV2ZcE4v52ANJMoA/HwKY+zKt9Kh4="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/lodash/4.17.20",
+        "metadata": {
+          "description": "Lodash modular utilities.",
+          "license": "MIT",
+          "repository": "https://github.com/lodash/lodash.git",
+          "homepage": "https://lodash.com/",
+          "maintainers": [
+            "bnjmnt4n",
+            "jdalton",
+            "mathias"
+          ],
+          "lifecycleScripts": {}
+        }
+      },
+      {
+        "nodeId": "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d",
+        "name": "is-number",
+        "version": "3.0.0",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-4cboCqIpliH+mAvFNegjZQ4kgKc3ZUhQVr3HvWbSh5q3WH2v82ct+T2Y1hdU5Gdtorx/cLifQjqCbL7bpznLTg==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-4cboCqIpliH+mAvFNegjZQ4kgKc3ZUhQVr3HvWbSh5q3WH2v82ct+T2Y1hdU5Gdtorx/cLifQjqCbL7bpznLTg==",
+          "shasum": "24fd6201a4782cf50561c810276afc7d12d71195"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEUCIEpkuzJnkIAtuDMAI3VLqzFNwNANap4m9nyeUneW72kRAiEAtsctBWg1OtEaj2FSH+9ViALZU1O0hQFCVzwGMWHfVnk="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/is-number/3.0.0",
+        "metadata": {
+          "description": "Returns true if the value is a number. comprehensive tests.",
+          "license": "MIT",
+          "repository": "https://github.com/jonschlinkert/is-number.git",
+          "homepage": "https://github.com/jonschlinkert/is-number",
+          "maintainers": [
+            "jonschlinkert",
+            "doowb"
+          ],
+          "lifecycleScripts": {}
+        }
+      },
+      {
+        "nodeId": "urn:traceguard:component:cbeff0b767fcc8148a21020df309d840d73aa24dceafc667ce44394a02d5e196",
+        "name": "minimist",
+        "version": "0.0.8",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-miQKw5Hv4NS1Psg2517mV4e4dYNaO3++hjAvLOAzKqZ61rH8NS1SK+vbfBWZ5PY/Me/bEWhUwqMghEW5Fb9T7Q==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-miQKw5Hv4NS1Psg2517mV4e4dYNaO3++hjAvLOAzKqZ61rH8NS1SK+vbfBWZ5PY/Me/bEWhUwqMghEW5Fb9T7Q==",
+          "shasum": "857fcabfc3397d2625b8228262e86aa7a011b05d"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEYCIQDW7J/Us43W8sxeysKUFk4mJj4B8ZpWxTsPHSc3ma5YHQIhAK2j6GqOYWD1UcAb6yxa85VuFB1DhhfYHwW0pDeAcBcS"
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/minimist/0.0.8",
+        "metadata": {
+          "description": "parse argument options",
+          "license": "MIT",
+          "homepage": "https://github.com/substack/minimist",
+          "maintainers": [
+            "substack"
+          ],
+          "lifecycleScripts": {}
+        }
+      },
+      {
+        "nodeId": "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0",
+        "name": "is-odd",
+        "version": "0.1.2",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "lock": "sha512-Ri7C2K7o5IrUU9UEI8losXJCCD/UtsaIrkR5sxIcFg4xQ9cRJXlWA5DQvTE0yDc0krvSNLsRGXN11UPS6KyfBw==",
+          "comparison": "MATCH",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-Ri7C2K7o5IrUU9UEI8losXJCCD/UtsaIrkR5sxIcFg4xQ9cRJXlWA5DQvTE0yDc0krvSNLsRGXN11UPS6KyfBw==",
+          "shasum": "bc573b5ce371ef2aad6e6f49799b72bef13978a7"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEQCIHI63jfRjPRbhpolQPjSEwwTdVf8yV/im1aqm5QrLDrbAiBPeyyXzmbqFY+l6K7EFNmlKaVmC8rMF7inILRu3jT9NQ=="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/is-odd/0.1.2",
+        "metadata": {
+          "description": "Returns true if the given number is odd.",
+          "license": "MIT",
+          "repository": "https://github.com/jonschlinkert/is-odd.git",
+          "homepage": "https://github.com/jonschlinkert/is-odd",
+          "maintainers": [
+            "jonschlinkert",
+            "doowb"
+          ],
+          "lifecycleScripts": {}
+        }
+      }
+    ],
+    "limitations": [
+      "Heuristics are review signals, not proof of malicious intent. NO SIGNALS is not a safety guarantee. Metadata can be publisher-controlled.",
+      "Name similarity uses a fixed reference list v1 (react, react-dom, express, lodash, axios, typescript, webpack, vite, eslint, prettier, chalk, commander, mongoose, next, jquery, dotenv), one edit or adjacent transposition, minimum length five; scoped names are excluded. It does not cover all typosquatting or dependency confusion.",
+      "At most 100 unique exact package/version pairs and 1,000 instances are included, with a 15-second metadata deadline and 1 MiB response limit. Unavailable or omitted data is not clean.",
+      "Integrity compares recorded lock and registry digest strings only. Tarballs, installed bytes, signatures and provenance attestations are not downloaded or cryptographically verified. Matching metadata does not establish safety.",
+      "Provenance is registry-advertised evidence only. Missing provenance or signatures does not imply malware. Lifecycle scripts are common in legitimate packages and are never executed.",
+      "CONFIRMED MALICIOUS requires a fresh OSV version match and a verified, non-withdrawn MAL- advisory for the same npm package. This is an attributed source verdict, not an independent analysis; other advisory IDs and heuristics cannot confirm malware. Advisory detail coverage limits also apply."
+    ],
+    "sources": [
+      "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+      "https://docs.npmjs.com/viewing-package-provenance/",
+      "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+      "https://osv.dev/"
+    ]
+  },
+  "coverageActions": [
+    "Validate changes in a trusted development environment. TRACEGUARD does not execute fixes or submitted source code."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "status": "UNKNOWN",
+  "reason": "Python reachability is UNKNOWN: no Python AST/call analysis is implemented. JavaScript analysis does not apply to Python.",
+  "target": {
+    "packageNodeId": "urn:traceguard:component:bb86b3d2838012e8185ec413ac06bdb417c7389e0fac7b644cbbafaab6e60255",
+    "exportName": "load"
+  },
+  "mapping": "Python analysis unsupported",
+  "coverage": {
+    "entrypoints": [
+      {
+        "file": "app.py",
+        "symbol": "<module>"
+      }
+    ],
+    "analyzedFiles": [],
+    "sourceFilesAvailable": 1,
+    "skippedSources": [],
+    "functionsVisited": 0,
+    "callsExamined": 0,
+    "completeForDeclaredEntrypoints": false,
+    "boundary": "Python/PyPI dependency inventory only; no Python source call analysis."
+  },
+  "evidence": [],
+  "gaps": [
+    {
+      "reason": "Python reachability is UNKNOWN: no Python AST/call analysis is implemented. JavaScript analysis does not apply to Python."
+    }
+  ],
+  "limitations": [
+    "Python reachability is unsupported and remains UNKNOWN. No Python source, imports, build backend, or package scripts are executed."
+  ]
+}

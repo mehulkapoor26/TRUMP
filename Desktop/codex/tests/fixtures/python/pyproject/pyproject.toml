@@ -1,0 +1,8 @@
+[project]
+name = "unresolved-python-project"
+version = "0.1.0"
+dependencies = ["Django>=4.0", "urllib3==1.26.5", "typing_extensions==4.0.0; python_version < '3.10'"]
+dynamic = ["optional-dependencies"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]

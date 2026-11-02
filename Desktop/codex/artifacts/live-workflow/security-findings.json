@@ -1,0 +1,440 @@
+{
+  "schemaVersion": "1.0",
+  "bundleId": "141d20fe-a641-404b-86cf-11124e6be45c",
+  "generatedAt": "2026-10-31T23:05:47.403Z",
+  "advisorySnapshotId": "4c39ba350422d87221eeb59b11d3cafd88595791f9c97a8e3d32a2eb28448984",
+  "inventoryCounts": {
+    "projectModules": 1,
+    "uniquePackages": 1,
+    "uniquePackageVersions": 1,
+    "dependencyInstances": 1,
+    "directDependencies": 1,
+    "transitiveOnlyDependencies": 0,
+    "unknownRelationships": 0,
+    "dependencyEdges": 1,
+    "unresolvedDeclarations": 0
+  },
+  "scanEvidence": {
+    "scannerVersion": "0.2.0",
+    "archiveSha256": "8e590fb7559d410dad475198b93df9c1ac9c216073581ceb978c3b19b2322a60",
+    "revisionStatus": "unknown",
+    "inventorySha256": "cc42bf40510dcd5a85d401114cb26b84e2dc5ac2ac2a011da4cb415d321680fd",
+    "languages": [
+      "JavaScript"
+    ],
+    "projects": [
+      {
+        "path": ".",
+        "manager": "npm",
+        "status": "analyzed",
+        "reasons": []
+      },
+      {
+        "path": ".",
+        "manager": "npm",
+        "status": "analyzed",
+        "reasons": []
+      }
+    ],
+    "metadataHashes": [
+      {
+        "path": "package-lock.json",
+        "sha256": "2ba44094cdd18baf4af77414649dcee2b094a1ec27786be907759740db06a319"
+      },
+      {
+        "path": "package.json",
+        "sha256": "1fb0138b887620f5958630e97b8dc82fbc8ab22719411050e291903d1fd32fc8"
+      }
+    ]
+  },
+  "scan": {
+    "id": "79573486-0a6c-48e6-8f41-1295a790db58",
+    "source": "ZIP upload",
+    "createdAt": "2026-10-31T23:05:44.548Z",
+    "inventorySha256": "cc42bf40510dcd5a85d401114cb26b84e2dc5ac2ac2a011da4cb415d321680fd"
+  },
+  "coverage": {
+    "status": "complete",
+    "checkedAt": "2026-10-31T23:05:44.550Z",
+    "packageInstances": 1,
+    "matched": 1,
+    "noKnownMatch": 0,
+    "unknown": 0,
+    "findingsIncluded": 1,
+    "findingsOmitted": 0
+  },
+  "limitations": [
+    "This report is a point-in-time snapshot of the saved inventory and fresh OSV queries, not a live deployment assessment.",
+    "Dependency presence and advisory version matches do not prove runtime execution, attacker control, or actual exploitability.",
+    "No known advisory match is not a safety guarantee. Unknown, failed, paginated, or skipped checks are not clean findings.",
+    "Advisory IDs can be aliases of the same underlying issue; counts describe package instances, not distinct exploitable vulnerabilities.",
+    "Details are fetched for at most 40 unique advisory IDs; at most 100 matched package instances and 20 advisory IDs per finding are included. Descriptions, references, paths and source evidence are bounded.",
+    "Source-provided CVSS vectors are retained without inventing numeric scores or priorities. Withdrawn or mismatched records require manual review.",
+    "A verified candidate is an advisory-listed fixed release that exists in its ecosystem registry and returns no known OSV match at verification time. It is not a guarantee of safety, compatibility, or that every relevant fix was published.",
+    "At most three candidate releases per package/version are checked, for at most 20 unique pairs. If no candidate is verified, manual review is required. Major-version changes may require migration.",
+    "Transitive updates require changes to the owning dependency declaration or parent. No dependency graph or lockfile is changed automatically.",
+    "Only server-recorded scoped reachability results from this server process are included (latest result per instance, at most 100 instances per scan and 100 recent scans; not restored after restart). Their affected-export mappings are user-declared; NOT REACHABLE applies only within each declared coverage and is never a global safety claim.",
+    "No source code, submitted package scripts, or package installation is executed while preparing these reports. Testing and release-note review remain the maintainer's responsibility."
+  ],
+  "reportType": "security-findings",
+  "title": "Security Findings",
+  "findings": [
+    {
+      "id": "F-001",
+      "package": {
+        "id": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "name": "lodash",
+        "version": "4.17.20",
+        "installPath": "node_modules/lodash",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+        ],
+        "declaredConstraints": [
+          "4.17.20"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/lodash@4.17.20",
+        "limitations": []
+      },
+      "whatIsWrong": "OSV returned 5 advisory ID(s) for lodash@4.17.20 at this recorded dependency location.",
+      "whyItMatters": "The recorded dependency includes a version associated with published security advisories. Dependent packages or project roots may inherit this dependency impact. The advisory preconditions and application exposure must be evaluated separately.",
+      "advisories": [
+        {
+          "id": "GHSA-29mw-wpgm-hmr9",
+          "source": "https://api.osv.dev/v1/vulns/GHSA-29mw-wpgm-hmr9",
+          "verification": "verified",
+          "summary": "Regular Expression Denial of Service (ReDoS) in lodash",
+          "description": "All versions of package lodash prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the `toNumber`, `trim` and `trimEnd` functions. \n\nSteps to reproduce (provided by reporter Liyuan Chen):\n```js\nvar lo = require('lodash');\n\nfunction build_blank(n) {\n    var ret = \"1\"\n    for (var i = 0; i < n; i++) {\n        ret += \" \"\n    }\n    return ret + \"1\";\n}\nvar s = build_blank(50000) var time0 = Date.now();\nlo.trim(s) \nvar time_cost0 = Date.now() - time0;\nconsole.log(\"time_cost0: \" + time_cost0);\nvar time1 = Date.now();\nlo.toNumber(s) var time_cost1 = Date.now() - time1;\nconsole.log(\"time_cost1: \" + time_cost1);\nvar time2 = Date.now();\nlo.trimEnd(s);\nvar time_cost2 = Date.now() - time2;\nconsole.log(\"time_cost2: \" + time_cost2);\n```",
+          "aliases": [
+            "CVE-2020-28500"
+          ],
+          "severity": [
+            {
+              "type": "CVSS_V3",
+              "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+            }
+          ],
+          "fixedVersions": [
+            "4.17.21"
+          ],
+          "references": [
+            "https://osv.dev/vulnerability/GHSA-29mw-wpgm-hmr9",
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-28500",
+            "https://github.com/github/advisory-database/pull/6139",
+            "https://github.com/lodash/lodash/pull/5065",
+            "https://github.com/lodash/lodash/pull/5065/commits/02906b8191d3c100c193fe6f7b27d1c40f200bb7",
+            "https://github.com/lodash/lodash/commit/c4847ebe7d14540bb28a8b932a9ce1b9ecbfee1a",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://snyk.io/vuln/SNYK-JS-LODASH-1018905",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074893",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074895",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074892",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074894"
+          ],
+          "modified": "2025-09-29T21:12:31.102523Z",
+          "severityLabel": "MODERATE",
+          "affectedVersions": [
+            "SEMVER: [{\"introduced\":\"4.0.0\"},{\"fixed\":\"4.17.21\"}]"
+          ]
+        },
+        {
+          "id": "GHSA-35jh-r3h4-6jhm",
+          "source": "https://api.osv.dev/v1/vulns/GHSA-35jh-r3h4-6jhm",
+          "verification": "verified",
+          "summary": "Command Injection in lodash",
+          "description": "`lodash` versions prior to 4.17.21 are vulnerable to Command Injection via the template function.",
+          "aliases": [
+            "CVE-2021-23337"
+          ],
+          "severity": [
+            {
+              "type": "CVSS_V3",
+              "score": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
+            }
+          ],
+          "fixedVersions": [
+            "4.17.21"
+          ],
+          "references": [
+            "https://osv.dev/vulnerability/GHSA-35jh-r3h4-6jhm",
+            "https://nvd.nist.gov/vuln/detail/CVE-2021-23337",
+            "https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c",
+            "https://www.oracle.com/security-alerts/cpuoct2021.html",
+            "https://www.oracle.com/security-alerts/cpujul2022.html",
+            "https://www.oracle.com/security-alerts/cpujan2022.html",
+            "https://www.oracle.com//security-alerts/cpujul2021.html",
+            "https://snyk.io/vuln/SNYK-JS-LODASH-1040724",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-1074929",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWERGITHUBLODASH-1074931",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARSBOWER-1074928",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGWEBJARS-1074930",
+            "https://snyk.io/vuln/SNYK-JAVA-ORGFUJIONWEBJARS-1074932",
+            "https://security.netapp.com/advisory/ntap-20210312-0006",
+            "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/lodash-rails/CVE-2021-23337.yml"
+          ],
+          "modified": "2026-10-17T02:55:38.085813876Z",
+          "severityLabel": "HIGH",
+          "affectedVersions": [
+            "SEMVER: [{\"introduced\":\"0\"},{\"fixed\":\"4.17.21\"}]"
+          ]
+        },
+        {
+          "id": "GHSA-f23m-r3pf-42rh",
+          "source": "https://api.osv.dev/v1/vulns/GHSA-f23m-r3pf-42rh",
+          "verification": "verified",
+          "summary": "lodash vulnerable to Prototype Pollution via array path bypass in `_.unset` and `_.omit`",
+          "description": "### Impact\n\nLodash versions 4.17.23 and earlier are vulnerable to prototype pollution in the `_.unset` and `_.omit` functions. The fix for [CVE-2025-13465](https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg) only guards against string key members, so an attacker can bypass the check by passing array-wrapped path segments. This allows deletion of properties from built-in prototypes such as `Object.prototype`, `Number.prototype`, and `String.prototype`.\n\nThe issue permits deletion of prototype properties but does not allow overwriting their original behavior.\n\n### Patches\n\nThis issue is patched in 4.18.0.\n\n### Workarounds\n\nNone. Upgrade to the patched version.",
+          "aliases": [
+            "CVE-2026-2950"
+          ],
+          "severity": [
+            {
+              "type": "CVSS_V3",
+              "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+            }
+          ],
+          "fixedVersions": [
+            "4.18.0"
+          ],
+          "references": [
+            "https://osv.dev/vulnerability/GHSA-f23m-r3pf-42rh",
+            "https://github.com/lodash/lodash/security/advisories/GHSA-f23m-r3pf-42rh",
+            "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-2950",
+            "https://github.com/lodash/lodash"
+          ],
+          "modified": "2026-10-17T02:56:13.084362346Z",
+          "severityLabel": "MODERATE",
+          "affectedVersions": [
+            "SEMVER: [{\"introduced\":\"0\"},{\"fixed\":\"4.18.0\"}]"
+          ]
+        },
+        {
+          "id": "GHSA-r5fr-rjxr-66jc",
+          "source": "https://api.osv.dev/v1/vulns/GHSA-r5fr-rjxr-66jc",
+          "verification": "verified",
+          "summary": "lodash vulnerable to Code Injection via `_.template` imports key names",
+          "description": "### Impact\n\nThe fix for [CVE-2021-23337](https://github.com/advisories/GHSA-35jh-r3h4-6jhm) added validation for the `variable` option in `_.template` but did not apply the same validation to `options.imports` key names. Both paths flow into the same `Function()` constructor sink.\n\nWhen an application passes untrusted input as `options.imports` key names, an attacker can inject default-parameter expressions that execute arbitrary code at template compilation time.\n\nAdditionally, `_.template` uses `assignInWith` to merge imports, which enumerates inherited properties via `for..in`. If `Object.prototype` has been polluted by any other vector, the polluted keys are copied into the imports object and passed to `Function()`.\n\n### Patches\n\nUsers should upgrade to version 4.18.0.\n\nThe fix applies two changes:\n1. Validate `importsKeys` against the existing `reForbiddenIdentifierChars` regex (same check already used for the `variable` option)\n2. Replace `assignInWith` with `assignWith` when merging imports, so only own properties are enumerated\n\n### Workarounds\n\nDo not pass untrusted input as key names in `options.imports`. Only use developer-controlled, static key names.",
+          "aliases": [
+            "CVE-2026-4800"
+          ],
+          "severity": [
+            {
+              "type": "CVSS_V3",
+              "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+            }
+          ],
+          "fixedVersions": [
+            "4.18.0"
+          ],
+          "references": [
+            "https://osv.dev/vulnerability/GHSA-r5fr-rjxr-66jc",
+            "https://github.com/lodash/lodash/security/advisories/GHSA-r5fr-rjxr-66jc",
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-4800",
+            "https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c",
+            "https://cna.openjsf.org/security-advisories.html",
+            "https://github.com/advisories/GHSA-35jh-r3h4-6jhm",
+            "https://github.com/lodash/lodash"
+          ],
+          "modified": "2026-10-17T02:56:15.633068434Z",
+          "severityLabel": "HIGH",
+          "affectedVersions": [
+            "SEMVER: [{\"introduced\":\"4.0.0\"},{\"fixed\":\"4.18.0\"}]"
+          ]
+        },
+        {
+          "id": "GHSA-xxjr-mmjv-4gpg",
+          "source": "https://api.osv.dev/v1/vulns/GHSA-xxjr-mmjv-4gpg",
+          "verification": "verified",
+          "summary": "Lodash has Prototype Pollution Vulnerability in `_.unset` and `_.omit` functions",
+          "description": "### Impact\n\nLodash versions 4.0.0 through 4.17.22 are vulnerable to prototype pollution in the `_.unset` and `_.omit` functions. An attacker can pass crafted paths which cause Lodash to delete methods from global prototypes. \n\nThe issue permits deletion of properties but does not allow overwriting their original behavior.  \n\n### Patches\n\nThis issue is patched on 4.17.23.",
+          "aliases": [
+            "CVE-2025-13465"
+          ],
+          "severity": [
+            {
+              "type": "CVSS_V3",
+              "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L"
+            },
+            {
+              "type": "CVSS_V4",
+              "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:H/SI:H/SA:H/E:P"
+            }
+          ],
+          "fixedVersions": [
+            "4.17.23"
+          ],
+          "references": [
+            "https://osv.dev/vulnerability/GHSA-xxjr-mmjv-4gpg",
+            "https://github.com/lodash/lodash/security/advisories/GHSA-xxjr-mmjv-4gpg",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-13465",
+            "https://github.com/lodash/lodash/commit/edadd452146f7e4bad4ea684e955708931d84d81",
+            "https://cert-portal.siemens.com/productcert/html/ssa-253495.html",
+            "https://github.com/lodash/lodash"
+          ],
+          "modified": "2026-10-17T02:55:54.229635593Z",
+          "severityLabel": "MODERATE",
+          "affectedVersions": [
+            "SEMVER: [{\"introduced\":\"4.0.0\"},{\"fixed\":\"4.17.23\"}]"
+          ]
+        }
+      ],
+      "dependencyImpact": {
+        "parentCount": 1,
+        "parents": [
+          {
+            "id": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+            "name": "traceguard-judge-fixture",
+            "version": "1.0.0",
+            "installPath": ""
+          }
+        ],
+        "rootPaths": [
+          [
+            "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+            "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4"
+          ]
+        ],
+        "truncated": false
+      },
+      "reachability": {
+        "status": "REACHABLE",
+        "report": {
+          "status": "REACHABLE",
+          "reason": "A syntactic call path reaches the user-declared affected export of the selected locked package instance.",
+          "target": {
+            "packageNodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+            "exportName": "default"
+          },
+          "mapping": "user-declared export; not independently verified",
+          "coverage": {
+            "entrypoints": [
+              {
+                "file": "src/entry.js",
+                "symbol": "handler"
+              }
+            ],
+            "analyzedFiles": [
+              "src/entry.js"
+            ],
+            "sourceFilesAvailable": 1,
+            "skippedSources": [],
+            "functionsVisited": 1,
+            "callsExamined": 1,
+            "completeForDeclaredEntrypoints": true,
+            "boundary": "Captured application source → declared export of the selected locked npm package instance."
+          },
+          "evidence": [
+            {
+              "file": "src/entry.js",
+              "line": 2,
+              "column": 1,
+              "snippet": "export function handler() {",
+              "kind": "entry",
+              "from": "<declared entrypoint>",
+              "to": "src/entry.js#handler"
+            },
+            {
+              "file": "src/entry.js",
+              "line": 3,
+              "column": 10,
+              "snippet": "return lodash({});",
+              "kind": "target",
+              "from": "src/entry.js#handler",
+              "to": "lodash@4.17.20:default"
+            }
+          ],
+          "gaps": [],
+          "limitations": [
+            "Syntactic, context-insensitive ESM traversal of captured JS/JSX/TS/TSX/MJS/CJS source; no code is executed.",
+            "Entrypoints are user-declared. Module initialization and an optional named/default exported function are roots. Other externally invoked exports are outside coverage.",
+            "Target mapping is user-declared and not verified against an advisory. A target denotes an exported API boundary, not an internal library function.",
+            "External package initialization and internal code, node_modules, generated/missing source, native code, framework dispatch, callbacks, dynamic imports, CommonJS, reflection, and computed calls are not modeled.",
+            "Branches are conservatively traversed without feasibility analysis. REACHABLE means a syntactic call path, not proven runtime execution or exploitability.",
+            "NOT REACHABLE applies only to declared entrypoints, captured source, and the exported-boundary model. It is not evidence of application safety.",
+            "Source capture: 200 files, 256 KiB/file, 2 MiB total. Traversal: 1,000 units, 5,000 calls, 100,000 AST visits; evidence limited to 100 records."
+          ]
+        }
+      },
+      "exploitability": "NOT ASSESSED"
+    }
+  ],
+  "inventoryWarnings": [],
+  "packageRisk": {
+    "checkedAt": "2026-10-31T23:05:49.305Z",
+    "coverage": {
+      "total": 1,
+      "metadataChecked": 1,
+      "unavailable": 0,
+      "skipped": 0
+    },
+    "results": [
+      {
+        "nodeId": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "name": "lodash",
+        "version": "4.17.20",
+        "classification": "NO SIGNALS",
+        "metadataStatus": "available",
+        "signals": [],
+        "maliciousSources": [],
+        "integrity": {
+          "comparison": "NOT COMPARABLE",
+          "artifactVerification": "NOT PERFORMED",
+          "registry": "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==",
+          "shasum": "b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+        },
+        "provenance": {
+          "status": "NOT ADVERTISED",
+          "verification": "NOT PERFORMED",
+          "signatures": [
+            {
+              "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+              "sig": "MEUCIQDPF8qtGU3yxHj4Yw4h9hpt+DCVT9dlk9ApvKxVXPwv7AIgSLC2TkL6ONbFlhyV2ZcE4v52ANJMoA/HwKY+zKt9Kh4="
+            }
+          ]
+        },
+        "reviewSteps": [
+          "In a trusted development environment, use npm audit signatures to verify supported registry signatures and provenance. This report has not performed that verification."
+        ],
+        "source": "https://registry.npmjs.org/lodash/4.17.20",
+        "metadata": {
+          "description": "Lodash modular utilities.",
+          "license": "MIT",
+          "repository": "https://github.com/lodash/lodash.git",
+          "homepage": "https://lodash.com/",
+          "maintainers": [
+            "bnjmnt4n",
+            "jdalton",
+            "mathias"
+          ],
+          "lifecycleScripts": {}
+        }
+      }
+    ],
+    "limitations": [
+      "Heuristics are review signals, not proof of malicious intent. NO SIGNALS is not a safety guarantee. Metadata can be publisher-controlled.",
+      "Name similarity uses a fixed reference list v1 (react, react-dom, express, lodash, axios, typescript, webpack, vite, eslint, prettier, chalk, commander, mongoose, next, jquery, dotenv), one edit or adjacent transposition, minimum length five; scoped names are excluded. It does not cover all typosquatting or dependency confusion.",
+      "At most 100 unique exact package/version pairs and 1,000 instances are included, with a 15-second metadata deadline and 1 MiB response limit. Unavailable or omitted data is not clean.",
+      "Integrity compares recorded lock and registry digest strings only. Tarballs, installed bytes, signatures and provenance attestations are not downloaded or cryptographically verified. Matching metadata does not establish safety.",
+      "Provenance is registry-advertised evidence only. Missing provenance or signatures does not imply malware. Lifecycle scripts are common in legitimate packages and are never executed.",
+      "CONFIRMED MALICIOUS requires a fresh OSV version match and a verified, non-withdrawn MAL- advisory for the same npm package. This is an attributed source verdict, not an independent analysis; other advisory IDs and heuristics cannot confirm malware. Advisory detail coverage limits also apply."
+    ],
+    "sources": [
+      "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+      "https://docs.npmjs.com/viewing-package-provenance/",
+      "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+      "https://osv.dev/"
+    ]
+  }
+}

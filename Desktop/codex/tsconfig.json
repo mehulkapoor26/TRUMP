@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "ESNext", "moduleResolution": "Bundler", "jsx": "react-jsx",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"], "noEmit": true, "resolveJsonModule": true
+  },
+  "include": ["scripts", "tests", "benchmark/run.ts", "frontend/src", "backend/src", "shared/src"]
+}

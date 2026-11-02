@@ -1,0 +1,368 @@
+{
+  "id": "7d0a6d4c-04f9-4bd6-9ca4-b94c3367cf6b",
+  "status": "completed",
+  "createdAt": "2026-10-31T22:12:40.974Z",
+  "source": "https://github.com/pypa/sampleproject",
+  "files": [
+    {
+      "path": "sampleproject-HEAD/pyproject.toml",
+      "kind": "manifest",
+      "bytes": 6684,
+      "ecosystem": "PyPI"
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "ecosystem": "PyPI",
+        "name": "sampleproject",
+        "project": "sampleproject-HEAD/pyproject.toml",
+        "installPath": "",
+        "isProject": true,
+        "direct": false,
+        "transitive": false,
+        "advisoryEligible": true
+      },
+      {
+        "id": "urn:traceguard:component:a73420634ff77a2e9e8cc6181fd3895e87ad93d539458d81e8a6f4ed304ba136",
+        "ecosystem": "PyPI",
+        "name": "peppercorn",
+        "project": "sampleproject-HEAD/pyproject.toml",
+        "installPath": "declared/peppercorn",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "advisoryEligible": true
+      },
+      {
+        "id": "urn:traceguard:component:797b0cf659a677c722bd626c7339aa13d0d555f89edc2dcf7c2159409c826fe9",
+        "ecosystem": "PyPI",
+        "name": "check-manifest",
+        "project": "sampleproject-HEAD/pyproject.toml",
+        "installPath": "declared/check-manifest",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "advisoryEligible": true
+      },
+      {
+        "id": "urn:traceguard:component:d6a20910e26911e2c25dcf251e40505f46712116f2d6bba59517bf676e1ab2c5",
+        "ecosystem": "PyPI",
+        "name": "coverage",
+        "project": "sampleproject-HEAD/pyproject.toml",
+        "installPath": "declared/coverage",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "advisoryEligible": true
+      }
+    ],
+    "edges": [
+      {
+        "from": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "to": "urn:traceguard:component:a73420634ff77a2e9e8cc6181fd3895e87ad93d539458d81e8a6f4ed304ba136",
+        "name": "peppercorn",
+        "requested": "",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "to": "urn:traceguard:component:797b0cf659a677c722bd626c7339aa13d0d555f89edc2dcf7c2159409c826fe9",
+        "name": "check-manifest",
+        "requested": "",
+        "kind": "optional"
+      },
+      {
+        "from": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "to": "urn:traceguard:component:d6a20910e26911e2c25dcf251e40505f46712116f2d6bba59517bf676e1ab2c5",
+        "name": "coverage",
+        "requested": "",
+        "kind": "optional"
+      }
+    ],
+    "roots": [
+      "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db"
+    ],
+    "unresolved": [
+      {
+        "from": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "name": "peppercorn",
+        "requested": "",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "name": "check-manifest",
+        "requested": "",
+        "kind": "optional"
+      },
+      {
+        "from": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "name": "coverage",
+        "requested": "",
+        "kind": "optional"
+      }
+    ],
+    "warnings": [
+      "sampleproject-HEAD/pyproject.toml: optional groups are inventoried without selecting extras.",
+      "sampleproject-HEAD/pyproject.toml: unresolved or ambiguous peppercorn (); no version or relationship is guessed.",
+      "sampleproject-HEAD/pyproject.toml: unresolved or ambiguous check-manifest (); no version or relationship is guessed.",
+      "sampleproject-HEAD/pyproject.toml: unresolved or ambiguous coverage (); no version or relationship is guessed.",
+      "sampleproject-HEAD/pyproject.toml: no Poetry lock; exact pins are recorded specifications, not proof of installed versions. Transitive dependency metadata is incomplete."
+    ]
+  },
+  "sbom": {
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:7d0a6d4c-04f9-4bd6-9ca4-b94c3367cf6b",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-31T22:12:40.974Z",
+      "component": {
+        "type": "application",
+        "bom-ref": "urn:uuid:7d0a6d4c-04f9-4bd6-9ca4-b94c3367cf6b",
+        "name": "TRACEGUARD scanned projects"
+      },
+      "properties": [
+        {
+          "name": "traceguard:analysis",
+          "value": "Static npm/Python dependency metadata analysis; no packages installed or executed."
+        },
+        {
+          "name": "traceguard:unresolved-count",
+          "value": "3"
+        },
+        {
+          "name": "traceguard:warning",
+          "value": "sampleproject-HEAD/pyproject.toml: optional groups are inventoried without selecting extras."
+        },
+        {
+          "name": "traceguard:warning",
+          "value": "sampleproject-HEAD/pyproject.toml: unresolved or ambiguous peppercorn (); no version or relationship is guessed."
+        },
+        {
+          "name": "traceguard:warning",
+          "value": "sampleproject-HEAD/pyproject.toml: unresolved or ambiguous check-manifest (); no version or relationship is guessed."
+        },
+        {
+          "name": "traceguard:warning",
+          "value": "sampleproject-HEAD/pyproject.toml: unresolved or ambiguous coverage (); no version or relationship is guessed."
+        },
+        {
+          "name": "traceguard:warning",
+          "value": "sampleproject-HEAD/pyproject.toml: no Poetry lock; exact pins are recorded specifications, not proof of installed versions. Transitive dependency metadata is incomplete."
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "application",
+        "bom-ref": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "name": "sampleproject",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "sampleproject-HEAD/pyproject.toml"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": ""
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "PyPI"
+          },
+          {
+            "name": "traceguard:version-evidence",
+            "value": "unresolved"
+          },
+          {
+            "name": "traceguard:relationship-known",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:a73420634ff77a2e9e8cc6181fd3895e87ad93d539458d81e8a6f4ed304ba136",
+        "name": "peppercorn",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "sampleproject-HEAD/pyproject.toml"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "declared/peppercorn"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "PyPI"
+          },
+          {
+            "name": "traceguard:version-evidence",
+            "value": "unresolved"
+          },
+          {
+            "name": "traceguard:relationship-known",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:797b0cf659a677c722bd626c7339aa13d0d555f89edc2dcf7c2159409c826fe9",
+        "name": "check-manifest",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "sampleproject-HEAD/pyproject.toml"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "declared/check-manifest"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "PyPI"
+          },
+          {
+            "name": "traceguard:version-evidence",
+            "value": "unresolved"
+          },
+          {
+            "name": "traceguard:relationship-known",
+            "value": "true"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:d6a20910e26911e2c25dcf251e40505f46712116f2d6bba59517bf676e1ab2c5",
+        "name": "coverage",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "sampleproject-HEAD/pyproject.toml"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "declared/coverage"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "PyPI"
+          },
+          {
+            "name": "traceguard:version-evidence",
+            "value": "unresolved"
+          },
+          {
+            "name": "traceguard:relationship-known",
+            "value": "true"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "ref": "urn:uuid:7d0a6d4c-04f9-4bd6-9ca4-b94c3367cf6b",
+        "dependsOn": [
+          "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db"
+        ]
+      },
+      {
+        "ref": "urn:traceguard:component:7e7b195ce26df8be58eb8c5a981fe8eba093a5eea55d3006c01f5f4055ddc3db",
+        "dependsOn": [
+          "urn:traceguard:component:797b0cf659a677c722bd626c7339aa13d0d555f89edc2dcf7c2159409c826fe9",
+          "urn:traceguard:component:a73420634ff77a2e9e8cc6181fd3895e87ad93d539458d81e8a6f4ed304ba136",
+          "urn:traceguard:component:d6a20910e26911e2c25dcf251e40505f46712116f2d6bba59517bf676e1ab2c5"
+        ]
+      },
+      {
+        "ref": "urn:traceguard:component:a73420634ff77a2e9e8cc6181fd3895e87ad93d539458d81e8a6f4ed304ba136",
+        "dependsOn": []
+      },
+      {
+        "ref": "urn:traceguard:component:797b0cf659a677c722bd626c7339aa13d0d555f89edc2dcf7c2159409c826fe9",
+        "dependsOn": []
+      },
+      {
+        "ref": "urn:traceguard:component:d6a20910e26911e2c25dcf251e40505f46712116f2d6bba59517bf676e1ab2c5",
+        "dependsOn": []
+      }
+    ],
+    "compositions": [
+      {
+        "aggregate": "incomplete",
+        "assemblies": [
+          "urn:uuid:7d0a6d4c-04f9-4bd6-9ca4-b94c3367cf6b"
+        ]
+      }
+    ]
+  },
+  "ecosystems": [
+    "PyPI"
+  ],
+  "sourceFiles": [
+    {
+      "path": "sampleproject-HEAD/noxfile.py",
+      "bytes": 1463,
+      "lines": 54
+    },
+    {
+      "path": "sampleproject-HEAD/src/sample/__init__.py",
+      "bytes": 111,
+      "lines": 4
+    },
+    {
+      "path": "sampleproject-HEAD/src/sample/simple.py",
+      "bytes": 43,
+      "lines": 3
+    },
+    {
+      "path": "sampleproject-HEAD/tests/__init__.py",
+      "bytes": 99,
+      "lines": 3
+    },
+    {
+      "path": "sampleproject-HEAD/tests/test_simple.py",
+      "bytes": 417,
+      "lines": 18
+    }
+  ]
+}

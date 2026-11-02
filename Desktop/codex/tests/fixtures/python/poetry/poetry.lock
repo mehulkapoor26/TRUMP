@@ -1,0 +1,52 @@
+# Controlled metadata snapshot with real published versions and dependency ranges.
+# Not a lock generated for installation. Used only as scanner input; no packages run.
+[[package]]
+name = "PyYAML"
+version = "5.3.1"
+optional = false
+python-versions = ">=2.7"
+files = []
+
+[[package]]
+name = "requests"
+version = "2.31.0"
+optional = false
+python-versions = ">=3.7"
+files = []
+[package.dependencies]
+certifi = ">=2017.4.17"
+charset-normalizer = ">=2,<4"
+idna = ">=2.5,<4"
+urllib3 = ">=1.21.1,<3"
+
+[[package]]
+name = "certifi"
+version = "2024.7.4"
+optional = false
+python-versions = ">=3.6"
+files = []
+
+[[package]]
+name = "charset-normalizer"
+version = "3.3.2"
+optional = false
+python-versions = ">=3.7"
+files = []
+
+[[package]]
+name = "idna"
+version = "3.7"
+optional = false
+python-versions = ">=3.5"
+files = []
+
+[[package]]
+name = "urllib3"
+version = "2.2.2"
+optional = false
+python-versions = ">=3.8"
+files = []
+
+[metadata]
+lock-version = "2.0"
+python-versions = ">=3.9"

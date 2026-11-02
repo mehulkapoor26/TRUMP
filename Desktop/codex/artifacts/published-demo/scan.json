@@ -1,0 +1,705 @@
+{
+  "id": "dffca870-000e-4fba-9e71-a7e6167bf368",
+  "status": "completed",
+  "createdAt": "2026-10-31T23:36:16.053Z",
+  "source": "ZIP upload",
+  "files": [
+    {
+      "path": "package-lock.json",
+      "kind": "lockfile",
+      "bytes": 3188,
+      "sha256": "4fbdfb16d2b682fd3486d2442abbbe415ddf24885d179ced7e644ace6f754e5c",
+      "ecosystem": "npm"
+    },
+    {
+      "path": "package.json",
+      "kind": "manifest",
+      "bytes": 351,
+      "sha256": "391c2de4bdacd91dd036293de3b7479fae6dbda0ab468fb2d928b58cad24a80c",
+      "ecosystem": "npm"
+    }
+  ],
+  "graph": {
+    "nodes": [
+      {
+        "id": "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89",
+        "name": "is-even",
+        "version": "1.0.0",
+        "installPath": "node_modules/is-even",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "integrity": "sha512-LEhnkAdJqic4Dbqn58A0y52IXoHWlsueqQkKfMfdEnIYG8A1sm/GHidKkS6yvXlMoRrkM34csHnXQtOqcb+Jzg==",
+        "resolved": "https://registry.npmjs.org/is-even/-/is-even-1.0.0.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+        ],
+        "declaredConstraints": [
+          "1.0.0"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/is-even@1.0.0",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52",
+        "name": "kind-of",
+        "version": "3.2.2",
+        "installPath": "node_modules/kind-of",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": false,
+        "transitive": true,
+        "integrity": "sha512-NOW9QQXMoZGg/oqnVNoNTTIFEIid1627WCffUBJEdMxYApq7mNE7CpzucIPc+ZQg25Phej7IJSmX3hO+oblOtQ==",
+        "resolved": "https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d"
+        ],
+        "declaredConstraints": [
+          "^3.0.2"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/kind-of@3.2.2",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:76396b0995214089bf2b58dd03b9a8a648f1386e96583619f38bb8822aced6c1",
+        "name": "is-buffer",
+        "version": "1.1.6",
+        "installPath": "node_modules/is-buffer",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": false,
+        "transitive": true,
+        "integrity": "sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==",
+        "resolved": "https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52"
+        ],
+        "declaredConstraints": [
+          "^1.1.5"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/is-buffer@1.1.6",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:8cec2c0a911ef6a0a4211e07416af7bbbe9808138060339d463d93f10e00b2e9",
+        "name": "is-number",
+        "version": "7.0.0",
+        "installPath": "node_modules/is-number",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "integrity": "sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==",
+        "resolved": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+        ],
+        "declaredConstraints": [
+          "7.0.0"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/is-number@7.0.0",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "name": "lodash",
+        "version": "4.17.20",
+        "installPath": "node_modules/lodash",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "integrity": "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==",
+        "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+        ],
+        "declaredConstraints": [
+          "4.17.20"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/lodash@4.17.20",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d",
+        "name": "is-number",
+        "version": "3.0.0",
+        "installPath": "node_modules/is-odd/node_modules/is-number",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": false,
+        "transitive": true,
+        "integrity": "sha512-4cboCqIpliH+mAvFNegjZQ4kgKc3ZUhQVr3HvWbSh5q3WH2v82ct+T2Y1hdU5Gdtorx/cLifQjqCbL7bpznLTg==",
+        "resolved": "https://registry.npmjs.org/is-number/-/is-number-3.0.0.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0"
+        ],
+        "declaredConstraints": [
+          "^3.0.0"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/is-number@3.0.0",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:cbeff0b767fcc8148a21020df309d840d73aa24dceafc667ce44394a02d5e196",
+        "name": "minimist",
+        "version": "0.0.8",
+        "installPath": "node_modules/minimist",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": true,
+        "transitive": false,
+        "integrity": "sha512-miQKw5Hv4NS1Psg2517mV4e4dYNaO3++hjAvLOAzKqZ61rH8NS1SK+vbfBWZ5PY/Me/bEWhUwqMghEW5Fb9T7Q==",
+        "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+        ],
+        "declaredConstraints": [
+          "0.0.8"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/minimist@0.0.8",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0",
+        "name": "is-odd",
+        "version": "0.1.2",
+        "installPath": "node_modules/is-odd",
+        "project": "package-lock.json",
+        "isProject": false,
+        "direct": false,
+        "transitive": true,
+        "integrity": "sha512-Ri7C2K7o5IrUU9UEI8losXJCCD/UtsaIrkR5sxIcFg4xQ9cRJXlWA5DQvTE0yDc0krvSNLsRGXN11UPS6KyfBw==",
+        "resolved": "https://registry.npmjs.org/is-odd/-/is-odd-0.1.2.tgz",
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [
+          "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89"
+        ],
+        "declaredConstraints": [
+          "^0.1.2"
+        ],
+        "resolutionConfidence": "recorded-lock",
+        "purl": "pkg:npm/is-odd@0.1.2",
+        "limitations": []
+      },
+      {
+        "id": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "name": "traceguard-published-vulnerability-lab",
+        "version": "1.0.0",
+        "installPath": "",
+        "project": "package-lock.json",
+        "isProject": true,
+        "direct": false,
+        "transitive": false,
+        "ecosystem": "npm",
+        "sourceFile": "package-lock.json",
+        "projectPath": ".",
+        "parentIds": [],
+        "declaredConstraints": [],
+        "resolutionConfidence": "recorded-lock",
+        "limitations": []
+      }
+    ],
+    "edges": [
+      {
+        "from": "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89",
+        "to": "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0",
+        "name": "is-odd",
+        "requested": "^0.1.2",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52",
+        "to": "urn:traceguard:component:76396b0995214089bf2b58dd03b9a8a648f1386e96583619f38bb8822aced6c1",
+        "name": "is-buffer",
+        "requested": "^1.1.5",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d",
+        "to": "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52",
+        "name": "kind-of",
+        "requested": "^3.0.2",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0",
+        "to": "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d",
+        "name": "is-number",
+        "requested": "^3.0.0",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "to": "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89",
+        "name": "is-even",
+        "requested": "1.0.0",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "to": "urn:traceguard:component:8cec2c0a911ef6a0a4211e07416af7bbbe9808138060339d463d93f10e00b2e9",
+        "name": "is-number",
+        "requested": "7.0.0",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "to": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "name": "lodash",
+        "requested": "4.17.20",
+        "kind": "runtime"
+      },
+      {
+        "from": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "to": "urn:traceguard:component:cbeff0b767fcc8148a21020df309d840d73aa24dceafc667ce44394a02d5e196",
+        "name": "minimist",
+        "requested": "0.0.8",
+        "kind": "runtime"
+      }
+    ],
+    "roots": [
+      "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+    ],
+    "unresolved": [],
+    "warnings": []
+  },
+  "sbom": {
+    "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:dffca870-000e-4fba-9e71-a7e6167bf368",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2026-10-31T23:36:16.053Z",
+      "component": {
+        "type": "application",
+        "bom-ref": "urn:uuid:dffca870-000e-4fba-9e71-a7e6167bf368",
+        "name": "TRACEGUARD scanned projects"
+      },
+      "properties": [
+        {
+          "name": "traceguard:analysis",
+          "value": "Static npm/Python dependency metadata analysis; no packages installed or executed."
+        },
+        {
+          "name": "traceguard:unresolved-count",
+          "value": "0"
+        }
+      ]
+    },
+    "components": [
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89",
+        "name": "is-even",
+        "version": "1.0.0",
+        "purl": "pkg:npm/is-even@1.0.0",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/is-even"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52",
+        "name": "kind-of",
+        "version": "3.2.2",
+        "purl": "pkg:npm/kind-of@3.2.2",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/kind-of"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:76396b0995214089bf2b58dd03b9a8a648f1386e96583619f38bb8822aced6c1",
+        "name": "is-buffer",
+        "version": "1.1.6",
+        "purl": "pkg:npm/is-buffer@1.1.6",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/is-buffer"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:8cec2c0a911ef6a0a4211e07416af7bbbe9808138060339d463d93f10e00b2e9",
+        "name": "is-number",
+        "version": "7.0.0",
+        "purl": "pkg:npm/is-number@7.0.0",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/is-number"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "name": "lodash",
+        "version": "4.17.20",
+        "purl": "pkg:npm/lodash@4.17.20",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/lodash"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d",
+        "name": "is-number",
+        "version": "3.0.0",
+        "purl": "pkg:npm/is-number@3.0.0",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/is-odd/node_modules/is-number"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:cbeff0b767fcc8148a21020df309d840d73aa24dceafc667ce44394a02d5e196",
+        "name": "minimist",
+        "version": "0.0.8",
+        "purl": "pkg:npm/minimist@0.0.8",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/minimist"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "library",
+        "bom-ref": "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0",
+        "name": "is-odd",
+        "version": "0.1.2",
+        "purl": "pkg:npm/is-odd@0.1.2",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": "node_modules/is-odd"
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "true"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      },
+      {
+        "type": "application",
+        "bom-ref": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "name": "traceguard-published-vulnerability-lab",
+        "version": "1.0.0",
+        "properties": [
+          {
+            "name": "traceguard:lockfile-or-manifest",
+            "value": "package-lock.json"
+          },
+          {
+            "name": "traceguard:install-path",
+            "value": ""
+          },
+          {
+            "name": "traceguard:direct",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:transitive",
+            "value": "false"
+          },
+          {
+            "name": "traceguard:ecosystem",
+            "value": "npm"
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "ref": "urn:uuid:dffca870-000e-4fba-9e71-a7e6167bf368",
+        "dependsOn": [
+          "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24"
+        ]
+      },
+      {
+        "ref": "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89",
+        "dependsOn": [
+          "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0"
+        ]
+      },
+      {
+        "ref": "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52",
+        "dependsOn": [
+          "urn:traceguard:component:76396b0995214089bf2b58dd03b9a8a648f1386e96583619f38bb8822aced6c1"
+        ]
+      },
+      {
+        "ref": "urn:traceguard:component:76396b0995214089bf2b58dd03b9a8a648f1386e96583619f38bb8822aced6c1",
+        "dependsOn": []
+      },
+      {
+        "ref": "urn:traceguard:component:8cec2c0a911ef6a0a4211e07416af7bbbe9808138060339d463d93f10e00b2e9",
+        "dependsOn": []
+      },
+      {
+        "ref": "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+        "dependsOn": []
+      },
+      {
+        "ref": "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d",
+        "dependsOn": [
+          "urn:traceguard:component:643cd63f0c02afa509c11e8984e066a3c84769a5f6b21c694c85826f6cb14b52"
+        ]
+      },
+      {
+        "ref": "urn:traceguard:component:cbeff0b767fcc8148a21020df309d840d73aa24dceafc667ce44394a02d5e196",
+        "dependsOn": []
+      },
+      {
+        "ref": "urn:traceguard:component:d179ea038a52817568f89455d9d487570809ba22986963ec6f6c9039b33a58e0",
+        "dependsOn": [
+          "urn:traceguard:component:c3d239051dada03b3f31da6954723755f3af5cb08f6550c2e0016d057c57127d"
+        ]
+      },
+      {
+        "ref": "urn:traceguard:component:f7dd3cc7a677a4603874ca2973e47a431ce3bd998c3e7e92237762327e666b24",
+        "dependsOn": [
+          "urn:traceguard:component:5b7799002fa8f5baca9f27c7f3068577cfa48d9f8a1b5f554a6368ee0e1baf89",
+          "urn:traceguard:component:8cec2c0a911ef6a0a4211e07416af7bbbe9808138060339d463d93f10e00b2e9",
+          "urn:traceguard:component:9c005dbc4c51bb6a564f133bc369c7e231f619e11fc786d41338c271f12c60e4",
+          "urn:traceguard:component:cbeff0b767fcc8148a21020df309d840d73aa24dceafc667ce44394a02d5e196"
+        ]
+      }
+    ],
+    "compositions": [
+      {
+        "aggregate": "complete",
+        "assemblies": [
+          "urn:uuid:dffca870-000e-4fba-9e71-a7e6167bf368"
+        ]
+      }
+    ]
+  },
+  "ecosystems": [
+    "npm"
+  ],
+  "sourceFiles": [
+    {
+      "path": "src/entry.js",
+      "bytes": 189,
+      "lines": 7
+    }
+  ],
+  "counts": {
+    "projectModules": 1,
+    "uniquePackages": 7,
+    "uniquePackageVersions": 8,
+    "dependencyInstances": 8,
+    "directDependencies": 4,
+    "transitiveOnlyDependencies": 4,
+    "unknownRelationships": 0,
+    "dependencyEdges": 8,
+    "unresolvedDeclarations": 0
+  },
+  "analysisStatus": "analyzed",
+  "evidence": {
+    "scannerVersion": "0.2.0",
+    "archiveSha256": "cc54816c50928cb5739509bfab8a5b72d36a5d53210154431af03c742efd4b65",
+    "revisionStatus": "unknown",
+    "inventorySha256": "147361aa36811031dfadd65a336aa4d86b4ec3144fe6219fc8577d403100ee6f",
+    "languages": [
+      "JavaScript"
+    ],
+    "projects": [
+      {
+        "path": ".",
+        "manager": "npm",
+        "status": "analyzed",
+        "reasons": []
+      },
+      {
+        "path": ".",
+        "manager": "npm",
+        "status": "analyzed",
+        "reasons": []
+      }
+    ],
+    "metadataHashes": [
+      {
+        "path": "package-lock.json",
+        "sha256": "4fbdfb16d2b682fd3486d2442abbbe415ddf24885d179ced7e644ace6f754e5c"
+      },
+      {
+        "path": "package.json",
+        "sha256": "391c2de4bdacd91dd036293de3b7479fae6dbda0ab468fb2d928b58cad24a80c"
+      }
+    ]
+  }
+}

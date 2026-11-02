@@ -1,0 +1,5 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": { "module": "NodeNext", "moduleResolution": "NodeNext", "types": ["node", "vscode"] },
+  "include": ["src/**/*.ts", "../backend/src/dependencies.ts", "../backend/src/vulnerabilities.ts", "../shared/src/index.ts"]
+}

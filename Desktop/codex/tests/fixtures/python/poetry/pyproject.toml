@@ -1,0 +1,9 @@
+[project]
+name = "traceguard-python-lab"
+version = "1.0.0"
+requires-python = ">=3.9"
+dependencies = ["PyYAML>=5.3,<6", "requests>=2.31,<3"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "never_execute_this_backend"

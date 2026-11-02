@@ -1,0 +1,74 @@
+{
+  "snapshotId": "osv-querybatch-2026-11-01",
+  "source": "https://api.osv.dev/v1/querybatch",
+  "responseFile": "osv-querybatch-2026-11-01.json",
+  "responseSha256": "a4cefaeecc21523492b10ccd0e64b529e6c67dd39322a88b6bb64f1ca1842c88",
+  "additionalResponseHashes": {
+    "osv-is-number-7.0.0-2026-11-01.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "osv-minimist-0.0.8-2026-11-01.json": "f61b1e0e622c29084a3f98d45a21515b742d11591ad0cdc426fa45da24562d6c",
+    "osv-minimist-1.2.8-2026-11-01.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  "queries": [
+    {
+      "ecosystem": "npm",
+      "name": "lodash",
+      "version": "4.17.19",
+      "responseIndex": 0
+    },
+    {
+      "ecosystem": "npm",
+      "name": "lodash",
+      "version": "4.17.23",
+      "responseIndex": 1
+    },
+    {
+      "ecosystem": "PyPI",
+      "name": "pyyaml",
+      "version": "5.3.1",
+      "responseIndex": 2
+    },
+    {
+      "ecosystem": "PyPI",
+      "name": "pyyaml",
+      "version": "6.0.2",
+      "responseIndex": 3
+    },
+    {
+      "ecosystem": "Maven",
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.14.1",
+      "responseIndex": 4
+    },
+    {
+      "ecosystem": "Maven",
+      "name": "org.apache.logging.log4j:log4j-core",
+      "version": "2.17.2",
+      "responseIndex": 5
+    },
+    {
+      "ecosystem": "npm",
+      "name": "is-number",
+      "version": "7.0.0",
+      "responseFile": "osv-is-number-7.0.0-2026-11-01.json"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "minimist",
+      "version": "0.0.8",
+      "responseFile": "osv-minimist-0.0.8-2026-11-01.json"
+    },
+    {
+      "ecosystem": "npm",
+      "name": "minimist",
+      "version": "1.2.8",
+      "responseFile": "osv-minimist-1.2.8-2026-11-01.json"
+    }
+  ],
+  "limitations": [
+    "This freezes the OSV API responses retrieved on the capture date; it does not reconstruct the OSV database as it existed when each advisory was first published.",
+    "A zero-result response means no advisory was returned by OSV for that exact query at capture time, not proof of absence of vulnerabilities.",
+    "Saved response bytes and query mappings are the reproducibility source; live OSV results may change."
+  ],
+  "capturedDate": "2026-11-01",
+  "capturedTimezone": "Asia/Kolkata"
+}

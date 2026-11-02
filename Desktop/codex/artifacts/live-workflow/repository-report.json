@@ -1,0 +1,258 @@
+{
+  "id": "723c57b2-39be-4562-9264-c05130e534a8",
+  "scanId": "67eb6b3d-5a0e-406a-aefd-90d8c596eed8",
+  "generatedAt": "2026-10-31T23:05:44.536Z",
+  "securityFindings": {
+    "schemaVersion": "1.0",
+    "bundleId": "723c57b2-39be-4562-9264-c05130e534a8",
+    "generatedAt": "2026-10-31T23:05:44.536Z",
+    "advisorySnapshotId": "99016dace2b266fc8ae815de763ed76bdd5adbd9cebcfa11dea06bd6929a1862",
+    "inventoryCounts": {
+      "projectModules": 1,
+      "uniquePackages": 0,
+      "uniquePackageVersions": 0,
+      "dependencyInstances": 0,
+      "directDependencies": 0,
+      "transitiveOnlyDependencies": 0,
+      "unknownRelationships": 0,
+      "dependencyEdges": 0,
+      "unresolvedDeclarations": 14
+    },
+    "scanEvidence": {
+      "scannerVersion": "0.2.0",
+      "archiveSha256": "716e0c2c94331493eae96d829fa811675a522f2e29d918c63da8b4e0e875a70b",
+      "repositoryUrl": "https://github.com/expressjs/serve-static",
+      "commitSha": "6e3606f2892df213e8fa738b51a36ba711e86ce8",
+      "revisionStatus": "pinned",
+      "inventorySha256": "6e6ad2dcc791d0c7e3d269fbcc02011660be1547e0893eb8f49e63096af445d3",
+      "languages": [
+        "JavaScript"
+      ],
+      "projects": [
+        {
+          "path": "serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8",
+          "manager": "npm",
+          "status": "unknown",
+          "reasons": [
+            "No lockfile for serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json; dependency ranges are not resolved versions.",
+            "Unresolved dev dependency eslint (7.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-config-standard (14.1.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-import (2.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-markdown (2.2.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-node (11.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-promise (5.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-standard (4.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency mocha (^10.7.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency nyc (^17.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency supertest (^6.3.4) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency encodeurl (^2.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency escape-html (^1.0.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency parseurl (^1.3.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency send (^1.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>."
+          ]
+        }
+      ],
+      "metadataHashes": [
+        {
+          "path": "serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json",
+          "sha256": "4f2884fa761dee155f31cb960d792c2900dbaa6aecbe6ebcc3bcfd7e754706b8"
+        }
+      ]
+    },
+    "scan": {
+      "id": "67eb6b3d-5a0e-406a-aefd-90d8c596eed8",
+      "source": "https://github.com/expressjs/serve-static",
+      "createdAt": "2026-10-31T23:05:44.522Z",
+      "inventorySha256": "6e6ad2dcc791d0c7e3d269fbcc02011660be1547e0893eb8f49e63096af445d3"
+    },
+    "coverage": {
+      "status": "unavailable",
+      "checkedAt": "2026-10-31T23:05:44.535Z",
+      "packageInstances": 0,
+      "matched": 0,
+      "noKnownMatch": 0,
+      "unknown": 0,
+      "findingsIncluded": 0,
+      "findingsOmitted": 0
+    },
+    "limitations": [
+      "This report is a point-in-time snapshot of the saved inventory and fresh OSV queries, not a live deployment assessment.",
+      "Dependency presence and advisory version matches do not prove runtime execution, attacker control, or actual exploitability.",
+      "No known advisory match is not a safety guarantee. Unknown, failed, paginated, or skipped checks are not clean findings.",
+      "Advisory IDs can be aliases of the same underlying issue; counts describe package instances, not distinct exploitable vulnerabilities.",
+      "Details are fetched for at most 40 unique advisory IDs; at most 100 matched package instances and 20 advisory IDs per finding are included. Descriptions, references, paths and source evidence are bounded.",
+      "Source-provided CVSS vectors are retained without inventing numeric scores or priorities. Withdrawn or mismatched records require manual review.",
+      "A verified candidate is an advisory-listed fixed release that exists in its ecosystem registry and returns no known OSV match at verification time. It is not a guarantee of safety, compatibility, or that every relevant fix was published.",
+      "At most three candidate releases per package/version are checked, for at most 20 unique pairs. If no candidate is verified, manual review is required. Major-version changes may require migration.",
+      "Transitive updates require changes to the owning dependency declaration or parent. No dependency graph or lockfile is changed automatically.",
+      "Only server-recorded scoped reachability results from this server process are included (latest result per instance, at most 100 instances per scan and 100 recent scans; not restored after restart). Their affected-export mappings are user-declared; NOT REACHABLE applies only within each declared coverage and is never a global safety claim.",
+      "No source code, submitted package scripts, or package installation is executed while preparing these reports. Testing and release-note review remain the maintainer's responsibility.",
+      "Dependency inventory is incomplete or has warnings; advisory coverage only applies to recorded resolved instances.",
+      "No resolved library inventory is available; advisory coverage cannot be established."
+    ],
+    "reportType": "security-findings",
+    "title": "Security Findings",
+    "findings": [],
+    "inventoryWarnings": [
+      "No lockfile for serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json; dependency ranges are not resolved versions.",
+      "Unresolved dev dependency eslint (7.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-config-standard (14.1.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-import (2.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-markdown (2.2.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-node (11.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-promise (5.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency eslint-plugin-standard (4.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency mocha (^10.7.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency nyc (^17.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved dev dependency supertest (^6.3.4) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency encodeurl (^2.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency escape-html (^1.0.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency parseurl (^1.3.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+      "Unresolved runtime dependency send (^1.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>."
+    ],
+    "packageRisk": {
+      "checkedAt": "2026-10-31T23:05:44.536Z",
+      "coverage": {
+        "total": 0,
+        "metadataChecked": 0,
+        "unavailable": 0,
+        "skipped": 0
+      },
+      "results": [],
+      "limitations": [
+        "Heuristics are review signals, not proof of malicious intent. NO SIGNALS is not a safety guarantee. Metadata can be publisher-controlled.",
+        "Name similarity uses a fixed reference list v1 (react, react-dom, express, lodash, axios, typescript, webpack, vite, eslint, prettier, chalk, commander, mongoose, next, jquery, dotenv), one edit or adjacent transposition, minimum length five; scoped names are excluded. It does not cover all typosquatting or dependency confusion.",
+        "At most 100 unique exact package/version pairs and 1,000 instances are included, with a 15-second metadata deadline and 1 MiB response limit. Unavailable or omitted data is not clean.",
+        "Integrity compares recorded lock and registry digest strings only. Tarballs, installed bytes, signatures and provenance attestations are not downloaded or cryptographically verified. Matching metadata does not establish safety.",
+        "Provenance is registry-advertised evidence only. Missing provenance or signatures does not imply malware. Lifecycle scripts are common in legitimate packages and are never executed.",
+        "CONFIRMED MALICIOUS requires a fresh OSV version match and a verified, non-withdrawn MAL- advisory for the same npm package. This is an attributed source verdict, not an independent analysis; other advisory IDs and heuristics cannot confirm malware. Advisory detail coverage limits also apply."
+      ],
+      "sources": [
+        "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+        "https://docs.npmjs.com/viewing-package-provenance/",
+        "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+        "https://osv.dev/"
+      ]
+    }
+  },
+  "remediationPlan": {
+    "schemaVersion": "1.0",
+    "bundleId": "723c57b2-39be-4562-9264-c05130e534a8",
+    "generatedAt": "2026-10-31T23:05:44.536Z",
+    "advisorySnapshotId": "99016dace2b266fc8ae815de763ed76bdd5adbd9cebcfa11dea06bd6929a1862",
+    "inventoryCounts": {
+      "projectModules": 1,
+      "uniquePackages": 0,
+      "uniquePackageVersions": 0,
+      "dependencyInstances": 0,
+      "directDependencies": 0,
+      "transitiveOnlyDependencies": 0,
+      "unknownRelationships": 0,
+      "dependencyEdges": 0,
+      "unresolvedDeclarations": 14
+    },
+    "scanEvidence": {
+      "scannerVersion": "0.2.0",
+      "archiveSha256": "716e0c2c94331493eae96d829fa811675a522f2e29d918c63da8b4e0e875a70b",
+      "repositoryUrl": "https://github.com/expressjs/serve-static",
+      "commitSha": "6e3606f2892df213e8fa738b51a36ba711e86ce8",
+      "revisionStatus": "pinned",
+      "inventorySha256": "6e6ad2dcc791d0c7e3d269fbcc02011660be1547e0893eb8f49e63096af445d3",
+      "languages": [
+        "JavaScript"
+      ],
+      "projects": [
+        {
+          "path": "serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8",
+          "manager": "npm",
+          "status": "unknown",
+          "reasons": [
+            "No lockfile for serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json; dependency ranges are not resolved versions.",
+            "Unresolved dev dependency eslint (7.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-config-standard (14.1.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-import (2.32.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-markdown (2.2.1) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-node (11.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-promise (5.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency eslint-plugin-standard (4.1.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency mocha (^10.7.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency nyc (^17.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved dev dependency supertest (^6.3.4) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency encodeurl (^2.0.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency escape-html (^1.0.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency parseurl (^1.3.3) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>.",
+            "Unresolved runtime dependency send (^1.2.0) from serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json:<root>."
+          ]
+        }
+      ],
+      "metadataHashes": [
+        {
+          "path": "serve-static-6e3606f2892df213e8fa738b51a36ba711e86ce8/package.json",
+          "sha256": "4f2884fa761dee155f31cb960d792c2900dbaa6aecbe6ebcc3bcfd7e754706b8"
+        }
+      ]
+    },
+    "scan": {
+      "id": "67eb6b3d-5a0e-406a-aefd-90d8c596eed8",
+      "source": "https://github.com/expressjs/serve-static",
+      "createdAt": "2026-10-31T23:05:44.522Z",
+      "inventorySha256": "6e6ad2dcc791d0c7e3d269fbcc02011660be1547e0893eb8f49e63096af445d3"
+    },
+    "coverage": {
+      "status": "unavailable",
+      "checkedAt": "2026-10-31T23:05:44.535Z",
+      "packageInstances": 0,
+      "matched": 0,
+      "noKnownMatch": 0,
+      "unknown": 0,
+      "findingsIncluded": 0,
+      "findingsOmitted": 0
+    },
+    "limitations": [
+      "This report is a point-in-time snapshot of the saved inventory and fresh OSV queries, not a live deployment assessment.",
+      "Dependency presence and advisory version matches do not prove runtime execution, attacker control, or actual exploitability.",
+      "No known advisory match is not a safety guarantee. Unknown, failed, paginated, or skipped checks are not clean findings.",
+      "Advisory IDs can be aliases of the same underlying issue; counts describe package instances, not distinct exploitable vulnerabilities.",
+      "Details are fetched for at most 40 unique advisory IDs; at most 100 matched package instances and 20 advisory IDs per finding are included. Descriptions, references, paths and source evidence are bounded.",
+      "Source-provided CVSS vectors are retained without inventing numeric scores or priorities. Withdrawn or mismatched records require manual review.",
+      "A verified candidate is an advisory-listed fixed release that exists in its ecosystem registry and returns no known OSV match at verification time. It is not a guarantee of safety, compatibility, or that every relevant fix was published.",
+      "At most three candidate releases per package/version are checked, for at most 20 unique pairs. If no candidate is verified, manual review is required. Major-version changes may require migration.",
+      "Transitive updates require changes to the owning dependency declaration or parent. No dependency graph or lockfile is changed automatically.",
+      "Only server-recorded scoped reachability results from this server process are included (latest result per instance, at most 100 instances per scan and 100 recent scans; not restored after restart). Their affected-export mappings are user-declared; NOT REACHABLE applies only within each declared coverage and is never a global safety claim.",
+      "No source code, submitted package scripts, or package installation is executed while preparing these reports. Testing and release-note review remain the maintainer's responsibility.",
+      "Dependency inventory is incomplete or has warnings; advisory coverage only applies to recorded resolved instances.",
+      "No resolved library inventory is available; advisory coverage cannot be established."
+    ],
+    "reportType": "remediation-plan",
+    "title": "Remediation Plan",
+    "actions": [],
+    "packageRisk": {
+      "checkedAt": "2026-10-31T23:05:44.536Z",
+      "coverage": {
+        "total": 0,
+        "metadataChecked": 0,
+        "unavailable": 0,
+        "skipped": 0
+      },
+      "results": [],
+      "limitations": [
+        "Heuristics are review signals, not proof of malicious intent. NO SIGNALS is not a safety guarantee. Metadata can be publisher-controlled.",
+        "Name similarity uses a fixed reference list v1 (react, react-dom, express, lodash, axios, typescript, webpack, vite, eslint, prettier, chalk, commander, mongoose, next, jquery, dotenv), one edit or adjacent transposition, minimum length five; scoped names are excluded. It does not cover all typosquatting or dependency confusion.",
+        "At most 100 unique exact package/version pairs and 1,000 instances are included, with a 15-second metadata deadline and 1 MiB response limit. Unavailable or omitted data is not clean.",
+        "Integrity compares recorded lock and registry digest strings only. Tarballs, installed bytes, signatures and provenance attestations are not downloaded or cryptographically verified. Matching metadata does not establish safety.",
+        "Provenance is registry-advertised evidence only. Missing provenance or signatures does not imply malware. Lifecycle scripts are common in legitimate packages and are never executed.",
+        "CONFIRMED MALICIOUS requires a fresh OSV version match and a verified, non-withdrawn MAL- advisory for the same npm package. This is an attributed source verdict, not an independent analysis; other advisory IDs and heuristics cannot confirm malware. Advisory detail coverage limits also apply."
+      ],
+      "sources": [
+        "https://github.com/npm/registry/blob/main/docs/responses/package-metadata.md",
+        "https://docs.npmjs.com/viewing-package-provenance/",
+        "https://docs.npmjs.com/cli/v11/commands/npm-audit/",
+        "https://osv.dev/"
+      ]
+    },
+    "coverageActions": [
+      "Resolve manifest/lockfile inventory warnings and repeat the scan before treating coverage as complete.",
+      "Validate changes in a trusted development environment. TRACEGUARD does not execute fixes or submitted source code."
+    ]
+  }
+}

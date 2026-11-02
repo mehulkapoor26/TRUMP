@@ -1,0 +1,9 @@
+{
+  "verifiedAt": "2026-10-31T22:12:19.869Z",
+  "backend": "compiled JavaScript",
+  "input": "controlled Python Poetry snapshot",
+  "packages": 6,
+  "fixCandidate": "5.4",
+  "reachability": "UNKNOWN",
+  "externalEvidence": "controlled responses for this compiled-runtime check"
+}

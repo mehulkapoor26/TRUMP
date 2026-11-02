@@ -1,0 +1,19 @@
+{
+  "mode": "LIVE GitHub/OSV/npm; results change over time",
+  "verifiedAt": "2026-10-31T23:05:49.688Z",
+  "repository": "https://github.com/expressjs/serve-static",
+  "repositoryScanId": "67eb6b3d-5a0e-406a-aefd-90d8c596eed8",
+  "beforeScanId": "79573486-0a6c-48e6-8f41-1295a790db58",
+  "advisoryMatches": 1,
+  "coverage": "complete",
+  "incomplete": [],
+  "checks": [
+    "repository ingestion to saved report",
+    "ZIP ingestion",
+    "OSV matches",
+    "isolated scoped reachability",
+    "persisted reports",
+    "two JSON and two parseable PDF downloads",
+    "CycloneDX SBOM"
+  ]
+}

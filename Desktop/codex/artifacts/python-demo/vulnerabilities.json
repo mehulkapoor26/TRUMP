@@ -1,0 +1,1567 @@
+{
+  "source": "OSV",
+  "checkedAt": "2026-10-31T22:04:53.140Z",
+  "status": "partial",
+  "checks": [
+    {
+      "nodeId": "urn:traceguard:component:746a1ad179ea6d1b0ee60b106b8ceaef6600efd2ed95fac3219e9c95452efc00",
+      "status": "unknown",
+      "complete": false,
+      "advisoryIds": []
+    },
+    {
+      "nodeId": "urn:traceguard:component:bb86b3d2838012e8185ec413ac06bdb417c7389e0fac7b644cbbafaab6e60255",
+      "status": "matched",
+      "complete": true,
+      "advisoryIds": [
+        "GHSA-8q59-q68h-6hv4",
+        "PYSEC-2021-142"
+      ]
+    },
+    {
+      "nodeId": "urn:traceguard:component:9640b0a9eb8bf7919af53e7008871f01055b43513c2cb87cc7af84b6459b2d73",
+      "status": "matched",
+      "complete": true,
+      "advisoryIds": [
+        "GHSA-9hjg-9r4m-mvj7",
+        "GHSA-9wx4-h78v-vm56",
+        "GHSA-gc5v-m9x4-r6x2",
+        "PYSEC-2026-1872",
+        "PYSEC-2026-1873",
+        "PYSEC-2026-2275"
+      ]
+    },
+    {
+      "nodeId": "urn:traceguard:component:ba9445ef23336812394d0e2b9066bdaea2871f9476e9010d489d3d37f103f597",
+      "status": "matched",
+      "complete": true,
+      "advisoryIds": [
+        "GHSA-6q48-6c7w-9gw2",
+        "PYSEC-2026-4320"
+      ]
+    },
+    {
+      "nodeId": "urn:traceguard:component:b5b7163d8af9c7df1c24eaa5f4e6bde1b389dcbe787ca5c19c29ae2fdf4268c6",
+      "status": "no-known",
+      "complete": true,
+      "advisoryIds": []
+    },
+    {
+      "nodeId": "urn:traceguard:component:dadae6aa4447dc7e2f2119d160e1cf52b441bbc11d8922de0b5c6dccda99feb0",
+      "status": "matched",
+      "complete": true,
+      "advisoryIds": [
+        "GHSA-65pc-fj4g-8rjx",
+        "PYSEC-2026-215"
+      ]
+    },
+    {
+      "nodeId": "urn:traceguard:component:79493d81990b4c073997e723ca5c37c9445b668235b217160ee150c640fe4254",
+      "status": "matched",
+      "complete": true,
+      "advisoryIds": [
+        "GHSA-2xpw-w6gg-jr37",
+        "GHSA-38jv-5279-wg99",
+        "GHSA-48p4-8xcf-vxj5",
+        "GHSA-8988-9cw3-xx77",
+        "GHSA-gm62-xv2j-4w53",
+        "GHSA-pq67-6m6q-mj2v",
+        "GHSA-qccp-gfcp-xxvc",
+        "GHSA-vxq7-64xx-v4gw",
+        "PYSEC-2026-141",
+        "PYSEC-2026-1994",
+        "PYSEC-2026-1996",
+        "PYSEC-2026-1997",
+        "PYSEC-2026-1998",
+        "PYSEC-2026-1999",
+        "PYSEC-2026-4175",
+        "PYSEC-2026-4177"
+      ]
+    }
+  ],
+  "warnings": [
+    "Dependency inventory is incomplete or has warnings; advisory coverage only applies to recorded resolved instances."
+  ],
+  "advisories": {
+    "[\"GHSA-8q59-q68h-6hv4\",\"pyyaml\",\"PyPI\"]": {
+      "id": "GHSA-8q59-q68h-6hv4",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-8q59-q68h-6hv4",
+      "verification": "verified",
+      "summary": "Improper Input Validation in PyYAML",
+      "description": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.",
+      "aliases": [
+        "CVE-2020-14343",
+        "PYSEC-2021-142"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N"
+        }
+      ],
+      "fixedVersions": [
+        "5.4"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-8q59-q68h-6hv4",
+        "https://nvd.nist.gov/vuln/detail/CVE-2020-14343",
+        "https://github.com/SeldonIO/seldon-core/issues/2252",
+        "https://github.com/yaml/pyyaml/issues/420",
+        "https://github.com/yaml/pyyaml/issues/420#issuecomment-663673966",
+        "https://github.com/yaml/pyyaml/commit/a001f2782501ad2d24986959f0239a354675f9dc",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=1860466",
+        "https://github.com/advisories/GHSA-8q59-q68h-6hv4",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/pyyaml/PYSEC-2021-142.yaml",
+        "https://github.com/yaml/pyyaml",
+        "https://pypi.org/project/PyYAML",
+        "https://www.oracle.com/security-alerts/cpuapr2022.html",
+        "https://www.oracle.com/security-alerts/cpujul2022.html"
+      ],
+      "modified": "2026-02-04T03:33:10.792778Z",
+      "severityLabel": "CRITICAL",
+      "affectedVersions": [
+        "listed version 3.01",
+        "listed version 3.02",
+        "listed version 3.03",
+        "listed version 3.04",
+        "listed version 3.05",
+        "listed version 3.06",
+        "listed version 3.07",
+        "listed version 3.08",
+        "listed version 3.09",
+        "listed version 3.10",
+        "listed version 3.11",
+        "listed version 3.12",
+        "listed version 3.13",
+        "listed version 3.13b1",
+        "listed version 3.13rc1",
+        "listed version 4.2b1",
+        "listed version 4.2b2",
+        "listed version 4.2b4",
+        "listed version 5.1",
+        "listed version 5.1.1",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"5.4\"}]"
+      ]
+    },
+    "[\"PYSEC-2021-142\",\"pyyaml\",\"PyPI\"]": {
+      "id": "PYSEC-2021-142",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2021-142",
+      "verification": "verified",
+      "summary": "OSV advisory matches the recorded package version.",
+      "description": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.",
+      "aliases": [
+        "CVE-2020-14343",
+        "GHSA-8q59-q68h-6hv4"
+      ],
+      "severity": [],
+      "fixedVersions": [
+        "5.4"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2021-142",
+        "https://bugzilla.redhat.com/show_bug.cgi?id=1860466",
+        "https://github.com/advisories/GHSA-8q59-q68h-6hv4"
+      ],
+      "modified": "2023-11-08T04:02:26.414885Z",
+      "affectedVersions": [
+        "listed version 3.01",
+        "listed version 3.02",
+        "listed version 3.03",
+        "listed version 3.04",
+        "listed version 3.05",
+        "listed version 3.06",
+        "listed version 3.07",
+        "listed version 3.08",
+        "listed version 3.09",
+        "listed version 3.10",
+        "listed version 3.11",
+        "listed version 3.12",
+        "listed version 3.13",
+        "listed version 3.13b1",
+        "listed version 3.13rc1",
+        "listed version 4.2b1",
+        "listed version 4.2b2",
+        "listed version 4.2b4",
+        "listed version 5.1",
+        "listed version 5.1.1",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"5.4\"}]"
+      ]
+    },
+    "[\"GHSA-9hjg-9r4m-mvj7\",\"requests\",\"PyPI\"]": {
+      "id": "GHSA-9hjg-9r4m-mvj7",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-9hjg-9r4m-mvj7",
+      "verification": "verified",
+      "summary": "Requests vulnerable to .netrc credentials leak via malicious URLs",
+      "description": "### Impact\n\nDue to a URL parsing issue, Requests releases prior to 2.32.4 may leak .netrc credentials to third parties for specific maliciously-crafted URLs.\n\n### Workarounds\nFor older versions of Requests, use of the .netrc file can be disabled with `trust_env=False` on your Requests Session ([docs](https://requests.readthedocs.io/en/latest/api/#requests.Session.trust_env)).\n\n### References\nhttps://github.com/psf/requests/pull/6965\nhttps://seclists.org/fulldisclosure/2025/Jun/2",
+      "aliases": [
+        "CVE-2024-47081",
+        "PYSEC-2026-1872"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.32.4"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-9hjg-9r4m-mvj7",
+        "https://github.com/psf/requests/security/advisories/GHSA-9hjg-9r4m-mvj7",
+        "https://nvd.nist.gov/vuln/detail/CVE-2024-47081",
+        "https://github.com/psf/requests/pull/6965",
+        "https://github.com/psf/requests/commit/96ba401c1296ab1dda74a2365ef36d88f7d144ef",
+        "https://github.com/advisories/GHSA-9hjg-9r4m-mvj7",
+        "https://github.com/psf/requests",
+        "https://github.com/psf/requests/releases/tag/v2.32.4",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/requests/PYSEC-2026-1872.yaml",
+        "https://pypi.org/project/requests",
+        "https://requests.readthedocs.io/en/latest/api/#requests.Session.trust_env",
+        "https://seclists.org/fulldisclosure/2025/Jun/2"
+      ],
+      "modified": "2026-10-19T20:00:04.716114530Z",
+      "severityLabel": "MODERATE",
+      "affectedVersions": [
+        "listed version 0.0.1",
+        "listed version 0.10.0",
+        "listed version 0.10.1",
+        "listed version 0.10.2",
+        "listed version 0.10.3",
+        "listed version 0.10.4",
+        "listed version 0.10.6",
+        "listed version 0.10.7",
+        "listed version 0.10.8",
+        "listed version 0.11.1",
+        "listed version 0.11.2",
+        "listed version 0.12.0",
+        "listed version 0.12.01",
+        "listed version 0.12.1",
+        "listed version 0.13.0",
+        "listed version 0.13.1",
+        "listed version 0.13.2",
+        "listed version 0.13.3",
+        "listed version 0.13.4",
+        "listed version 0.13.5",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.32.4\"}]"
+      ]
+    },
+    "[\"GHSA-9wx4-h78v-vm56\",\"requests\",\"PyPI\"]": {
+      "id": "GHSA-9wx4-h78v-vm56",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-9wx4-h78v-vm56",
+      "verification": "verified",
+      "summary": "Requests `Session` object does not verify requests after making first request with verify=False",
+      "description": "When using a `requests.Session`, if the first request to a given origin is made with `verify=False`, TLS certificate verification may remain disabled for all subsequent requests to that origin, even if `verify=True` is explicitly specified later.\n\nThis occurs because the underlying connection is reused from the session's connection pool, causing the initial TLS verification setting to persist for the lifetime of the pooled connection. As a result, applications may unintentionally send requests without certificate verification, leading to potential man-in-the-middle attacks and compromised confidentiality or integrity.\n\nThis behavior affects versions of `requests` prior to 2.32.0.",
+      "aliases": [
+        "CVE-2024-35195",
+        "PYSEC-2026-1873"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.32.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-9wx4-h78v-vm56",
+        "https://github.com/psf/requests/security/advisories/GHSA-9wx4-h78v-vm56",
+        "https://nvd.nist.gov/vuln/detail/CVE-2024-35195",
+        "https://github.com/psf/requests/pull/6655",
+        "https://github.com/psf/requests/commit/a58d7f2ffb4d00b46dca2d70a3932a0b37e22fac",
+        "https://github.com/psf/requests",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IYLSNK5TL46Q6XPRVMHVWS63MVJQOK4Q",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N7WP6EYDSUOCOJYHDK5NX43PYZ4SNHGZ"
+      ],
+      "modified": "2026-09-10T03:50:13.740879755Z",
+      "severityLabel": "MODERATE",
+      "affectedVersions": [
+        "listed version 0.0.1",
+        "listed version 0.10.0",
+        "listed version 0.10.1",
+        "listed version 0.10.2",
+        "listed version 0.10.3",
+        "listed version 0.10.4",
+        "listed version 0.10.6",
+        "listed version 0.10.7",
+        "listed version 0.10.8",
+        "listed version 0.11.1",
+        "listed version 0.11.2",
+        "listed version 0.12.0",
+        "listed version 0.12.01",
+        "listed version 0.12.1",
+        "listed version 0.13.0",
+        "listed version 0.13.1",
+        "listed version 0.13.2",
+        "listed version 0.13.3",
+        "listed version 0.13.4",
+        "listed version 0.13.5",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.32.0\"}]"
+      ]
+    },
+    "[\"GHSA-gc5v-m9x4-r6x2\",\"requests\",\"PyPI\"]": {
+      "id": "GHSA-gc5v-m9x4-r6x2",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-gc5v-m9x4-r6x2",
+      "verification": "verified",
+      "summary": "Requests has Insecure Temp File Reuse in its extract_zipped_paths() utility function",
+      "description": "### Impact\nThe `requests.utils.extract_zipped_paths()` utility function uses a predictable filename when extracting files from zip archives into the system temporary directory. If the target file already exists, it is reused without validation. A local attacker with write access to the temp directory could pre-create a malicious file that would be loaded in place of the legitimate one.\n\n### Affected usages\n**Standard usage of the Requests library is not affected by this vulnerability.** Only applications that call `extract_zipped_paths()` directly are impacted.\n\n### Remediation\nUpgrade to at least Requests 2.33.0, where the library now extracts files to a non-deterministic location.\n\nIf developers are unable to upgrade, they can set `TMPDIR` in their environment to a directory with restricted write access.",
+      "aliases": [
+        "CVE-2026-25645",
+        "PYSEC-2026-2275"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.33.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-gc5v-m9x4-r6x2",
+        "https://github.com/psf/requests/security/advisories/GHSA-gc5v-m9x4-r6x2",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-25645",
+        "https://github.com/psf/requests/commit/66d21cb07bd6255b1280291c4fafb71803cdb3b7",
+        "https://github.com/psf/requests",
+        "https://github.com/psf/requests/releases/tag/v2.33.0"
+      ],
+      "modified": "2026-09-10T03:50:39.207922076Z",
+      "severityLabel": "MODERATE",
+      "affectedVersions": [
+        "listed version 0.0.1",
+        "listed version 0.10.0",
+        "listed version 0.10.1",
+        "listed version 0.10.2",
+        "listed version 0.10.3",
+        "listed version 0.10.4",
+        "listed version 0.10.6",
+        "listed version 0.10.7",
+        "listed version 0.10.8",
+        "listed version 0.11.1",
+        "listed version 0.11.2",
+        "listed version 0.12.0",
+        "listed version 0.12.01",
+        "listed version 0.12.1",
+        "listed version 0.13.0",
+        "listed version 0.13.1",
+        "listed version 0.13.2",
+        "listed version 0.13.3",
+        "listed version 0.13.4",
+        "listed version 0.13.5",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.33.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-1872\",\"requests\",\"PyPI\"]": {
+      "id": "PYSEC-2026-1872",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-1872",
+      "verification": "verified",
+      "summary": "Requests vulnerable to .netrc credentials leak via malicious URLs",
+      "description": "### Impact\n\nDue to a URL parsing issue, Requests releases prior to 2.32.4 may leak .netrc credentials to third parties for specific maliciously-crafted URLs.\n\n### Workarounds\nFor older versions of Requests, use of the .netrc file can be disabled with `trust_env=False` on your Requests Session ([docs](https://requests.readthedocs.io/en/latest/api/#requests.Session.trust_env)).\n\n### References\nhttps://github.com/psf/requests/pull/6965\nhttps://seclists.org/fulldisclosure/2025/Jun/2",
+      "aliases": [
+        "CVE-2024-47081",
+        "GHSA-9hjg-9r4m-mvj7"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.32.4"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-1872",
+        "https://github.com/psf/requests/security/advisories/GHSA-9hjg-9r4m-mvj7",
+        "https://nvd.nist.gov/vuln/detail/CVE-2024-47081",
+        "https://github.com/psf/requests/pull/6965",
+        "https://github.com/psf/requests/commit/96ba401c1296ab1dda74a2365ef36d88f7d144ef",
+        "https://github.com/psf/requests",
+        "https://requests.readthedocs.io/en/latest/api/#requests.Session.trust_env",
+        "https://seclists.org/fulldisclosure/2025/Jun/2",
+        "https://pypi.org/project/requests",
+        "https://github.com/advisories/GHSA-9hjg-9r4m-mvj7"
+      ],
+      "modified": "2026-07-07T17:47:00.332079836Z",
+      "affectedVersions": [
+        "listed version 0.0.1",
+        "listed version 0.10.0",
+        "listed version 0.10.1",
+        "listed version 0.10.2",
+        "listed version 0.10.3",
+        "listed version 0.10.4",
+        "listed version 0.10.6",
+        "listed version 0.10.7",
+        "listed version 0.10.8",
+        "listed version 0.11.1",
+        "listed version 0.11.2",
+        "listed version 0.12.0",
+        "listed version 0.12.01",
+        "listed version 0.12.1",
+        "listed version 0.13.0",
+        "listed version 0.13.1",
+        "listed version 0.13.2",
+        "listed version 0.13.3",
+        "listed version 0.13.4",
+        "listed version 0.13.5",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.32.4\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-1873\",\"requests\",\"PyPI\"]": {
+      "id": "PYSEC-2026-1873",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-1873",
+      "verification": "verified",
+      "summary": "Requests `Session` object does not verify requests after making first request with verify=False",
+      "description": "When using a `requests.Session`, if the first request to a given origin is made with `verify=False`, TLS certificate verification may remain disabled for all subsequent requests to that origin, even if `verify=True` is explicitly specified later.\n\nThis occurs because the underlying connection is reused from the session's connection pool, causing the initial TLS verification setting to persist for the lifetime of the pooled connection. As a result, applications may unintentionally send requests without certificate verification, leading to potential man-in-the-middle attacks and compromised confidentiality or integrity.\n\nThis behavior affects versions of `requests` prior to 2.32.0.",
+      "aliases": [
+        "CVE-2024-35195",
+        "GHSA-9wx4-h78v-vm56"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.32.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-1873",
+        "https://github.com/psf/requests/security/advisories/GHSA-9wx4-h78v-vm56",
+        "https://nvd.nist.gov/vuln/detail/CVE-2024-35195",
+        "https://github.com/psf/requests/pull/6655",
+        "https://github.com/psf/requests/commit/a58d7f2ffb4d00b46dca2d70a3932a0b37e22fac",
+        "https://github.com/psf/requests",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IYLSNK5TL46Q6XPRVMHVWS63MVJQOK4Q",
+        "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/N7WP6EYDSUOCOJYHDK5NX43PYZ4SNHGZ",
+        "https://pypi.org/project/requests",
+        "https://github.com/advisories/GHSA-9wx4-h78v-vm56"
+      ],
+      "modified": "2026-07-07T17:46:36.762141019Z",
+      "affectedVersions": [
+        "listed version 0.0.1",
+        "listed version 0.10.0",
+        "listed version 0.10.1",
+        "listed version 0.10.2",
+        "listed version 0.10.3",
+        "listed version 0.10.4",
+        "listed version 0.10.6",
+        "listed version 0.10.7",
+        "listed version 0.10.8",
+        "listed version 0.11.1",
+        "listed version 0.11.2",
+        "listed version 0.12.0",
+        "listed version 0.12.01",
+        "listed version 0.12.1",
+        "listed version 0.13.0",
+        "listed version 0.13.1",
+        "listed version 0.13.2",
+        "listed version 0.13.3",
+        "listed version 0.13.4",
+        "listed version 0.13.5",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.32.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-2275\",\"requests\",\"PyPI\"]": {
+      "id": "PYSEC-2026-2275",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-2275",
+      "verification": "verified",
+      "summary": "OSV advisory matches the recorded package version.",
+      "description": "Requests is a HTTP library. Prior to version 2.33.0, the `requests.utils.extract_zipped_paths()` utility function uses a predictable filename when extracting files from zip archives into the system temporary directory. If the target file already exists, it is reused without validation. A local attacker with write access to the temp directory could pre-create a malicious file that would be loaded in place of the legitimate one. Standard usage of the Requests library is not affected by this vulnerability. Only applications that call `extract_zipped_paths()` directly are impacted. Starting in version 2.33.0, the library extracts files to a non-deterministic location. If developers are unable to upgrade, they can set `TMPDIR` in their environment to a directory with restricted write access.",
+      "aliases": [
+        "CVE-2026-25645",
+        "GHSA-gc5v-m9x4-r6x2"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.33.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-2275",
+        "https://github.com/psf/requests/releases/tag/v2.33.0",
+        "https://github.com/psf/requests/security/advisories/GHSA-gc5v-m9x4-r6x2",
+        "https://github.com/psf/requests/commit/66d21cb07bd6255b1280291c4fafb71803cdb3b7"
+      ],
+      "modified": "2026-07-13T07:15:43.964902190Z",
+      "affectedVersions": [
+        "listed version 0.0.1",
+        "listed version 0.10.0",
+        "listed version 0.10.1",
+        "listed version 0.10.2",
+        "listed version 0.10.3",
+        "listed version 0.10.4",
+        "listed version 0.10.6",
+        "listed version 0.10.7",
+        "listed version 0.10.8",
+        "listed version 0.11.1",
+        "listed version 0.11.2",
+        "listed version 0.12.0",
+        "listed version 0.12.01",
+        "listed version 0.12.1",
+        "listed version 0.13.0",
+        "listed version 0.13.1",
+        "listed version 0.13.2",
+        "listed version 0.13.3",
+        "listed version 0.13.4",
+        "listed version 0.13.5",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.33.0\"}]"
+      ]
+    },
+    "[\"GHSA-6q48-6c7w-9gw2\",\"certifi\",\"PyPI\"]": {
+      "id": "GHSA-6q48-6c7w-9gw2",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-6q48-6c7w-9gw2",
+      "verification": "verified",
+      "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+      "description": "Certifi versions before 2026.10.18 include the `emSign ECC Root CA - G3` root certificate in their bundled CA store. Eight eMudhra intermediate CA certificates that chain to this root have compromised private keys and the CA has revoked them. \n\nAn attacker with one of the compromised keys can issue valid-looking certificates for any hostname. If the attacker is also on-path, they can intercept or modify TLS traffic from clients that trust the certifi bundle. Examples include `requests`, `urllib3` and `pip`, and the Python.org macOS installer.\n\nCertifi 2026.10.18 removed all emSign roots from the bundle. Certifi 2026.10.19 restored the emSign roots that are not affected. Upgrade to 2026.10.19 or later, and rebuild container images that vendor certifi.",
+      "aliases": [
+        "PYSEC-2026-4320"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "fixedVersions": [
+        "2026.10.18"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-6q48-6c7w-9gw2",
+        "https://github.com/certifi/python-certifi/security/advisories/GHSA-6q48-6c7w-9gw2",
+        "https://discuss.python.org/t/information-for-python-users-regarding-emudhra-emsign-ca-certificate-security-incident/109576",
+        "https://emudhra.we-have-a-problem.com/",
+        "https://github.com/certifi/python-certifi"
+      ],
+      "modified": "2026-10-26T16:15:35.371128995Z",
+      "severityLabel": "CRITICAL",
+      "affectedVersions": [
+        "listed version 2019.11.28",
+        "listed version 2019.3.9",
+        "listed version 2019.6.16",
+        "listed version 2019.9.11",
+        "listed version 2020.11.8",
+        "listed version 2020.12.5",
+        "listed version 2020.4.5",
+        "listed version 2020.4.5.1",
+        "listed version 2020.4.5.2",
+        "listed version 2020.6.20",
+        "listed version 2021.10.8",
+        "listed version 2021.5.30",
+        "listed version 2022.12.7",
+        "listed version 2022.5.18",
+        "listed version 2022.5.18.1",
+        "listed version 2022.6.15",
+        "listed version 2022.6.15.1",
+        "listed version 2022.6.15.2",
+        "listed version 2022.9.14",
+        "listed version 2022.9.24",
+        "ECOSYSTEM: [{\"introduced\":\"2019.03.09\"},{\"fixed\":\"2026.10.18\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-4320\",\"certifi\",\"PyPI\"]": {
+      "id": "PYSEC-2026-4320",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-4320",
+      "verification": "verified",
+      "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+      "description": "Certifi versions before 2026.10.18 include the `emSign ECC Root CA - G3` root certificate in their bundled CA store. Eight eMudhra intermediate CA certificates that chain to this root have compromised private keys and the CA has revoked them. \n\nAn attacker with one of the compromised keys can issue valid-looking certificates for any hostname. If the attacker is also on-path, they can intercept or modify TLS traffic from clients that trust the certifi bundle. Examples include `requests`, `urllib3` and `pip`, and the Python.org macOS installer.\n\nCertifi 2026.10.18 removed all emSign roots from the bundle. Certifi 2026.10.19 restored the emSign roots that are not affected. Upgrade to 2026.10.19 or later, and rebuild container images that vendor certifi.",
+      "aliases": [
+        "GHSA-6q48-6c7w-9gw2"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "fixedVersions": [
+        "2026.10.18"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-4320",
+        "https://github.com/certifi/python-certifi/security/advisories/GHSA-6q48-6c7w-9gw2",
+        "https://discuss.python.org/t/information-for-python-users-regarding-emudhra-emsign-ca-certificate-security-incident/109576",
+        "https://emudhra.we-have-a-problem.com/",
+        "https://github.com/certifi/python-certifi",
+        "https://pypi.org/project/certifi",
+        "https://github.com/advisories/GHSA-6q48-6c7w-9gw2"
+      ],
+      "modified": "2026-10-30T14:00:02.590922333Z",
+      "affectedVersions": [
+        "listed version 2019.11.28",
+        "listed version 2019.3.9",
+        "listed version 2019.6.16",
+        "listed version 2019.9.11",
+        "listed version 2020.11.8",
+        "listed version 2020.12.5",
+        "listed version 2020.4.5",
+        "listed version 2020.4.5.1",
+        "listed version 2020.4.5.2",
+        "listed version 2020.6.20",
+        "listed version 2021.10.8",
+        "listed version 2021.5.30",
+        "listed version 2022.12.7",
+        "listed version 2022.5.18",
+        "listed version 2022.5.18.1",
+        "listed version 2022.6.15",
+        "listed version 2022.6.15.1",
+        "listed version 2022.6.15.2",
+        "listed version 2022.9.14",
+        "listed version 2022.9.24",
+        "ECOSYSTEM: [{\"introduced\":\"2019.03.09\"},{\"fixed\":\"2026.10.18\"}]"
+      ]
+    },
+    "[\"GHSA-65pc-fj4g-8rjx\",\"idna\",\"PyPI\"]": {
+      "id": "GHSA-65pc-fj4g-8rjx",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-65pc-fj4g-8rjx",
+      "verification": "verified",
+      "summary": "Internationalized Domain Names in Applications (IDNA): Specially crafted inputs to idna.encode() can bypass CVE-2024-3651 fix",
+      "description": "This is the same issue as CVE-2024-3651, however the original remediation in 2024 was not a complete fix. Payloads such as `\"\\u0660\" * N` or `\"\\u30fb\" * N + \"\\u6f22\"` utilize the `valid_contexto` function prior to length rejection, and for high values of `N` will take a long time to process.\n\n### Impact\nA specially crafted argument to the `idna.encode()` function could consume significant resources. This may lead to a denial-of-service.\n\n### Patches\nStarting in version 3.14, the function rejects long inputs as soon as practicable prior to any further processing to minimize resource consumption. In version 3.15, this approach was extended to lesser used alternate functions (i.e. per-label conversions and codec support).\n\n### Workarounds\nDomain names cannot exceed 253 characters in length, if this length limit is enforced prior to passing the domain to the `idna.encode()` function it should no longer consume significant resources. This is triggered by arbitrarily large inputs that would not occur in normal usage, but may be passed to the library assuming there is no preliminary input validation by the higher-level application.",
+      "aliases": [
+        "CVE-2026-45409",
+        "PYSEC-2026-215"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N"
+        }
+      ],
+      "fixedVersions": [
+        "3.15"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-65pc-fj4g-8rjx",
+        "https://github.com/kjd/idna/security/advisories/GHSA-65pc-fj4g-8rjx",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-45409",
+        "https://github.com/kjd/idna",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/idna/PYSEC-2026-215.yaml"
+      ],
+      "modified": "2026-09-10T03:50:45.700124422Z",
+      "severityLabel": "MODERATE",
+      "affectedVersions": [
+        "listed version 0.1",
+        "listed version 0.2",
+        "listed version 0.3",
+        "listed version 0.4",
+        "listed version 0.5",
+        "listed version 0.6",
+        "listed version 0.7",
+        "listed version 0.8",
+        "listed version 0.9",
+        "listed version 1.0",
+        "listed version 1.1",
+        "listed version 2.0",
+        "listed version 2.1",
+        "listed version 2.10",
+        "listed version 2.2",
+        "listed version 2.3",
+        "listed version 2.4",
+        "listed version 2.5",
+        "listed version 2.6",
+        "listed version 2.7",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"3.15\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-215\",\"idna\",\"PyPI\"]": {
+      "id": "PYSEC-2026-215",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-215",
+      "verification": "verified",
+      "summary": "OSV advisory matches the recorded package version.",
+      "description": "Internationalized Domain Names in Applications (IDNA) for Python provides support for Internationalized Domain Names in Applications (IDNA) and Unicode IDNA Compatibility Processing. In versions prior to 3.15, payloads such as `\"\\u0660\" * N` or `\"\\u30fb\" * N + \"\\u6f22\"` utilize the `valid_contexto` function prior to length rejection, and for high values of `N` will take a long time to process. This is the same issue as CVE-2024-3651, however the original remediation in 2024 was not a complete fix. A specially crafted argument to the `idna.encode()` function could consume significant resources. This may lead to a denial-of-service. Starting in version 3.14, the function rejects long inputs as soon as practicable prior to any further processing to minimize resource consumption. In version 3.15, this approach was extended to lesser used alternate functions (i.e. per-label conversions and codec support). A workaround is available. Domain names cannot exceed 253 characters in length. If this length limit is enforced prior to passing the domain to the `idna.encode()` function, it should no longer consume significant resources. This is triggered by arbitrarily large inputs that would not occur in normal usage, but may be passed to the library assuming there is no preliminary input validation by the higher-level application.",
+      "aliases": [
+        "CVE-2026-45409",
+        "GHSA-65pc-fj4g-8rjx"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+        }
+      ],
+      "fixedVersions": [
+        "3.15"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-215",
+        "https://github.com/kjd/idna/security/advisories/GHSA-65pc-fj4g-8rjx"
+      ],
+      "modified": "2026-06-16T16:15:04.639265054Z",
+      "affectedVersions": [
+        "listed version 0.1",
+        "listed version 0.2",
+        "listed version 0.3",
+        "listed version 0.4",
+        "listed version 0.5",
+        "listed version 0.6",
+        "listed version 0.7",
+        "listed version 0.8",
+        "listed version 0.9",
+        "listed version 1.0",
+        "listed version 1.1",
+        "listed version 2.0",
+        "listed version 2.1",
+        "listed version 2.10",
+        "listed version 2.2",
+        "listed version 2.3",
+        "listed version 2.4",
+        "listed version 2.5",
+        "listed version 2.6",
+        "listed version 2.7",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"3.15\"}]"
+      ]
+    },
+    "[\"GHSA-2xpw-w6gg-jr37\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-2xpw-w6gg-jr37",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-2xpw-w6gg-jr37",
+      "verification": "verified",
+      "summary": "urllib3 streaming API improperly handles highly compressed data",
+      "description": "### Impact\n\nurllib3's [streaming API](https://urllib3.readthedocs.io/en/2.5.0/advanced-usage.html#streaming-and-i-o) is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once.\n\nWhen streaming a compressed response, urllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). The library must read compressed data from the network and decompress it until the requested chunk size is met. Any resulting decompressed data that exceeds the requested amount is held in an internal buffer for the next read operation.\n\nThe decompression logic could cause urllib3 to fully decode a small amount of highly compressed data in a single operation. This can result in excessive resource consumption (high CPU usage and massive memory allocation for the decompressed data; CWE-409) on the client side, even if the application only requested a small chunk of data.\n\n\n### Affected usages\n\nApplications and libraries using urllib3 version 2.5.0 and earlier to stream large compressed responses or content from untrusted sources.\n\n`stream()`, `read(amt=256)`, `read1(amt=256)`, `read_chunked(amt=256)`, `readinto(b)` are examples of `urllib3.HTTPResponse` method calls using the affected logic unless decoding is disabled explicitly.\n\n\n### Remediation\n\nUpgrade to at least urllib3 v2.6.0 in which the library avoids decompressing data that exceeds the requested amount.\n\nIf your environment contains a package facilitating the Brotli encoding, upgrade to at least Brotli 1.2.0 or brotlicffi 1.2.0.0 too. These versions are enforced by the `urllib3[brotli]` extra in the patched versions of urllib3.\n\n\n### Credits\n\nThe issue was reported by @Cycloctane.\nSupplemental information was provided by @stamparm during a security audit performed by [7ASecurity](https://7asecurity.com/) and facilitated by [OSTIF](https://ostif.org/).",
+      "aliases": [
+        "CVE-2025-66471",
+        "PYSEC-2026-1994"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.6.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-2xpw-w6gg-jr37",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-66471",
+        "https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7",
+        "https://github.com/urllib3/urllib3/commit/d0fde3672e4a4093f7587858dccfc298eb66e46c",
+        "https://github.com/advisories/GHSA-2xpw-w6gg-jr37",
+        "https://github.com/pypa/advisory-database/tree/main/vulns/urllib3/PYSEC-2026-1994.yaml",
+        "https://github.com/urllib3/urllib3",
+        "https://pypi.org/project/urllib3"
+      ],
+      "modified": "2026-09-25T17:15:05.968189421Z",
+      "severityLabel": "HIGH",
+      "affectedVersions": [
+        "listed version 1.0",
+        "listed version 1.0.1",
+        "listed version 1.0.2",
+        "listed version 1.1",
+        "listed version 1.10",
+        "listed version 1.10.1",
+        "listed version 1.10.2",
+        "listed version 1.10.3",
+        "listed version 1.10.4",
+        "listed version 1.11",
+        "listed version 1.12",
+        "listed version 1.13",
+        "listed version 1.13.1",
+        "listed version 1.14",
+        "listed version 1.15",
+        "listed version 1.15.1",
+        "listed version 1.16",
+        "listed version 1.17",
+        "listed version 1.18",
+        "listed version 1.18.1",
+        "ECOSYSTEM: [{\"introduced\":\"1.0\"},{\"fixed\":\"2.6.0\"}]"
+      ]
+    },
+    "[\"GHSA-38jv-5279-wg99\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-38jv-5279-wg99",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-38jv-5279-wg99",
+      "verification": "verified",
+      "summary": "Decompression-bomb safeguards bypassed when following HTTP redirects (streaming API)",
+      "description": "### Impact\n\nurllib3's [streaming API](https://urllib3.readthedocs.io/en/2.6.2/advanced-usage.html#streaming-and-i-o) is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once.\n\nurllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). When using the streaming API, the library decompresses only the necessary bytes, enabling partial content consumption.\n\nHowever, for HTTP redirect responses, the library would read the entire response body to drain the connection and decompress the content unnecessarily. This decompression occurred even before any read methods were called, and configured read limits did not restrict the amount of decompressed data. As a result, there was no safeguard against decompression bombs. A malicious server could exploit this to trigger excessive resource consumption on the client (high CPU usage and large memory allocations for decompressed data; CWE-409).\n\n### Affected usages\n\nApplications and libraries using urllib3 version 2.6.2 and earlier to stream content from untrusted sources by setting `preload_content=False` when they do not disable redirects.\n\n\n### Remediation\n\nUpgrade to at least urllib3 v2.6.3 in which the library does not decode content of redirect responses when `preload_content=False`.\n\nIf upgrading is not immediately possible, disable [redirects](https://urllib3.readthedocs.io/en/2.6.2/user-guide.html#retrying-requests) by setting `redirect=False` for requests to untrusted source.",
+      "aliases": [
+        "CVE-2026-21441",
+        "PYSEC-2026-1996"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.6.3"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-38jv-5279-wg99",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-21441",
+        "https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b",
+        "https://github.com/urllib3/urllib3",
+        "https://lists.debian.org/debian-lts-announce/2026/01/msg00017.html"
+      ],
+      "modified": "2026-09-10T03:50:32.562010895Z",
+      "severityLabel": "HIGH",
+      "affectedVersions": [
+        "listed version 1.22",
+        "listed version 1.23",
+        "listed version 1.24",
+        "listed version 1.24.1",
+        "listed version 1.24.2",
+        "listed version 1.24.3",
+        "listed version 1.25",
+        "listed version 1.25.1",
+        "listed version 1.25.10",
+        "listed version 1.25.11",
+        "listed version 1.25.2",
+        "listed version 1.25.3",
+        "listed version 1.25.4",
+        "listed version 1.25.5",
+        "listed version 1.25.6",
+        "listed version 1.25.7",
+        "listed version 1.25.8",
+        "listed version 1.25.9",
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "ECOSYSTEM: [{\"introduced\":\"1.22\"},{\"fixed\":\"2.6.3\"}]"
+      ]
+    },
+    "[\"GHSA-48p4-8xcf-vxj5\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-48p4-8xcf-vxj5",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-48p4-8xcf-vxj5",
+      "verification": "verified",
+      "summary": "urllib3 does not control redirects in browsers and Node.js",
+      "description": "urllib3 [supports](https://urllib3.readthedocs.io/en/2.4.0/reference/contrib/emscripten.html) being used in a Pyodide runtime utilizing the [JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or falling back on [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). This means you can use Python libraries to make HTTP requests from your browser or Node.js. Additionally, urllib3 provides [a mechanism](https://urllib3.readthedocs.io/en/2.4.0/user-guide.html#retrying-requests) to control redirects.\n\nHowever, the `retries` and `redirect` parameters are ignored with Pyodide; the runtime itself determines redirect behavior.\n\n\n## Affected usages\n\nAny code which relies on urllib3 to control the number of redirects for an HTTP request in a Pyodide runtime.\n\n\n## Impact\n\nRedirects are often used to exploit SSRF vulnerabilities. An application attempting to mitigate SSRF or open redirect vulnerabilities by disabling redirects may remain vulnerable if a Pyodide runtime redirect mechanism is unsuitable.\n\n\n## Remediation\n\nIf you use urllib3 in Node.js, upgrade to a patched version of urllib3.\n\nUnfortunately, browsers provide no suitable way which urllib3 can use: `XMLHttpRequest` provides no control over redirects, the Fetch API returns `opaqueredirect` responses lacking data when redirects are controlled manually. Expect default browser behavior for redirects.",
+      "aliases": [
+        "CVE-2025-50182",
+        "PYSEC-2026-1997"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.5.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-48p4-8xcf-vxj5",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-48p4-8xcf-vxj5",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-50182",
+        "https://github.com/urllib3/urllib3/commit/7eb4a2aafe49a279c29b6d1f0ed0f42e9736194f",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.5.0"
+      ],
+      "modified": "2026-09-10T03:50:24.821170285Z",
+      "severityLabel": "MODERATE",
+      "affectedVersions": [
+        "listed version 2.2.0",
+        "listed version 2.2.1",
+        "listed version 2.2.2",
+        "listed version 2.2.3",
+        "listed version 2.3.0",
+        "listed version 2.4.0",
+        "ECOSYSTEM: [{\"introduced\":\"2.2.0\"},{\"fixed\":\"2.5.0\"}]"
+      ]
+    },
+    "[\"GHSA-8988-9cw3-xx77\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-8988-9cw3-xx77",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-8988-9cw3-xx77",
+      "verification": "verified",
+      "summary": "urllib3: HTTPS proxy TLS configuration may be ignored or overridden",
+      "description": "## Impact\n\nurllib3 supports configuring TLS independently for an HTTPS proxy and the target server.\n\n`proxy_ssl_context`, `proxy_assert_hostname`, and `proxy_assert_fingerprint` configure the TLS connection to the proxy. `ssl_context` and the other target-specific TLS parameters configure the connection to the target server.\n\nIn urllib3 versions 1.26.0 through 2.7.0, these configurations were not consistently separated. Depending on the proxy mode, urllib3 could:\n\n1. Ignore `proxy_ssl_context` and use the target server's SSL context for the TLS connection to an HTTPS forwarding proxy.\n2. Override the HTTPS proxy's certificate-verification policy with the target server's certificate-verification policy.\n3. Apply target-specific SNI, hostname assertions, certificate fingerprint assertions, or TLS client credentials to the TLS connection to an HTTPS forwarding proxy.\n\nIn particular, configuring `cert_reqs=\"CERT_NONE\"` for a target server could overwrite the `verify_mode` of the SSL context configured for the HTTPS proxy. This modification occurred in place and persisted on the context object, potentially disabling proxy certificate verification for later connections that reused the same context.\n\nAn attacker able to intercept the connection to an HTTPS proxy may be able to impersonate the proxy when the effective proxy TLS configuration disables certificate verification or otherwise accepts the attacker's certificate. This may occur, for example, when the target server's trust or identity policy is incorrectly applied to the proxy connection.\n\nWhen HTTPS forwarding is enabled, an impersonated proxy can observe or modify forwarded requests and responses, potentially exposing credentials, authentication tokens, request bodies, response data, and other sensitive information.\n\nA TLS client certificate intended for the target server may also be presented to the proxy or to an attacker impersonating it. This can disclose the client's identity and provide proof of possession of the corresponding private key. The private key itself is not transmitted during the TLS handshake.\n\nIn CONNECT tunneling mode, impersonating the HTTPS proxy does not by itself defeat the separate end-to-end TLS connection between the client and the target server.\n\n## Affected Usages\n\nCode using urllib3 versions 1.26.0 through 2.7.0 may be affected in any of the following cases.\n\n### 1. The target SSL context is used for an HTTPS forwarding proxy\n\nHTTPS requests are forwarded through an HTTPS proxy with `use_forwarding_for_https=True`, and `proxy_ssl_context` is configured for the proxy.\n\nurllib3 may ignore `proxy_ssl_context` and use the target server's `ssl_context` for the proxy TLS handshake. The proxy may therefore be verified using the target server's trust and certificate policy instead of the policy explicitly configured for the proxy.\n\n### 2. The target verification policy overrides the proxy policy\n\nAn HTTPS proxy is configured with `proxy_ssl_context`, while the target ser",
+      "aliases": [
+        "CVE-2026-97687",
+        "PYSEC-2026-4175"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.8.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-8988-9cw3-xx77",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-8988-9cw3-xx77",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-97687",
+        "https://github.com/urllib3/urllib3/pull/5093",
+        "https://github.com/urllib3/urllib3/commit/07408cec79d1856d81bb42c74a904a24fdb9e465",
+        "https://github.com/urllib3/urllib3/commit/b6447295fff7b38fdffc67e0df9712d60cef3cc3",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.8.0"
+      ],
+      "modified": "2026-10-01T17:55:53.793608550Z",
+      "severityLabel": "HIGH",
+      "affectedVersions": [
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "listed version 1.26.10",
+        "listed version 1.26.11",
+        "listed version 1.26.12",
+        "listed version 1.26.13",
+        "listed version 1.26.14",
+        "listed version 1.26.15",
+        "listed version 1.26.16",
+        "listed version 1.26.17",
+        "listed version 1.26.18",
+        "listed version 1.26.19",
+        "listed version 1.26.2",
+        "listed version 1.26.20",
+        "listed version 1.26.3",
+        "listed version 1.26.4",
+        "listed version 1.26.5",
+        "listed version 1.26.6",
+        "listed version 1.26.7",
+        "listed version 1.26.8",
+        "ECOSYSTEM: [{\"introduced\":\"1.26.0\"},{\"fixed\":\"2.8.0\"}]"
+      ]
+    },
+    "[\"GHSA-gm62-xv2j-4w53\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-gm62-xv2j-4w53",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-gm62-xv2j-4w53",
+      "verification": "verified",
+      "summary": "urllib3 allows an unbounded number of links in the decompression chain",
+      "description": "## Impact\n\nurllib3 supports chained HTTP encoding algorithms for response content according to RFC 9110 (e.g., `Content-Encoding: gzip, zstd`).\n\nHowever, the number of links in the decompression chain was unbounded allowing a malicious server to insert a virtually unlimited number of compression steps leading to high CPU usage and massive memory allocation for the decompressed data.\n\n\n## Affected usages\n\nApplications and libraries using urllib3 version 2.5.0 and earlier for HTTP requests to untrusted sources unless they disable content decoding explicitly.\n\n\n## Remediation\n\nUpgrade to at least urllib3 v2.6.0 in which the library limits the number of links to 5.\n\nIf upgrading is not immediately possible, use [`preload_content=False`](https://urllib3.readthedocs.io/en/2.5.0/advanced-usage.html#streaming-and-i-o) and ensure that `resp.headers[\"content-encoding\"]` contains a safe number of encodings before reading the response content.",
+      "aliases": [
+        "CVE-2025-66418",
+        "PYSEC-2026-1998"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.6.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-gm62-xv2j-4w53",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-gm62-xv2j-4w53",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-66418",
+        "https://github.com/urllib3/urllib3/commit/24d7b67eac89f94e11003424bcf0d8f7b72222a8",
+        "https://github.com/urllib3/urllib3"
+      ],
+      "modified": "2026-09-10T03:50:58.741847479Z",
+      "severityLabel": "HIGH",
+      "affectedVersions": [
+        "listed version 1.24",
+        "listed version 1.24.1",
+        "listed version 1.24.2",
+        "listed version 1.24.3",
+        "listed version 1.25",
+        "listed version 1.25.1",
+        "listed version 1.25.10",
+        "listed version 1.25.11",
+        "listed version 1.25.2",
+        "listed version 1.25.3",
+        "listed version 1.25.4",
+        "listed version 1.25.5",
+        "listed version 1.25.6",
+        "listed version 1.25.7",
+        "listed version 1.25.8",
+        "listed version 1.25.9",
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "listed version 1.26.10",
+        "listed version 1.26.11",
+        "ECOSYSTEM: [{\"introduced\":\"1.24\"},{\"fixed\":\"2.6.0\"}]"
+      ]
+    },
+    "[\"GHSA-pq67-6m6q-mj2v\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-pq67-6m6q-mj2v",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-pq67-6m6q-mj2v",
+      "verification": "verified",
+      "summary": "urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation",
+      "description": "urllib3 handles redirects and retries using the same mechanism, which is controlled by the `Retry` object. The most common way to disable redirects is at the request level, as follows:\n\n```python\nresp = urllib3.request(\"GET\", \"https://httpbin.org/redirect/1\", redirect=False)\nprint(resp.status)\n# 302\n```\n\nHowever, it is also possible to disable redirects, for all requests, by instantiating a `PoolManager` and specifying `retries` in a way that disable redirects:\n\n```python\nimport urllib3\n\nhttp = urllib3.PoolManager(retries=0)  # should raise MaxRetryError on redirect\nhttp = urllib3.PoolManager(retries=urllib3.Retry(redirect=0))  # equivalent to the above\nhttp = urllib3.PoolManager(retries=False)  # should return the first response\n\nresp = http.request(\"GET\", \"https://httpbin.org/redirect/1\")\n```\n\nHowever, the `retries` parameter is currently ignored, which means all the above examples don't disable redirects.\n\n## Affected usages\n\nPassing `retries` on `PoolManager` instantiation to disable redirects or restrict their number.\n\nBy default, requests and botocore users are not affected.\n\n## Impact\n\nRedirects are often used to exploit SSRF vulnerabilities. An application attempting to mitigate SSRF or open redirect vulnerabilities by disabling redirects at the PoolManager level will remain vulnerable.\n\n## Remediation\n\nYou can remediate this vulnerability with the following steps:\n\n * Upgrade to a patched version of urllib3. If your organization would benefit from the continued support of urllib3 1.x, please contact [sethmichaellarson@gmail.com](mailto:sethmichaellarson@gmail.com) to discuss sponsorship or contribution opportunities.\n * Disable redirects at the `request()` level instead of the `PoolManager()` level.",
+      "aliases": [
+        "CVE-2025-50181",
+        "PYSEC-2026-1999"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.5.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-pq67-6m6q-mj2v",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-pq67-6m6q-mj2v",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-50181",
+        "https://github.com/urllib3/urllib3/commit/f05b1329126d5be6de501f9d1e3e36738bc08857",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.5.0"
+      ],
+      "modified": "2026-09-10T03:50:25.299291456Z",
+      "severityLabel": "MODERATE",
+      "affectedVersions": [
+        "listed version 0.2",
+        "listed version 0.3",
+        "listed version 0.3.1",
+        "listed version 0.4.0",
+        "listed version 0.4.1",
+        "listed version 1.0",
+        "listed version 1.0.1",
+        "listed version 1.0.2",
+        "listed version 1.1",
+        "listed version 1.10",
+        "listed version 1.10.1",
+        "listed version 1.10.2",
+        "listed version 1.10.3",
+        "listed version 1.10.4",
+        "listed version 1.11",
+        "listed version 1.12",
+        "listed version 1.13",
+        "listed version 1.13.1",
+        "listed version 1.14",
+        "listed version 1.15",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.5.0\"}]"
+      ]
+    },
+    "[\"GHSA-qccp-gfcp-xxvc\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-qccp-gfcp-xxvc",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-qccp-gfcp-xxvc",
+      "verification": "verified",
+      "summary": "urllib3: Sensitive headers forwarded across origins in proxied low-level redirects",
+      "description": "### Impact\n\nWhen following cross-origin redirects for requests made using urllib3’s high-level APIs, such as `urllib3.request()`, `PoolManager.request()`, and `ProxyManager.request()`, sensitive headers — `Authorization`, `Cookie`, and `Proxy-Authorization` (defined in `Retry.DEFAULT_REMOVE_HEADERS_ON_REDIRECT`) — are stripped by default, as expected.\n\nHowever, cross-origin redirects followed from the low-level API via `ProxyManager.connection_from_url().urlopen(..., assert_same_host=False)` still forward these sensitive headers.\n\n### Affected usage\n\nApplications and libraries using urllib3 versions earlier than 2.7.0 may be affected if they allow cross-origin redirects while making requests through `HTTPConnection.urlopen()` instances created via `ProxyManager.connection_from_url()`.\n\n### Remediation\n\nUpgrade to urllib3 version 2.7.0 or later, in which sensitive headers are stripped from redirects followed by `HTTPConnection`.\n\nIf upgrading is not immediately possible, avoid using this low-level redirect flow for cross-origin redirects. If appropriate for your use case, switch to `ProxyManager.request()`.",
+      "aliases": [
+        "CVE-2026-44431",
+        "PYSEC-2026-141"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.7.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-qccp-gfcp-xxvc",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-qccp-gfcp-xxvc",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-44431",
+        "https://github.com/urllib3/urllib3"
+      ],
+      "modified": "2026-09-10T03:50:47.272765640Z",
+      "severityLabel": "HIGH",
+      "affectedVersions": [
+        "listed version 1.23",
+        "listed version 1.24",
+        "listed version 1.24.1",
+        "listed version 1.24.2",
+        "listed version 1.24.3",
+        "listed version 1.25",
+        "listed version 1.25.1",
+        "listed version 1.25.10",
+        "listed version 1.25.11",
+        "listed version 1.25.2",
+        "listed version 1.25.3",
+        "listed version 1.25.4",
+        "listed version 1.25.5",
+        "listed version 1.25.6",
+        "listed version 1.25.7",
+        "listed version 1.25.8",
+        "listed version 1.25.9",
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "listed version 1.26.10",
+        "ECOSYSTEM: [{\"introduced\":\"1.23\"},{\"fixed\":\"2.7.0\"}]"
+      ]
+    },
+    "[\"GHSA-vxq7-64xx-v4gw\",\"urllib3\",\"PyPI\"]": {
+      "id": "GHSA-vxq7-64xx-v4gw",
+      "source": "https://api.osv.dev/v1/vulns/GHSA-vxq7-64xx-v4gw",
+      "verification": "verified",
+      "summary": "urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory",
+      "description": "## Impact\n\nurllib3's [streaming API](https://urllib3.readthedocs.io/en/2.7.0/advanced-usage.html#streaming-and-i-o) is designed for efficiently handling large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. When decoding a [chunked-transfer-encoded response](https://httpwg.org/specs/rfc9112.html#chunked.encoding), this API reads each chunk's size field by buffering until it sees `\\n` or EOF.\n\nA malicious HTTP server can return `Transfer-Encoding: chunked` and then send a very long run of bytes without any newline, causing the streaming client to buffer that entire run before urllib3 can reject the chunk size as invalid and allocate more memory than intended.\n\nTo fix the issue, we'll reject chunk-size fields larger than 65536 bytes, as already done in the non-streaming case, which is currently handled by the Python standard library. Note that this only applies to reading the chunk-size field, not the chunk data, which is already handled correctly. Thus, there shouldn't be any impact for non-malicious servers.\n\n## Affected usages\n\nApplications and libraries using urllib3 versions earlier than 2.8.0 may be affected when streaming a chunked response from untrusted sources. Specifically, this affects the [read_chunked()](https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.BaseHTTPResponse.read_chunked) and [stream()](https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.BaseHTTPResponse.stream) methods of the HTTPResponse object.\n\nThis also affects requests streaming API, which uses urllib3 under the hood.\n\n## Remediation\n\nUpgrade to urllib3 version 2.8.0 or later, where chunk-size fields larger than 65536 will be rejected. If upgrading is not immediately possible, consider reading the response at once using the [read()](https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.BaseHTTPResponse.read) method.",
+      "aliases": [
+        "CVE-2026-97689",
+        "PYSEC-2026-4177"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.8.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/GHSA-vxq7-64xx-v4gw",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-vxq7-64xx-v4gw",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-97689",
+        "https://github.com/urllib3/urllib3/commit/cd770b059b543be29298ea5c52afb0b1b090f5ed",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.8.0"
+      ],
+      "modified": "2026-10-01T17:55:57.514829071Z",
+      "severityLabel": "HIGH",
+      "affectedVersions": [
+        "listed version 1.10.3",
+        "listed version 1.10.4",
+        "listed version 1.11",
+        "listed version 1.12",
+        "listed version 1.13",
+        "listed version 1.13.1",
+        "listed version 1.14",
+        "listed version 1.15",
+        "listed version 1.15.1",
+        "listed version 1.16",
+        "listed version 1.17",
+        "listed version 1.18",
+        "listed version 1.18.1",
+        "listed version 1.19",
+        "listed version 1.19.1",
+        "listed version 1.20",
+        "listed version 1.21",
+        "listed version 1.21.1",
+        "listed version 1.22",
+        "listed version 1.23",
+        "ECOSYSTEM: [{\"introduced\":\"1.10.3\"},{\"fixed\":\"2.8.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-141\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-141",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-141",
+      "verification": "verified",
+      "summary": "OSV advisory matches the recorded package version.",
+      "description": "urllib3 is an HTTP client library for Python. From 1.23 to before 2.7.0, cross-origin redirects followed from the low-level API via ProxyManager.connection_from_url().urlopen(..., assert_same_host=False) still forward these sensitive headers. This vulnerability is fixed in 2.7.0.",
+      "aliases": [
+        "CVE-2026-44431",
+        "GHSA-qccp-gfcp-xxvc"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.7.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-141",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-qccp-gfcp-xxvc"
+      ],
+      "modified": "2026-05-20T09:19:20.983812Z",
+      "affectedVersions": [
+        "listed version 1.23",
+        "listed version 1.24",
+        "listed version 1.24.1",
+        "listed version 1.24.2",
+        "listed version 1.24.3",
+        "listed version 1.25",
+        "listed version 1.25.1",
+        "listed version 1.25.10",
+        "listed version 1.25.11",
+        "listed version 1.25.2",
+        "listed version 1.25.3",
+        "listed version 1.25.4",
+        "listed version 1.25.5",
+        "listed version 1.25.6",
+        "listed version 1.25.7",
+        "listed version 1.25.8",
+        "listed version 1.25.9",
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "listed version 1.26.10",
+        "ECOSYSTEM: [{\"introduced\":\"1.23\"},{\"fixed\":\"2.7.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-1994\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-1994",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-1994",
+      "verification": "verified",
+      "summary": "urllib3 streaming API improperly handles highly compressed data",
+      "description": "### Impact\n\nurllib3's [streaming API](https://urllib3.readthedocs.io/en/2.5.0/advanced-usage.html#streaming-and-i-o) is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once.\n\nWhen streaming a compressed response, urllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). The library must read compressed data from the network and decompress it until the requested chunk size is met. Any resulting decompressed data that exceeds the requested amount is held in an internal buffer for the next read operation.\n\nThe decompression logic could cause urllib3 to fully decode a small amount of highly compressed data in a single operation. This can result in excessive resource consumption (high CPU usage and massive memory allocation for the decompressed data; CWE-409) on the client side, even if the application only requested a small chunk of data.\n\n\n### Affected usages\n\nApplications and libraries using urllib3 version 2.5.0 and earlier to stream large compressed responses or content from untrusted sources.\n\n`stream()`, `read(amt=256)`, `read1(amt=256)`, `read_chunked(amt=256)`, `readinto(b)` are examples of `urllib3.HTTPResponse` method calls using the affected logic unless decoding is disabled explicitly.\n\n\n### Remediation\n\nUpgrade to at least urllib3 v2.6.0 in which the library avoids decompressing data that exceeds the requested amount.\n\nIf your environment contains a package facilitating the Brotli encoding, upgrade to at least Brotli 1.2.0 or brotlicffi 1.2.0.0 too. These versions are enforced by the `urllib3[brotli]` extra in the patched versions of urllib3.\n\n\n### Credits\n\nThe issue was reported by @Cycloctane.\nSupplemental information was provided by @stamparm during a security audit performed by [7ASecurity](https://7asecurity.com/) and facilitated by [OSTIF](https://ostif.org/).",
+      "aliases": [
+        "CVE-2025-66471",
+        "GHSA-2xpw-w6gg-jr37"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.6.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-1994",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-2xpw-w6gg-jr37",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-66471",
+        "https://github.com/urllib3/urllib3/commit/c19571de34c47de3a766541b041637ba5f716ed7",
+        "https://github.com/urllib3/urllib3",
+        "https://pypi.org/project/urllib3",
+        "https://github.com/advisories/GHSA-2xpw-w6gg-jr37"
+      ],
+      "modified": "2026-07-07T17:48:15.379954669Z",
+      "affectedVersions": [
+        "listed version 1.0",
+        "listed version 1.0.1",
+        "listed version 1.0.2",
+        "listed version 1.1",
+        "listed version 1.10",
+        "listed version 1.10.1",
+        "listed version 1.10.2",
+        "listed version 1.10.3",
+        "listed version 1.10.4",
+        "listed version 1.11",
+        "listed version 1.12",
+        "listed version 1.13",
+        "listed version 1.13.1",
+        "listed version 1.14",
+        "listed version 1.15",
+        "listed version 1.15.1",
+        "listed version 1.16",
+        "listed version 1.17",
+        "listed version 1.18",
+        "listed version 1.18.1",
+        "ECOSYSTEM: [{\"introduced\":\"1.0\"},{\"fixed\":\"2.6.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-1996\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-1996",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-1996",
+      "verification": "verified",
+      "summary": "Decompression-bomb safeguards bypassed when following HTTP redirects (streaming API)",
+      "description": "### Impact\n\nurllib3's [streaming API](https://urllib3.readthedocs.io/en/2.6.2/advanced-usage.html#streaming-and-i-o) is designed for the efficient handling of large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once.\n\nurllib3 can perform decoding or decompression based on the HTTP `Content-Encoding` header (e.g., `gzip`, `deflate`, `br`, or `zstd`). When using the streaming API, the library decompresses only the necessary bytes, enabling partial content consumption.\n\nHowever, for HTTP redirect responses, the library would read the entire response body to drain the connection and decompress the content unnecessarily. This decompression occurred even before any read methods were called, and configured read limits did not restrict the amount of decompressed data. As a result, there was no safeguard against decompression bombs. A malicious server could exploit this to trigger excessive resource consumption on the client (high CPU usage and large memory allocations for decompressed data; CWE-409).\n\n### Affected usages\n\nApplications and libraries using urllib3 version 2.6.2 and earlier to stream content from untrusted sources by setting `preload_content=False` when they do not disable redirects.\n\n\n### Remediation\n\nUpgrade to at least urllib3 v2.6.3 in which the library does not decode content of redirect responses when `preload_content=False`.\n\nIf upgrading is not immediately possible, disable [redirects](https://urllib3.readthedocs.io/en/2.6.2/user-guide.html#retrying-requests) by setting `redirect=False` for requests to untrusted source.",
+      "aliases": [
+        "CVE-2026-21441",
+        "GHSA-38jv-5279-wg99"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        },
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.6.3"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-1996",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-38jv-5279-wg99",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-21441",
+        "https://github.com/urllib3/urllib3/commit/8864ac407bba8607950025e0979c4c69bc7abc7b",
+        "https://github.com/urllib3/urllib3",
+        "https://lists.debian.org/debian-lts-announce/2026/01/msg00017.html",
+        "https://pypi.org/project/urllib3",
+        "https://github.com/advisories/GHSA-38jv-5279-wg99"
+      ],
+      "modified": "2026-07-07T17:48:15.382053236Z",
+      "affectedVersions": [
+        "listed version 1.22",
+        "listed version 1.23",
+        "listed version 1.24",
+        "listed version 1.24.1",
+        "listed version 1.24.2",
+        "listed version 1.24.3",
+        "listed version 1.25",
+        "listed version 1.25.1",
+        "listed version 1.25.10",
+        "listed version 1.25.11",
+        "listed version 1.25.2",
+        "listed version 1.25.3",
+        "listed version 1.25.4",
+        "listed version 1.25.5",
+        "listed version 1.25.6",
+        "listed version 1.25.7",
+        "listed version 1.25.8",
+        "listed version 1.25.9",
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "ECOSYSTEM: [{\"introduced\":\"1.22\"},{\"fixed\":\"2.6.3\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-1997\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-1997",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-1997",
+      "verification": "verified",
+      "summary": "urllib3 does not control redirects in browsers and Node.js",
+      "description": "urllib3 [supports](https://urllib3.readthedocs.io/en/2.4.0/reference/contrib/emscripten.html) being used in a Pyodide runtime utilizing the [JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or falling back on [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). This means you can use Python libraries to make HTTP requests from your browser or Node.js. Additionally, urllib3 provides [a mechanism](https://urllib3.readthedocs.io/en/2.4.0/user-guide.html#retrying-requests) to control redirects.\n\nHowever, the `retries` and `redirect` parameters are ignored with Pyodide; the runtime itself determines redirect behavior.\n\n\n## Affected usages\n\nAny code which relies on urllib3 to control the number of redirects for an HTTP request in a Pyodide runtime.\n\n\n## Impact\n\nRedirects are often used to exploit SSRF vulnerabilities. An application attempting to mitigate SSRF or open redirect vulnerabilities by disabling redirects may remain vulnerable if a Pyodide runtime redirect mechanism is unsuitable.\n\n\n## Remediation\n\nIf you use urllib3 in Node.js, upgrade to a patched version of urllib3.\n\nUnfortunately, browsers provide no suitable way which urllib3 can use: `XMLHttpRequest` provides no control over redirects, the Fetch API returns `opaqueredirect` responses lacking data when redirects are controlled manually. Expect default browser behavior for redirects.",
+      "aliases": [
+        "CVE-2025-50182",
+        "GHSA-48p4-8xcf-vxj5"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.5.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-1997",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-48p4-8xcf-vxj5",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-50182",
+        "https://github.com/urllib3/urllib3/commit/7eb4a2aafe49a279c29b6d1f0ed0f42e9736194f",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.5.0",
+        "https://pypi.org/project/urllib3",
+        "https://github.com/advisories/GHSA-48p4-8xcf-vxj5"
+      ],
+      "modified": "2026-07-07T17:48:15.745179657Z",
+      "affectedVersions": [
+        "listed version 2.2.0",
+        "listed version 2.2.1",
+        "listed version 2.2.2",
+        "listed version 2.2.3",
+        "listed version 2.3.0",
+        "listed version 2.4.0",
+        "ECOSYSTEM: [{\"introduced\":\"2.2.0\"},{\"fixed\":\"2.5.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-1998\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-1998",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-1998",
+      "verification": "verified",
+      "summary": "urllib3 allows an unbounded number of links in the decompression chain",
+      "description": "## Impact\n\nurllib3 supports chained HTTP encoding algorithms for response content according to RFC 9110 (e.g., `Content-Encoding: gzip, zstd`).\n\nHowever, the number of links in the decompression chain was unbounded allowing a malicious server to insert a virtually unlimited number of compression steps leading to high CPU usage and massive memory allocation for the decompressed data.\n\n\n## Affected usages\n\nApplications and libraries using urllib3 version 2.5.0 and earlier for HTTP requests to untrusted sources unless they disable content decoding explicitly.\n\n\n## Remediation\n\nUpgrade to at least urllib3 v2.6.0 in which the library limits the number of links to 5.\n\nIf upgrading is not immediately possible, use [`preload_content=False`](https://urllib3.readthedocs.io/en/2.5.0/advanced-usage.html#streaming-and-i-o) and ensure that `resp.headers[\"content-encoding\"]` contains a safe number of encodings before reading the response content.",
+      "aliases": [
+        "CVE-2025-66418",
+        "GHSA-gm62-xv2j-4w53"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.6.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-1998",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-gm62-xv2j-4w53",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-66418",
+        "https://github.com/urllib3/urllib3/commit/24d7b67eac89f94e11003424bcf0d8f7b72222a8",
+        "https://github.com/urllib3/urllib3",
+        "https://pypi.org/project/urllib3",
+        "https://github.com/advisories/GHSA-gm62-xv2j-4w53"
+      ],
+      "modified": "2026-07-07T17:47:54.140852492Z",
+      "affectedVersions": [
+        "listed version 1.24",
+        "listed version 1.24.1",
+        "listed version 1.24.2",
+        "listed version 1.24.3",
+        "listed version 1.25",
+        "listed version 1.25.1",
+        "listed version 1.25.10",
+        "listed version 1.25.11",
+        "listed version 1.25.2",
+        "listed version 1.25.3",
+        "listed version 1.25.4",
+        "listed version 1.25.5",
+        "listed version 1.25.6",
+        "listed version 1.25.7",
+        "listed version 1.25.8",
+        "listed version 1.25.9",
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "listed version 1.26.10",
+        "listed version 1.26.11",
+        "ECOSYSTEM: [{\"introduced\":\"1.24\"},{\"fixed\":\"2.6.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-1999\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-1999",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-1999",
+      "verification": "verified",
+      "summary": "urllib3 redirects are not disabled when retries are disabled on PoolManager instantiation",
+      "description": "urllib3 handles redirects and retries using the same mechanism, which is controlled by the `Retry` object. The most common way to disable redirects is at the request level, as follows:\n\n```python\nresp = urllib3.request(\"GET\", \"https://httpbin.org/redirect/1\", redirect=False)\nprint(resp.status)\n# 302\n```\n\nHowever, it is also possible to disable redirects, for all requests, by instantiating a `PoolManager` and specifying `retries` in a way that disable redirects:\n\n```python\nimport urllib3\n\nhttp = urllib3.PoolManager(retries=0)  # should raise MaxRetryError on redirect\nhttp = urllib3.PoolManager(retries=urllib3.Retry(redirect=0))  # equivalent to the above\nhttp = urllib3.PoolManager(retries=False)  # should return the first response\n\nresp = http.request(\"GET\", \"https://httpbin.org/redirect/1\")\n```\n\nHowever, the `retries` parameter is currently ignored, which means all the above examples don't disable redirects.\n\n## Affected usages\n\nPassing `retries` on `PoolManager` instantiation to disable redirects or restrict their number.\n\nBy default, requests and botocore users are not affected.\n\n## Impact\n\nRedirects are often used to exploit SSRF vulnerabilities. An application attempting to mitigate SSRF or open redirect vulnerabilities by disabling redirects at the PoolManager level will remain vulnerable.\n\n## Remediation\n\nYou can remediate this vulnerability with the following steps:\n\n * Upgrade to a patched version of urllib3. If your organization would benefit from the continued support of urllib3 1.x, please contact [sethmichaellarson@gmail.com](mailto:sethmichaellarson@gmail.com) to discuss sponsorship or contribution opportunities.\n * Disable redirects at the `request()` level instead of the `PoolManager()` level.",
+      "aliases": [
+        "CVE-2025-50181",
+        "GHSA-pq67-6m6q-mj2v"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V3",
+          "score": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:N/A:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.5.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-1999",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-pq67-6m6q-mj2v",
+        "https://nvd.nist.gov/vuln/detail/CVE-2025-50181",
+        "https://github.com/urllib3/urllib3/commit/f05b1329126d5be6de501f9d1e3e36738bc08857",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.5.0",
+        "https://pypi.org/project/urllib3",
+        "https://github.com/advisories/GHSA-pq67-6m6q-mj2v"
+      ],
+      "modified": "2026-07-07T17:47:54.161376347Z",
+      "affectedVersions": [
+        "listed version 0.2",
+        "listed version 0.3",
+        "listed version 0.3.1",
+        "listed version 0.4.0",
+        "listed version 0.4.1",
+        "listed version 1.0",
+        "listed version 1.0.1",
+        "listed version 1.0.2",
+        "listed version 1.1",
+        "listed version 1.10",
+        "listed version 1.10.1",
+        "listed version 1.10.2",
+        "listed version 1.10.3",
+        "listed version 1.10.4",
+        "listed version 1.11",
+        "listed version 1.12",
+        "listed version 1.13",
+        "listed version 1.13.1",
+        "listed version 1.14",
+        "listed version 1.15",
+        "ECOSYSTEM: [{\"introduced\":\"0\"},{\"fixed\":\"2.5.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-4175\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-4175",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-4175",
+      "verification": "verified",
+      "summary": "urllib3: HTTPS proxy TLS configuration may be ignored or overridden",
+      "description": "## Impact\n\nurllib3 supports configuring TLS independently for an HTTPS proxy and the target server.\n\n`proxy_ssl_context`, `proxy_assert_hostname`, and `proxy_assert_fingerprint` configure the TLS connection to the proxy. `ssl_context` and the other target-specific TLS parameters configure the connection to the target server.\n\nIn urllib3 versions 1.26.0 through 2.7.0, these configurations were not consistently separated. Depending on the proxy mode, urllib3 could:\n\n1. Ignore `proxy_ssl_context` and use the target server's SSL context for the TLS connection to an HTTPS forwarding proxy.\n2. Override the HTTPS proxy's certificate-verification policy with the target server's certificate-verification policy.\n3. Apply target-specific SNI, hostname assertions, certificate fingerprint assertions, or TLS client credentials to the TLS connection to an HTTPS forwarding proxy.\n\nIn particular, configuring `cert_reqs=\"CERT_NONE\"` for a target server could overwrite the `verify_mode` of the SSL context configured for the HTTPS proxy. This modification occurred in place and persisted on the context object, potentially disabling proxy certificate verification for later connections that reused the same context.\n\nAn attacker able to intercept the connection to an HTTPS proxy may be able to impersonate the proxy when the effective proxy TLS configuration disables certificate verification or otherwise accepts the attacker's certificate. This may occur, for example, when the target server's trust or identity policy is incorrectly applied to the proxy connection.\n\nWhen HTTPS forwarding is enabled, an impersonated proxy can observe or modify forwarded requests and responses, potentially exposing credentials, authentication tokens, request bodies, response data, and other sensitive information.\n\nA TLS client certificate intended for the target server may also be presented to the proxy or to an attacker impersonating it. This can disclose the client's identity and provide proof of possession of the corresponding private key. The private key itself is not transmitted during the TLS handshake.\n\nIn CONNECT tunneling mode, impersonating the HTTPS proxy does not by itself defeat the separate end-to-end TLS connection between the client and the target server.\n\n## Affected Usages\n\nCode using urllib3 versions 1.26.0 through 2.7.0 may be affected in any of the following cases.\n\n### 1. The target SSL context is used for an HTTPS forwarding proxy\n\nHTTPS requests are forwarded through an HTTPS proxy with `use_forwarding_for_https=True`, and `proxy_ssl_context` is configured for the proxy.\n\nurllib3 may ignore `proxy_ssl_context` and use the target server's `ssl_context` for the proxy TLS handshake. The proxy may therefore be verified using the target server's trust and certificate policy instead of the policy explicitly configured for the proxy.\n\n### 2. The target verification policy overrides the proxy policy\n\nAn HTTPS proxy is configured with `proxy_ssl_context`, while the target ser",
+      "aliases": [
+        "CVE-2026-97687",
+        "GHSA-8988-9cw3-xx77"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N"
+        }
+      ],
+      "fixedVersions": [
+        "2.8.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-4175",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-8988-9cw3-xx77",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-97687",
+        "https://github.com/urllib3/urllib3/pull/5093",
+        "https://github.com/urllib3/urllib3/commit/07408cec79d1856d81bb42c74a904a24fdb9e465",
+        "https://github.com/urllib3/urllib3/commit/b6447295fff7b38fdffc67e0df9712d60cef3cc3",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.8.0",
+        "https://pypi.org/project/urllib3",
+        "https://github.com/advisories/GHSA-8988-9cw3-xx77"
+      ],
+      "modified": "2026-10-01T17:45:18.542387510Z",
+      "affectedVersions": [
+        "listed version 1.26.0",
+        "listed version 1.26.1",
+        "listed version 1.26.10",
+        "listed version 1.26.11",
+        "listed version 1.26.12",
+        "listed version 1.26.13",
+        "listed version 1.26.14",
+        "listed version 1.26.15",
+        "listed version 1.26.16",
+        "listed version 1.26.17",
+        "listed version 1.26.18",
+        "listed version 1.26.19",
+        "listed version 1.26.2",
+        "listed version 1.26.20",
+        "listed version 1.26.3",
+        "listed version 1.26.4",
+        "listed version 1.26.5",
+        "listed version 1.26.6",
+        "listed version 1.26.7",
+        "listed version 1.26.8",
+        "ECOSYSTEM: [{\"introduced\":\"1.26.0\"},{\"fixed\":\"2.8.0\"}]"
+      ]
+    },
+    "[\"PYSEC-2026-4177\",\"urllib3\",\"PyPI\"]": {
+      "id": "PYSEC-2026-4177",
+      "source": "https://api.osv.dev/v1/vulns/PYSEC-2026-4177",
+      "verification": "verified",
+      "summary": "urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory",
+      "description": "## Impact\n\nurllib3's [streaming API](https://urllib3.readthedocs.io/en/2.7.0/advanced-usage.html#streaming-and-i-o) is designed for efficiently handling large HTTP responses by reading the content in chunks, rather than loading the entire response body into memory at once. When decoding a [chunked-transfer-encoded response](https://httpwg.org/specs/rfc9112.html#chunked.encoding), this API reads each chunk's size field by buffering until it sees `\\n` or EOF.\n\nA malicious HTTP server can return `Transfer-Encoding: chunked` and then send a very long run of bytes without any newline, causing the streaming client to buffer that entire run before urllib3 can reject the chunk size as invalid and allocate more memory than intended.\n\nTo fix the issue, we'll reject chunk-size fields larger than 65536 bytes, as already done in the non-streaming case, which is currently handled by the Python standard library. Note that this only applies to reading the chunk-size field, not the chunk data, which is already handled correctly. Thus, there shouldn't be any impact for non-malicious servers.\n\n## Affected usages\n\nApplications and libraries using urllib3 versions earlier than 2.8.0 may be affected when streaming a chunked response from untrusted sources. Specifically, this affects the [read_chunked()](https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.BaseHTTPResponse.read_chunked) and [stream()](https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.BaseHTTPResponse.stream) methods of the HTTPResponse object.\n\nThis also affects requests streaming API, which uses urllib3 under the hood.\n\n## Remediation\n\nUpgrade to urllib3 version 2.8.0 or later, where chunk-size fields larger than 65536 will be rejected. If upgrading is not immediately possible, consider reading the response at once using the [read()](https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.BaseHTTPResponse.read) method.",
+      "aliases": [
+        "CVE-2026-97689",
+        "GHSA-vxq7-64xx-v4gw"
+      ],
+      "severity": [
+        {
+          "type": "CVSS_V4",
+          "score": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H"
+        }
+      ],
+      "fixedVersions": [
+        "2.8.0"
+      ],
+      "references": [
+        "https://osv.dev/vulnerability/PYSEC-2026-4177",
+        "https://github.com/urllib3/urllib3/security/advisories/GHSA-vxq7-64xx-v4gw",
+        "https://nvd.nist.gov/vuln/detail/CVE-2026-97689",
+        "https://github.com/urllib3/urllib3/commit/cd770b059b543be29298ea5c52afb0b1b090f5ed",
+        "https://github.com/urllib3/urllib3",
+        "https://github.com/urllib3/urllib3/releases/tag/2.8.0",
+        "https://pypi.org/project/urllib3",
+        "https://github.com/advisories/GHSA-vxq7-64xx-v4gw"
+      ],
+      "modified": "2026-10-01T17:45:18.336090182Z",
+      "affectedVersions": [
+        "listed version 1.10.3",
+        "listed version 1.10.4",
+        "listed version 1.11",
+        "listed version 1.12",
+        "listed version 1.13",
+        "listed version 1.13.1",
+        "listed version 1.14",
+        "listed version 1.15",
+        "listed version 1.15.1",
+        "listed version 1.16",
+        "listed version 1.17",
+        "listed version 1.18",
+        "listed version 1.18.1",
+        "listed version 1.19",
+        "listed version 1.19.1",
+        "listed version 1.20",
+        "listed version 1.21",
+        "listed version 1.21.1",
+        "listed version 1.22",
+        "listed version 1.23",
+        "ECOSYSTEM: [{\"introduced\":\"1.10.3\"},{\"fixed\":\"2.8.0\"}]"
+      ]
+    }
+  }
+}
